@@ -21,6 +21,9 @@ function WeaponStatus({ parameters }) {
                         Weight: {parameters.weight.toFixed(2)}kg
                     </Typography>
                     <Typography>Ergonomics: {parameters.ergonomics}</Typography>
+                    <Typography>
+                        Price: ¥{parameters.price.toLocaleString()}
+                    </Typography>
                 </Box>
             </Box>
         </>

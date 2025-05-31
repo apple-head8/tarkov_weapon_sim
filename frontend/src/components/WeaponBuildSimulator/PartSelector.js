@@ -1,5 +1,6 @@
 import React from "react";
-import { Tabs, Tab, Box, Card, CardContent, Typography } from "@mui/material";
+import { Tabs, Tab, Box } from "@mui/material";
+import PartCard from "../common/PartCard";
 
 function PartSelector({
     selectedTab,
@@ -28,91 +29,51 @@ function PartSelector({
             <Box
                 sx={{
                     display: "flex",
-                    gap: 2,
-                    padding: 2,
-                    backgroundColor: "#1e1e1e",
-                    borderRadius: 1,
-                    marginTop: 2,
                 }}
             >
-                <Card
-                    sx={{
-                        minWidth: 150,
-                        backgroundColor:
-                            selectedTab in selectedParts
-                                ? "#4c8cc6"
-                                : "#1e1e1e",
-                        color: "#fff",
-                        transition: "transform 0.2s",
-                        cursor: "pointer",
-                        "&:hover": {
-                            transform: "scale(1.05)",
-                        },
-                        borderStyle: "dotted", //borderを破線に
-                        borderColor: "#3a3a3a",
-                        borderColor:
-                            selectedTab in selectedParts
-                                ? "#ffffff"
-                                : "#3a3a3a",
+                <div
+                    style={{
+                        width: "150px",
+                        height: "200px",
+                        display: "grid",
+                        margin: "10px",
+                        flexShrink: 0,
                     }}
-                    onClick={() => clearPartSelect(selectedTab)}
                 >
-                    <CardContent>
-                        <Typography variant="body1" align="center">
-                            {selectedParts[selectedTab]?.name ?? "　"}
-                        </Typography>
-                        <Typography variant="body2" align="center">
-                            Weight: {selectedParts[selectedTab]?.weight}kg
-                        </Typography>
-                        <Typography variant="body2" align="center">
-                            Ergonomics: {selectedParts[selectedTab]?.ergonomics}
-                        </Typography>
-                    </CardContent>
-                </Card>
+                    <PartCard
+                        part={selectedParts[selectedTab]}
+                        isSelectedCard={true}
+                        onClick={() => clearPartSelect(selectedTab)}
+                    />
+                </div>
+
                 <Box
                     sx={{
                         display: "flex",
-                        flex: 1,
-                        overflowX: "auto",
-                        overflowY: "hidden",
-                        gap: 2,
-                        backgroundColor: "#1e1e1e",
+                        overflowX: "auto", // 横スクロールを有効化
+                        width: "100%",
                     }}
                 >
                     {parts[selectedTab].map((part) => (
-                        <Card
-                            key={part.id}
-                            sx={{
-                                minWidth: 150,
-                                backgroundColor:
-                                    selectedParts[selectedTab]?.id === part.id
-                                        ? "#4c8cc6"
-                                        : "#3a3a3a",
-                                color: "#fff",
-                                transition: "transform 0.2s",
-                                cursor: "pointer",
-                                border:
-                                    selectedParts[selectedTab]?.id === part.id
-                                        ? "2px solid #4c8cc6"
-                                        : "none",
-                                "&:hover": {
-                                    transform: "scale(1.05)",
-                                },
+                        <div
+                            style={{
+                                width: "150px",
+                                height: "200px",
+                                display: "grid",
+                                margin: "10px",
                             }}
-                            onClick={() => handlePartSelect(selectedTab, part)}
+                            key={part.id}
                         >
-                            <CardContent>
-                                <Typography variant="body1" align="center">
-                                    {part.name}
-                                </Typography>
-                                <Typography variant="body2" align="center">
-                                    Weight: {part.weight}kg
-                                </Typography>
-                                <Typography variant="body2" align="center">
-                                    Ergonomics: {part.ergonomics}
-                                </Typography>
-                            </CardContent>
-                        </Card>
+                            <PartCard
+                                part={part}
+                                isSelected={
+                                    selectedParts[selectedTab]?.id === part.id
+                                }
+                                onClick={() =>
+                                    handlePartSelect(selectedTab, part)
+                                }
+                            />
+                        </div>
                     ))}
                 </Box>
             </Box>

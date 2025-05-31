@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import {
     Tabs,
     Tab,
@@ -13,70 +13,82 @@ import {
     Grid2,
 } from "@mui/material";
 import "./App.css";
+import axios from "axios";
 import Sidebar from "./components/common/Sidebar";
-import WeaponSelector from "./components/WeaponBuildSimulator/WeaponSelector";
-import PartSelector from "./components/WeaponBuildSimulator/PartSelector";
 import WeaponPartsList from "./components/WeaponBuildSimulator/WeaponPartsList";
 import WeaponStatus from "./components/WeaponBuildSimulator/WeaponStatus";
 import PresetSave from "./components/WeaponBuildSimulator/PresetSave";
 import PresetList from "./components/WeaponBuildSimulator/PresetList";
 import Header from "./components/common/Header";
+import WeaponSelector from "./components/WeaponBuildSimulator/WeaponSelector";
+import PartSelector from "./components/WeaponBuildSimulator/PartSelector";
+import {
+    categoryList,
+    categoryArrayList,
+    categoryListMapping,
+} from "./constants/categoryList";
+import ErrorMessage from "./components/common/ErrorMessage";
+import { findConflictingPart } from "./utils/conflict";
 
-const categories = ["Sights", "Grips", "Stocks", "Muzzles"];
-const parts = {
-    Sights: [
-        { id: 1, name: "Red Dot", weight: 0.2, ergonomics: 5 },
-        { id: 2, name: "Holo Sight", weight: 0.3, ergonomics: 4 },
-        { id: 3, name: "Scope", weight: 0.5, ergonomics: 3 },
-        { id: 4, name: "Scope2", weight: 0.5, ergonomics: 3 },
-        { id: 5, name: "Scope3", weight: 0.5, ergonomics: 3 },
-    ],
-    Grips: [
-        { id: 4, name: "Vertical Grip", weight: 0.3, ergonomics: 6 },
-        { id: 5, name: "Angled Grip", weight: 0.25, ergonomics: 5 },
-    ],
-    Stocks: [
-        { id: 6, name: "Adjustable Stock", weight: 0.4, ergonomics: 7 },
-        { id: 7, name: "Fixed Stock", weight: 0.5, ergonomics: 5 },
-    ],
-    Muzzles: [
-        { id: 8, name: "Suppressor", weight: 0.6, ergonomics: 2 },
-        { id: 9, name: "Compensator", weight: 0.4, ergonomics: 3 },
-    ],
-};
+const categories = categoryList;
 
-const guns = [
-    { id: 1, name: "AK-47", weight: 3.5, ergonomics: 20 },
-    { id: 2, name: "M4A1", weight: 3.0, ergonomics: 25 },
-    { id: 3, name: "MP5", weight: 2.8, ergonomics: 30 },
-];
+const baseURL = "http://localhost:8000"; // Laravelサーバーのアドレスとポート
 
 const TarkovWeaponSim = () => {
-    const [selectedTab, setSelectedTab] = useState("Sights");
     const [selectedParts, setSelectedParts] = useState({});
-    const [parameters, setParameters] = useState({ weight: 0, ergonomics: 0 });
-    const [selectedGun, setSelectedGun] = useState(guns[0]);
+    const [parameters, setParameters] = useState({
+        weight: 0,
+        ergonomics: 0,
+        price: 0,
+    });
+    const [selectedGun, setSelectedGun] = useState(""); // 選択された銃のIDを管理 TODO:初期値の精査
     const [presetName, setPresetName] = useState("");
     const [presets, setPresets] = useState([]);
+    const [selectedTab, setSelectedTab] = useState("RearSight");
+    const [selectedGunSlots, setSelectedGunSlots] = useState(categoryArrayList);
+    const [error, setError] = useState("");
+
+    useEffect(() => {
+        const newParameters = Object.values(selectedParts).reduce(
+            (acc, part) => {
+                acc.weight += part.weight || 0;
+                acc.ergonomics += part.ergonomicsModifier || 0;
+                acc.price += part.lastLowPrice || 0;
+                return acc;
+            },
+            {
+                weight: selectedGun?.weight || 0,
+                ergonomics: selectedGun?.properties?.ergonomics || 0,
+                price: selectedGun?.lastLowPrice || 0,
+            }
+        );
+        setParameters(newParameters);
+    }, [selectedGun, selectedParts]);
 
     const handleTabChange = (event, newValue) => {
         setSelectedTab(newValue);
     };
 
     const handlePartSelect = (category, part) => {
+        // 競合しているパーツが現在装備されているか確認（双方向チェック）
+        const conflicted = findConflictingPart(part, selectedParts);
+
+        if (conflicted) {
+            // 競合が見つかった場合はエラーメッセージを表示して終了
+            const { category: conflictedCategory, part: conflictedItem } =
+                conflicted;
+            setError(
+                `${part.name} は ${conflictedItem.name}（${conflictedCategory}）と競合しています。`
+            );
+            return;
+        }
+
+        // エラーをリセット（正常に選択できる場合）
+        setError("");
+
+        // パーツを選択状態に追加
         const updatedParts = { ...selectedParts, [category]: part };
         setSelectedParts(updatedParts);
-
-        // Update parameters based on selected parts and gun
-        const newParameters = Object.values(updatedParts).reduce(
-            (acc, part) => {
-                acc.weight += part.weight;
-                acc.ergonomics += part.ergonomics;
-                return acc;
-            },
-            { weight: selectedGun.weight, ergonomics: selectedGun.ergonomics }
-        );
-        setParameters(newParameters);
     };
 
     const clearPartSelect = (category) => {
@@ -84,35 +96,6 @@ const TarkovWeaponSim = () => {
         delete deleteParts?.[category];
 
         setSelectedParts(deleteParts);
-
-        // Update parameters based on selected parts and gun
-        const newParameters = Object.values(deleteParts).reduce(
-            (acc, part) => {
-                acc.weight += part.weight;
-                acc.ergonomics += part.ergonomics;
-                return acc;
-            },
-            { weight: selectedGun.weight, ergonomics: selectedGun.ergonomics }
-        );
-        setParameters(newParameters);
-    };
-
-    const handleGunChange = (event) => {
-        const gun = guns.find((g) => g.id === event.target.value);
-        setSelectedGun(gun);
-        // データ用意後、初期状態のパーツをセットする関数に変更
-        setSelectedParts({});
-
-        // Recalculate parameters with the new gun
-        const newParameters = Object.values(selectedParts).reduce(
-            (acc, part) => {
-                acc.weight += part.weight;
-                acc.ergonomics += part.ergonomics;
-                return acc;
-            },
-            { weight: gun.weight, ergonomics: gun.ergonomics }
-        );
-        setParameters(newParameters);
     };
 
     const handleSavePreset = () => {
@@ -141,14 +124,16 @@ const TarkovWeaponSim = () => {
                 <Sidebar />
                 {/* ここから再度縦並び */}
                 {/* flex 1 は、画面横幅いっぱい使うような設定 */}
-                <Box sx={{ flex: 1, padding: 3 }}>
+                <Box sx={{ flex: 1, padding: 3, overflow: "hidden" }}>
+                    {error && <ErrorMessage message={error} />}
                     {/* 再度横並び */}
                     <Grid2 container spacing={2}>
                         <Grid2 size={2}>
                             <WeaponSelector
-                                guns={guns}
                                 selectedGun={selectedGun}
-                                handleGunChange={handleGunChange}
+                                setSelectedGun={setSelectedGun}
+                                setSelectedGunSlots={setSelectedGunSlots}
+                                setSelectedParts={setSelectedParts}
                             />
                         </Grid2>
                         <Grid2 size={10}>
@@ -156,7 +141,7 @@ const TarkovWeaponSim = () => {
                                 selectedTab={selectedTab}
                                 handleTabChange={handleTabChange}
                                 categories={categories}
-                                parts={parts}
+                                parts={selectedGunSlots}
                                 handlePartSelect={handlePartSelect}
                                 selectedParts={selectedParts}
                                 clearPartSelect={clearPartSelect}
