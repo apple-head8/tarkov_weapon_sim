@@ -77,6 +77,7 @@ function WeaponSelector({
         handleDefaultParts(selectedGunInfo);
     };
 
+    // 武器選択時の初期パーツセット
     const handleDefaultParts = (gunInfo) => {
         if (!gunInfo || !gunInfo.containsItems) {
             setSelectedParts({});
@@ -101,6 +102,8 @@ function WeaponSelector({
                         weight: matchedItem?.weight || 0,
                         ergonomicsModifier:
                             matchedItem?.ergonomicsModifier || 0,
+                        image512pxLink: matchedItem?.image512pxLink || null,
+                        lastLowPrice: matchedItem?.lastLowPrice || "-",
                     };
                 }
             }
