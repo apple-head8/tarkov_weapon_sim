@@ -12,6 +12,7 @@ function WeaponSelector({
     setSelectedGun,
     setSelectedGunSlots,
     setSelectedParts,
+    setEnabledCategories,
 }) {
     const [selectedType, setSelectedType] = useState("");
     const [gunLists, setGunLists] = useState("");
@@ -44,8 +45,10 @@ function WeaponSelector({
 
     const slotMapping = categoryListMapping;
 
+    // 銃選択時のイベント
     const handleGunChange = (event) => {
         const gun_id = event.target.value;
+        // 定数データ郡から対象の銃情報を取得
         const selectedGunInfo = assaultRifleData.data.items.find(
             (item) =>
                 item.id === gun_id && Object.keys(item.properties).length > 0
@@ -60,9 +63,15 @@ function WeaponSelector({
                 ])
             );
 
+            let enabledCategories = [];
+
             selectedGunInfo.properties.slots.forEach((slot) => {
                 const category = slotMapping[slot.nameId] || null;
                 if (category) {
+                    // 表示するタブを管理
+                    if (!enabledCategories.includes(category)) {
+                        enabledCategories.push(category);
+                    }
                     slot.filters.allowedItems.forEach((item) => {
                         newSlots[category].push(item);
                     });
@@ -70,6 +79,7 @@ function WeaponSelector({
             });
 
             setSelectedGunSlots(newSlots);
+            setEnabledCategories(enabledCategories);
         } else {
             setSelectedGunSlots(categoryArrayList);
         }

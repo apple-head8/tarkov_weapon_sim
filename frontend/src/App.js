@@ -44,9 +44,10 @@ const TarkovWeaponSim = () => {
     const [selectedGun, setSelectedGun] = useState(""); // 選択された銃のIDを管理 TODO:初期値の精査
     const [presetName, setPresetName] = useState("");
     const [presets, setPresets] = useState([]);
-    const [selectedTab, setSelectedTab] = useState("RearSight");
+    const [selectedTab, setSelectedTab] = useState(null);
     const [selectedGunSlots, setSelectedGunSlots] = useState(categoryArrayList);
     const [error, setError] = useState("");
+    const [enabledCategories, setEnabledCategories] = useState([]);
 
     useEffect(() => {
         const newParameters = Object.values(selectedParts).reduce(
@@ -64,6 +65,18 @@ const TarkovWeaponSim = () => {
         );
         setParameters(newParameters);
     }, [selectedGun, selectedParts]);
+
+    useEffect(() => {
+        // enabledCategories が更新されたら、
+        // もし現在の selectedTab が存在しない or 無効 なら、
+        // 最初のタブに自動で切り替える
+        if (
+            enabledCategories.length > 0 &&
+            !enabledCategories.includes(selectedTab)
+        ) {
+            setSelectedTab(enabledCategories[0]);
+        }
+    }, [enabledCategories]);
 
     const handleTabChange = (event, newValue) => {
         setSelectedTab(newValue);
@@ -134,18 +147,21 @@ const TarkovWeaponSim = () => {
                                 setSelectedGun={setSelectedGun}
                                 setSelectedGunSlots={setSelectedGunSlots}
                                 setSelectedParts={setSelectedParts}
+                                setEnabledCategories={setEnabledCategories}
                             />
                         </Grid2>
                         <Grid2 size={10}>
-                            <PartSelector
-                                selectedTab={selectedTab}
-                                handleTabChange={handleTabChange}
-                                categories={categories}
-                                parts={selectedGunSlots}
-                                handlePartSelect={handlePartSelect}
-                                selectedParts={selectedParts}
-                                clearPartSelect={clearPartSelect}
-                            />
+                            {selectedTab && (
+                                <PartSelector
+                                    selectedTab={selectedTab}
+                                    handleTabChange={handleTabChange}
+                                    categories={enabledCategories}
+                                    parts={selectedGunSlots}
+                                    handlePartSelect={handlePartSelect}
+                                    selectedParts={selectedParts}
+                                    clearPartSelect={clearPartSelect}
+                                />
+                            )}
                         </Grid2>
                     </Grid2>
 
