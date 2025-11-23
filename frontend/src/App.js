@@ -26,6 +26,7 @@ import {
     categoryList,
     categoryArrayList,
     categoryListMapping,
+    PART_DATA_MAP,
 } from "./constants/categoryList";
 import ErrorMessage from "./components/common/ErrorMessage";
 import { findConflictingPart } from "./utils/conflict";
@@ -48,6 +49,8 @@ const TarkovWeaponSim = () => {
     const [selectedGunSlots, setSelectedGunSlots] = useState(categoryArrayList);
     const [error, setError] = useState("");
     const [enabledCategories, setEnabledCategories] = useState([]);
+    // 変数の置き換えいる？
+    const slotMapping = categoryListMapping;
 
     useEffect(() => {
         const newParameters = Object.values(selectedParts).reduce(
@@ -102,6 +105,71 @@ const TarkovWeaponSim = () => {
         // パーツを選択状態に追加
         const updatedParts = { ...selectedParts, [category]: part };
         setSelectedParts(updatedParts);
+
+        // パーツが新しいスロットを持っている場合、スロットの情報を追加
+        // カテゴリに応じて JSON を切り替える
+        const dataSource = PART_DATA_MAP[category];
+        if (!dataSource) {
+            console.warn("⚠ 未対応カテゴリ: ", category);
+            return;
+        }
+
+        // 対象パーツを JSON 内から検索
+        const selectedRecieverInfo = dataSource.data.items.find(
+            (item) =>
+                item.id === part.id && Object.keys(item.properties).length > 0
+        );
+
+        // 子スロットが存在すれば selectedGunSlots に追加
+        const hasValidSlots = selectedRecieverInfo.properties?.slots?.some(
+            (slot) =>
+                Array.isArray(slot.filters.allowedItems) &&
+                slot.filters.allowedItems.length > 0
+        );
+
+        if (!hasValidSlots) {
+            console.log(
+                "🟡 allowedItems が全て空配列なので子スロット処理をスキップ:",
+                part.name
+            );
+            return;
+        }
+
+        const newSlots = { ...selectedGunSlots };
+        const addedCategories = new Set();
+
+        selectedRecieverInfo.properties.slots.forEach((slot) => {
+            const category = slotMapping[slot.nameId] || null;
+            console.log(category);
+
+            if (category) {
+                // 表示するタブを管理
+                // タブがmodによって追加される場合、定義していないタブとなる
+                // スコープ１，スコープ２、、、のように
+                // そのため、既存の定数に持っているタブかどうかという判定は行わない
+                // if (!enabledCategories.includes(category)) {
+                //     enabledCategories.push(category);
+                // }
+
+                // slotsパーツ郡をセットする
+                slot.filters.allowedItems.forEach((item) => {
+                    newSlots[category].push(item);
+                    //タブを追加する
+                    addedCategories.add(category);
+                });
+            }
+        });
+
+        setSelectedGunSlots(newSlots);
+        setEnabledCategories((prev) => {
+            const set = new Set(prev);
+            addedCategories.forEach((c) => set.add(c));
+            return [...set];
+        });
+        console.log(
+            "🔧 子スロットを追加しました:",
+            selectedRecieverInfo.properties.slots
+        );
     };
 
     const clearPartSelect = (category) => {

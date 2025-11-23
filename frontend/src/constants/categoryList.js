@@ -1,3 +1,5 @@
+import recieverData from "../data/reciever.json"; // JSONファイルをインポート
+
 export const categoryList = [
     "RearSight",
     "Grips",
@@ -9,6 +11,7 @@ export const categoryList = [
     "Reciever",
     "Charge",
     "FrontSight",
+    "Scope",
 ];
 
 export const categoryArrayList = {
@@ -22,6 +25,7 @@ export const categoryArrayList = {
     Reciever: [],
     Charge: [],
     FrontSight: [],
+    Scope: [],
 };
 
 export const categoryListMapping = {
@@ -37,4 +41,12 @@ export const categoryListMapping = {
     // mod_stock_akms: "Stocks",
     mod_charge: "Charge",
     mod_sight_front: "FrontSight",
+    mod_scope: "Scope",
+};
+
+// カテゴリ名→jsonファイル名を探しに行く
+// 選択したパーツのJsonデータを探すために使用
+export const PART_DATA_MAP = {
+    Reciever: recieverData,
+    // 必要に応じて追加
 };

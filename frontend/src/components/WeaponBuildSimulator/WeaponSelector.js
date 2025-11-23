@@ -100,6 +100,20 @@ function WeaponSelector({
             const slot = gunInfo.properties?.slots?.find((s) =>
                 s.filters.allowedItems.some((allowed) => allowed.id === item.id)
             );
+
+            // // 初期パーツに子要素があったときの考慮
+            // // この考慮が必要かどうかはあとから精査
+            // // ここではtypesを確認してreceiver.jsonなどから詳細を取得
+            // if (item.types?.includes("pistolGrip")) {
+            //     const receiverItem = receiverData.data.items.find(
+            //         (r) => r.id === item.id
+            //     );
+            //     if (receiverItem) {
+            //         console.log("Receiver found:", receiverItem);
+            //         // ここで receiverItem.properties.slots を使っても良い
+            //     }
+            // }
+
             if (slot) {
                 const matchedItem = slot.filters.allowedItems.find(
                     (i) => i.id === item.id
