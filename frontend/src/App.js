@@ -69,6 +69,16 @@ const TarkovWeaponSim = () => {
         setParameters(newParameters);
     }, [selectedGun, selectedParts]);
 
+    // パーツ選択毎に、スロットの情報等を再計算する
+    useEffect(() => {
+        const { newSlots, enabled } = buildSlotsAndCategories(
+            selectedGun,
+            selectedParts
+        );
+        setSelectedGunSlots(newSlots);
+        setEnabledCategories(enabled);
+    }, [selectedGun, selectedParts]);
+
     useEffect(() => {
         // enabledCategories が更新されたら、
         // もし現在の selectedTab が存在しない or 無効 なら、
@@ -103,73 +113,13 @@ const TarkovWeaponSim = () => {
         setError("");
 
         // パーツを選択状態に追加
-        const updatedParts = { ...selectedParts, [category]: part };
-        setSelectedParts(updatedParts);
-
-        // パーツが新しいスロットを持っている場合、スロットの情報を追加
-        // カテゴリに応じて JSON を切り替える
-        const dataSource = PART_DATA_MAP[category];
-        if (!dataSource) {
-            console.warn("⚠ 未対応カテゴリ: ", category);
-            return;
-        }
-
-        // 対象パーツを JSON 内から検索
-        const selectedRecieverInfo = dataSource.data.items.find(
-            (item) =>
-                item.id === part.id && Object.keys(item.properties).length > 0
-        );
-
-        // 子スロットが存在すれば selectedGunSlots に追加
-        const hasValidSlots = selectedRecieverInfo.properties?.slots?.some(
-            (slot) =>
-                Array.isArray(slot.filters.allowedItems) &&
-                slot.filters.allowedItems.length > 0
-        );
-
-        if (!hasValidSlots) {
-            console.log(
-                "🟡 allowedItems が全て空配列なので子スロット処理をスキップ:",
-                part.name
-            );
-            return;
-        }
-
-        const newSlots = { ...selectedGunSlots };
-        const addedCategories = new Set();
-
-        selectedRecieverInfo.properties.slots.forEach((slot) => {
-            const category = slotMapping[slot.nameId] || null;
-            console.log(category);
-
-            if (category) {
-                // 表示するタブを管理
-                // タブがmodによって追加される場合、定義していないタブとなる
-                // スコープ１，スコープ２、、、のように
-                // そのため、既存の定数に持っているタブかどうかという判定は行わない
-                // if (!enabledCategories.includes(category)) {
-                //     enabledCategories.push(category);
-                // }
-
-                // slotsパーツ郡をセットする
-                slot.filters.allowedItems.forEach((item) => {
-                    newSlots[category].push(item);
-                    //タブを追加する
-                    addedCategories.add(category);
-                });
-            }
-        });
-
-        setSelectedGunSlots(newSlots);
-        setEnabledCategories((prev) => {
-            const set = new Set(prev);
-            addedCategories.forEach((c) => set.add(c));
-            return [...set];
-        });
-        console.log(
-            "🔧 子スロットを追加しました:",
-            selectedRecieverInfo.properties.slots
-        );
+        setSelectedParts((prev) => ({
+            ...prev,
+            [category]: {
+                ...part,
+                category: category,
+            },
+        }));
     };
 
     const clearPartSelect = (category) => {
@@ -196,6 +146,148 @@ const TarkovWeaponSim = () => {
         setSelectedParts(preset.parts);
         setParameters(preset.parameters);
     };
+
+    // ヘルパー: カテゴリに対応する JSON データを返す（例）
+    function getJsonByCategory(categoryKey) {
+        // PART_DATA_MAP は事前に用意しておく (例: { Reciever: recieverData, Barrel: barrelData, ... })
+        return PART_DATA_MAP[categoryKey];
+    }
+
+    // categoryArrayList を安全に複製する関数
+    function cloneCategoryArrayList() {
+        return Object.fromEntries(
+            Object.entries(categoryArrayList).map(([key, arr]) => [
+                key,
+                [...arr],
+            ])
+        );
+    }
+
+    /**
+     * processSlots
+     *
+     * 指定された item（銃 or パーツ）が持つ「装着スロット」を読み取り、
+     * newSlots（カテゴリごとの装着候補リスト）と enabledCategories（表示するタブ）を更新する。
+     *
+     * 役割：
+     * - item.properties.slots の内容を読み取り、
+     * - slotMapping からカテゴリ名を特定し、
+     * - allowedItems（装着可能パーツ）を newSlots[category] に追加し、
+     * - そのカテゴリを enabledCategories に登録する。
+     *
+     * @param {Object} item - 銃やパーツの JSON データ
+     * @param {Object} newSlots - カテゴリごとの装着候補リスト（破壊的更新）
+     * @param {Array} enabledCategories - 表示すべきカテゴリ一覧（破壊的更新）
+     */
+    function processSlots(item, newSlots, enabledCategories) {
+        // パーツに slots 情報が無ければ何もしない
+        if (!item?.properties?.slots) return;
+
+        item.properties.slots.forEach((slot) => {
+            // slot.nameId → カテゴリ名に置き換える
+            const category = slotMapping[slot.nameId];
+            if (!category) return;
+
+            // allowedItems（装着できるパーツの配列）
+            const allowed = slot.filters?.allowedItems;
+            if (!Array.isArray(allowed) || allowed.length === 0) return;
+
+            // newSlots[category] に装着候補パーツを追加
+            allowed.forEach((allow) => {
+                newSlots[category].push(allow);
+            });
+
+            // 表示すべきカテゴリリストに追加
+            if (!enabledCategories.includes(category)) {
+                enabledCategories.push(category);
+            }
+        });
+    }
+
+    /**
+     * buildSlotsAndCategories
+     *
+     * 現在選択されている「銃」と「装備中パーツ」から、
+     * - newSlots（カテゴリごとの装着候補リスト）
+     * - enabled（表示すべきタブ一覧）
+     * を再構築して返す。
+     *
+     * 役割：
+     *   ① categoryArrayList を元に newSlots を初期化（deep clone）
+     *   ② selectedGun の slots を newSlots に反映
+     *   ③ selectedParts（装備中パーツ）の slots も反映
+     *
+     * この関数を呼ぶだけで、
+     * 　「必要なタブが増えたり減ったりする UI 切替」
+     * 　「適切な装着候補リストを作成」
+     * がすべて自動で行われる。
+     *
+     * 戻り値：
+     *   { newSlots, enabled }
+     *
+     * @param {Object} selectedGun - 現在選択中の銃
+     * @param {Object} selectedParts - 現在装備中のパーツ一覧（category → part）
+     */
+    function buildSlotsAndCategories(selectedGun, selectedParts) {
+        // ------------------------------------------------------
+        // 1) newSlots を初期化（deep clone）
+        //    categoryArrayList の中身は配列が多いため参照共有が起きると壊れる。
+        //    cloneCategoryArrayList() はあなたが作った安全なディープコピー関数。
+        // ------------------------------------------------------
+        const newSlots = cloneCategoryArrayList();
+
+        // ------------------------------------------------------
+        // 2) enabledCategories = 有効化するタブの一覧（例：["receiver", "scope", "laser"]）
+        // ------------------------------------------------------
+        const enabled = [];
+
+        // ------------------------------------------------------
+        // 3) 銃に定義された slots を反映
+        //    例）銃の JSON → properties.slots を processSlots() が解析して
+        //       newSlots["receiver"], newSlots["scope"] などを埋める
+        // ------------------------------------------------------
+        if (selectedGun) {
+            processSlots(selectedGun, newSlots, enabled);
+        }
+
+        // ------------------------------------------------------
+        // 4) 装備中のパーツの slots を反映
+        //    selectedParts = { receiver: {...}, scope: {...}, ... }
+        //
+        //    パーツ情報から category を取り出して、対応する JSON を取得して、
+        //    その JSON 内で id が一致する本物のパーツ定義を探す。
+        // ------------------------------------------------------
+        Object.values(selectedParts || {}).forEach((part) => {
+            const categoryKey = part.category || null;
+            let partJson = null;
+
+            // category から正しいパーツ JSON を取得
+            if (categoryKey) {
+                partJson = getJsonByCategory(categoryKey);
+            }
+
+            console.log(partJson);
+
+            if (partJson) {
+                // JSON 内で id が一致する元データを検索（properties を持っている本体）
+                const found = partJson.data?.items?.find(
+                    (i) => i.id === part.id
+                );
+                console.log(found);
+
+                // processSlots を使って newSlots に反映
+                if (found) processSlots(found, newSlots, enabled);
+            } else {
+                // ※必要ならここにフォールバック処理を書く
+                // 例：selectedGunSlots の中の allowedItems を検索するなど
+            }
+        });
+
+        // ------------------------------------------------------
+        // 5) 最終結果を返す
+        // ------------------------------------------------------
+        return { newSlots, enabled };
+    }
 
     return (
         <>

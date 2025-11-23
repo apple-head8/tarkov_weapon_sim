@@ -46,45 +46,11 @@ function WeaponSelector({
     const slotMapping = categoryListMapping;
 
     // 銃選択時のイベント
-    const handleGunChange = (event) => {
-        const gun_id = event.target.value;
-        // 定数データ郡から対象の銃情報を取得
-        const selectedGunInfo = assaultRifleData.data.items.find(
-            (item) =>
-                item.id === gun_id && Object.keys(item.properties).length > 0
-        );
-        setSelectedGun(selectedGunInfo);
-
-        if (selectedGunInfo && selectedGunInfo.properties.slots) {
-            const newSlots = Object.fromEntries(
-                Object.entries(categoryArrayList).map(([key, arr]) => [
-                    key,
-                    [...arr],
-                ])
-            );
-
-            let enabledCategories = [];
-
-            selectedGunInfo.properties.slots.forEach((slot) => {
-                const category = slotMapping[slot.nameId] || null;
-                if (category) {
-                    // 表示するタブを管理
-                    if (!enabledCategories.includes(category)) {
-                        enabledCategories.push(category);
-                    }
-                    slot.filters.allowedItems.forEach((item) => {
-                        newSlots[category].push(item);
-                    });
-                }
-            });
-
-            setSelectedGunSlots(newSlots);
-            setEnabledCategories(enabledCategories);
-        } else {
-            setSelectedGunSlots(categoryArrayList);
-        }
-
-        handleDefaultParts(selectedGunInfo);
+    const handleGunChange = (e) => {
+        const id = e.target.value;
+        const gun = assaultRifleData.data.items.find((x) => x.id === id);
+        setSelectedGun(gun);
+        handleDefaultParts(gun);
     };
 
     // 武器選択時の初期パーツセット
@@ -119,10 +85,12 @@ function WeaponSelector({
                     (i) => i.id === item.id
                 );
                 const category = slotMapping[slot.nameId] || null;
+
                 if (category) {
                     defaultParts[category] = {
                         id: item.id,
                         name: item.name,
+                        category: category,
                         weight: matchedItem?.weight || 0,
                         ergonomicsModifier:
                             matchedItem?.ergonomicsModifier || 0,
