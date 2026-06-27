@@ -4,16 +4,44 @@ import {
     PART_DATA_MAP,
 } from "../constants/categoryList";
 
+/**
+ * 枝番付きカテゴリキーから、元のカテゴリ名だけを取り出す。
+ *
+ * 例:
+ * - "Scope" -> "Scope"
+ * - "Scope#2" -> "Scope"
+ *
+ * @param {string} categoryKey タブや選択状態で使うカテゴリキー
+ * @returns {string} 枝番を除いたカテゴリ名
+ */
 export function getBaseCategoryKey(categoryKey) {
     return categoryKey?.split("#")[0] ?? categoryKey;
 }
 
-export function cloneCategorySlots() {
+/**
+ * パーツ候補を格納するための空のスロット表を作成する。
+ *
+ * categoryArrayList はアプリ全体で共有されるテンプレートなので、
+ * 直接変更せず、カテゴリごとの配列を新しく作り直してから使う。
+ *
+ * @returns {Object.<string, Array>} カテゴリキーを持つ空のスロット表
+ */
+export function createInitialSlotMap() {
     return Object.fromEntries(
         Object.entries(categoryArrayList).map(([key, items]) => [key, [...items]])
     );
 }
 
+/**
+ * カテゴリとパーツIDから、詳細なパーツ定義を取得する。
+ *
+ * タブ用のカテゴリキーには "Reciever#2" のような枝番が付くことがあるため、
+ * PART_DATA_MAP を引く前に元カテゴリ名へ戻している。
+ *
+ * @param {string} categoryKey パーツが選択されたカテゴリキー
+ * @param {string} partId パーツID
+ * @returns {Object|null} properties.slots などを含む詳細定義。見つからない場合は null
+ */
 export function getPartDefinition(categoryKey, partId) {
     const baseCategory = getBaseCategoryKey(categoryKey);
     const data = PART_DATA_MAP[baseCategory];
@@ -21,6 +49,17 @@ export function getPartDefinition(categoryKey, partId) {
     return data?.data?.items?.find((item) => item.id === partId) ?? null;
 }
 
+/**
+ * 同名カテゴリが複数出た場合にも区別できるカテゴリキーを作る。
+ *
+ * 例:
+ * - 初回の "Scope" -> "Scope"
+ * - 2回目の "Scope" -> "Scope#2"
+ *
+ * @param {string} categoryName 表示上のカテゴリ名
+ * @param {Object.<string, Object>} enabledCategories すでに有効化されているカテゴリ一覧
+ * @returns {string} UI状態で一意に扱えるカテゴリキー
+ */
 function createUniqueSlotKey(categoryName, enabledCategories) {
     const sameCategoryCount = Object.values(enabledCategories).filter(
         (category) => category.categoryName === categoryName
@@ -33,6 +72,17 @@ function createUniqueSlotKey(categoryName, enabledCategories) {
     return `${categoryName}#${sameCategoryCount + 1}`;
 }
 
+/**
+ * 親カテゴリに子カテゴリを紐づける。
+ *
+ * レシーバーを選ぶとバレルやスコープのスロットが増えるような、
+ * 「パーツが持つ追加スロット」の親子関係を保持するために使う。
+ *
+ * @param {string|null} parentCategory 親カテゴリキー。ルートカテゴリの場合は null
+ * @param {string} childCategory 子カテゴリキー
+ * @param {Object.<string, Object>} enabledCategories 有効カテゴリ一覧
+ * @returns {void}
+ */
 function addChildCategory(parentCategory, childCategory, enabledCategories) {
     if (!parentCategory) return;
 
@@ -42,6 +92,18 @@ function addChildCategory(parentCategory, childCategory, enabledCategories) {
     }
 }
 
+/**
+ * アイテムが持つ装着スロットを、スロット表と有効カテゴリ一覧に反映する。
+ *
+ * 銃本体にもパーツにも properties.slots が存在することがある。
+ * この関数はその slots を読み取り、slot.nameId をカテゴリ名へ変換し、
+ * slot.filters.allowedItems を選択候補として登録する。
+ *
+ * @param {Object|null} item 銃またはパーツの詳細データ
+ * @param {{slots: Object.<string, Array>, enabled: Object.<string, Object>}} state 構築中の状態
+ * @param {string|null} parentCategory このスロットを生んだ親カテゴリキー
+ * @returns {void}
+ */
 function addSlotsFromItem(item, state, parentCategory = null) {
     const slots = item?.properties?.slots;
     if (!Array.isArray(slots)) return;
@@ -68,9 +130,19 @@ function addSlotsFromItem(item, state, parentCategory = null) {
     });
 }
 
+/**
+ * 現在の武器と選択済みパーツから、表示すべきスロットとカテゴリを再構築する。
+ *
+ * まず武器本体の slots を読み取り、その後、選択済みパーツが持つ slots を追加する。
+ * React 側ではこの戻り値を使って、パーツ選択タブと候補パーツ一覧を更新する。
+ *
+ * @param {Object|null} selectedGun 選択中の武器
+ * @param {Object.<string, Object>} selectedParts 選択済みパーツ。キーはカテゴリキー
+ * @returns {{newSlots: Object.<string, Array>, enabled: Object.<string, Object>}} スロット表と有効カテゴリ一覧
+ */
 export function buildSlotsAndCategories(selectedGun, selectedParts) {
     const state = {
-        slots: cloneCategorySlots(),
+        slots: createInitialSlotMap(),
         enabled: {},
     };
 
@@ -89,6 +161,15 @@ export function buildSlotsAndCategories(selectedGun, selectedParts) {
     };
 }
 
+/**
+ * 親子関係を持つカテゴリ一覧を、画面に表示しやすい順番へ並べる。
+ *
+ * parent が null のルートカテゴリから始めて、子カテゴリを深さ優先で追加する。
+ * これにより、親スロットの直後に、そのパーツから生まれた子スロットが並ぶ。
+ *
+ * @param {Object.<string, {parent: string|null, children: string[]}>} categoryMap 有効カテゴリ一覧
+ * @returns {string[]} 表示順に並んだカテゴリキー
+ */
 export function buildOrderedCategoryKeys(categoryMap) {
     const result = [];
     const visited = new Set();
@@ -109,6 +190,16 @@ export function buildOrderedCategoryKeys(categoryMap) {
     return result;
 }
 
+/**
+ * 指定カテゴリの配下にある子孫カテゴリキーをすべて取得する。
+ *
+ * 親パーツを外したときに、そのパーツから生まれた子スロットの選択も
+ * まとめて解除するために使う。
+ *
+ * @param {string} categoryKey 起点となるカテゴリキー
+ * @param {Object.<string, {children: string[]}>} categoryMap 有効カテゴリ一覧
+ * @returns {string[]} 子・孫カテゴリキーの一覧
+ */
 export function getDescendantCategoryKeys(categoryKey, categoryMap) {
     const descendants = [];
 
@@ -123,6 +214,18 @@ export function getDescendantCategoryKeys(categoryKey, categoryMap) {
     return descendants;
 }
 
+/**
+ * 指定カテゴリと、その子孫カテゴリの選択済みパーツを取り除く。
+ *
+ * 例:
+ * レシーバーを外す場合、レシーバーから増えたバレルやスコープも同時に外す。
+ * これにより、現在の構成では存在しないスロットのパーツが残ることを防ぐ。
+ *
+ * @param {Object.<string, Object>} parts 現在の選択済みパーツ
+ * @param {string} categoryKey 解除するカテゴリキー
+ * @param {Object.<string, {children: string[]}>} categoryMap 有効カテゴリ一覧
+ * @returns {Object.<string, Object>} 対象カテゴリを取り除いた選択済みパーツ
+ */
 export function removeCategoryAndDescendants(parts, categoryKey, categoryMap) {
     const nextParts = { ...parts };
     const categoriesToRemove = [
