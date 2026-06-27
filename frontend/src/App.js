@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useMemo } from "react";
 import {
     Tabs,
     Tab,
@@ -48,7 +48,7 @@ const TarkovWeaponSim = () => {
     const [selectedTab, setSelectedTab] = useState(null);
     const [selectedGunSlots, setSelectedGunSlots] = useState(categoryArrayList);
     const [error, setError] = useState("");
-    const [enabledCategories, setEnabledCategories] = useState([]);
+    const [enabledCategories, setEnabledCategories] = useState({});
     // 変数の置き換えいる？
     const slotMapping = categoryListMapping;
 
@@ -83,12 +83,15 @@ const TarkovWeaponSim = () => {
         // enabledCategories が更新されたら、
         // もし現在の selectedTab が存在しない or 無効 なら、
         // 最初のタブに自動で切り替える
-        if (
-            enabledCategories.length > 0 &&
-            !enabledCategories.includes(selectedTab)
-        ) {
-            setSelectedTab(enabledCategories[0]);
+        const keys = Object.keys(enabledCategories || []);
+
+        if (keys.length > 0 && !keys.includes(selectedTab)) {
+            setSelectedTab(keys[0]);
         }
+    }, [enabledCategories]);
+
+    const sortedCategories = useMemo(() => {
+        return buildOrderedCategoryKeys(enabledCategories);
     }, [enabledCategories]);
 
     const handleTabChange = (event, newValue) => {
@@ -177,29 +180,76 @@ const TarkovWeaponSim = () => {
      *
      * @param {Object} item - 銃やパーツの JSON データ
      * @param {Object} newSlots - カテゴリごとの装着候補リスト（破壊的更新）
-     * @param {Array} enabledCategories - 表示すべきカテゴリ一覧（破壊的更新）
+     * @param {Object} enabledCategories - 表示すべきカテゴリ一覧（破壊的更新）
      */
-    function processSlots(item, newSlots, enabledCategories) {
+    function processSlots(
+        item,
+        newSlots,
+        enabledCategories,
+        parentCategory = null
+    ) {
+        console.log(enabledCategories);
+
         // パーツに slots 情報が無ければ何もしない
         if (!item?.properties?.slots) return;
 
         item.properties.slots.forEach((slot) => {
             // slot.nameId → カテゴリ名に置き換える
-            const category = slotMapping[slot.nameId];
-            if (!category) return;
+            const categoryName = slotMapping[slot.nameId];
+            if (!categoryName) return;
+
+            // 枝番付きカテゴリ名に変換
+            // const category = assignCategoryName(
+            //     categoryName,
+            //     enabledCategories
+            // );
+            const categoryKey = assignCategoryName(
+                categoryName,
+                enabledCategories
+            );
 
             // allowedItems（装着できるパーツの配列）
             const allowed = slot.filters?.allowedItems;
             if (!Array.isArray(allowed) || allowed.length === 0) return;
 
             // newSlots[category] に装着候補パーツを追加
-            allowed.forEach((allow) => {
-                newSlots[category].push(allow);
-            });
+            // allowed.forEach((allow) => {
+            //     newSlots[category].push(allow);
+            // });
+            if (!newSlots[categoryKey]) {
+                newSlots[categoryKey] = [];
+            }
+            allowed.forEach((allow) => newSlots[categoryKey].push(allow));
 
-            // 表示すべきカテゴリリストに追加
-            if (!enabledCategories.includes(category)) {
-                enabledCategories.push(category);
+            // カテゴリリスト(タブ)に追加
+            // if (!enabledCategories.includes(category)) {
+            //     enabledCategories[category] = {
+            //         parent: parentCategory,
+            //         children: [],
+            //     };
+            // }
+            if (!enabledCategories[categoryKey]) {
+                enabledCategories[categoryKey] = {
+                    categoryName,
+                    index: categoryKey.includes("#")
+                        ? Number(categoryKey.split("#")[1])
+                        : 0,
+                    parent: parentCategory,
+                    children: [],
+                };
+
+                console.log(enabledCategories);
+            }
+
+            // 親カテゴリが存在する場合、親カテゴリに子カテゴリを追加
+            // if (
+            //     parentCategory &&
+            //     !enabledCategories[parentCategory].children.includes(category)
+            // ) {
+            //     enabledCategories[parentCategory].children.push(category);
+            // }
+            if (parentCategory) {
+                enabledCategories[parentCategory].children.push(categoryKey);
             }
         });
     }
@@ -239,7 +289,7 @@ const TarkovWeaponSim = () => {
         // ------------------------------------------------------
         // 2) enabledCategories = 有効化するタブの一覧（例：["receiver", "scope", "laser"]）
         // ------------------------------------------------------
-        const enabled = [];
+        const enabled = {};
 
         // ------------------------------------------------------
         // 3) 銃に定義された slots を反映
@@ -266,17 +316,14 @@ const TarkovWeaponSim = () => {
                 partJson = getJsonByCategory(categoryKey);
             }
 
-            console.log(partJson);
-
             if (partJson) {
                 // JSON 内で id が一致する元データを検索（properties を持っている本体）
                 const found = partJson.data?.items?.find(
                     (i) => i.id === part.id
                 );
-                console.log(found);
 
                 // processSlots を使って newSlots に反映
-                if (found) processSlots(found, newSlots, enabled);
+                if (found) processSlots(found, newSlots, enabled, categoryKey);
             } else {
                 // ※必要ならここにフォールバック処理を書く
                 // 例：selectedGunSlots の中の allowedItems を検索するなど
@@ -287,6 +334,56 @@ const TarkovWeaponSim = () => {
         // 5) 最終結果を返す
         // ------------------------------------------------------
         return { newSlots, enabled };
+    }
+
+    function assignCategoryName(categoryName, enabledCategories) {
+        // // categoryName が未使用ならそのまま使う
+        // if (!enabledCategories[categoryName]) return categoryName;
+
+        // // すでに存在するなら枝番を振る
+        // let index = 1;
+        // let name = `${categoryName}${index}`;
+
+        // // 重複しなくなるまで index を増やす
+        // while (enabledCategories[name]) {
+        //     index++;
+        //     name = `${categoryName}${index}`;
+        // }
+        // return name;
+
+        // 既存カテゴリの中から同名カテゴリを探す
+        const sameCategoryName = Object.values(enabledCategories).filter(
+            (c) => c.categoryName === categoryName
+        );
+
+        if (sameCategoryName.length === 0) {
+            return categoryName;
+        }
+
+        // 2個目以降は枝番
+        return `${categoryName}#${sameCategoryName.length + 1}`;
+    }
+
+    function buildOrderedCategoryKeys(categoryMap) {
+        const result = [];
+        const visited = new Set();
+
+        function dfs(key) {
+            if (visited.has(key)) return;
+            visited.add(key);
+
+            result.push(key);
+
+            const children = categoryMap[key]?.children || [];
+            children.forEach((child) => dfs(child));
+        }
+
+        // ルート（parent === null）から開始
+        Object.keys(categoryMap)
+            .filter((key) => categoryMap[key].parent === null)
+            .forEach((root) => dfs(root));
+
+        return result;
     }
 
     return (
@@ -315,6 +412,7 @@ const TarkovWeaponSim = () => {
                                 <PartSelector
                                     selectedTab={selectedTab}
                                     handleTabChange={handleTabChange}
+                                    categoryKeys={sortedCategories}
                                     categories={enabledCategories}
                                     parts={selectedGunSlots}
                                     handlePartSelect={handlePartSelect}
