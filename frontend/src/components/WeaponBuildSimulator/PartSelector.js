@@ -24,16 +24,6 @@ function PartSelector({
         return depth;
     }
 
-    function getTabColor(depth, isSelected) {
-        const baseLightness = 45; // 親の明るさ
-        const step = 12; // 階層ごとの差
-        const lightness = Math.min(baseLightness + depth * step, 85);
-
-        return isSelected
-            ? `hsl(210, 70%, ${lightness - 10}%)`
-            : `hsl(210, 50%, ${lightness}%)`;
-    }
-
     function shouldHighlightTab(categoryKey, categories) {
         const category = categories[categoryKey];
 
@@ -63,6 +53,15 @@ function PartSelector({
         };
     }
 
+    function getCategoryLabel(categoryKey) {
+        const category = categories[categoryKey];
+        if (!category) return categoryKey;
+
+        return category.index > 1
+            ? `${category.categoryName} ${category.index}`
+            : category.categoryName;
+    }
+
     return (
         <>
             {/* Tabs for part categories */}
@@ -75,13 +74,10 @@ function PartSelector({
                 scrollButtons="auto"
             >
                 {categoryKeys.map((key) => {
-                    const depth = getCategoryDepth(key, categories);
-                    const isSelected = selectedTab === key;
-
                     return (
                         <Tab
                             key={key}
-                            label={key}
+                            label={getCategoryLabel(key)}
                             value={key}
                             sx={{
                                 position: "relative",
@@ -150,7 +146,7 @@ function PartSelector({
                         width: "100%",
                     }}
                 >
-                    {parts[selectedTab].map((part) => (
+                    {(parts[selectedTab] ?? []).map((part) => (
                         <div
                             style={{
                                 width: "150px",

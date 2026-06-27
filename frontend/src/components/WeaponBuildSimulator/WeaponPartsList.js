@@ -1,7 +1,16 @@
 import React from "react";
 import { Box, Typography, Grid2 } from "@mui/material";
 
-function WeaponPartsList({ categories, selectedParts }) {
+function WeaponPartsList({ categoryKeys, categories, selectedParts }) {
+    function getCategoryLabel(categoryKey) {
+        const category = categories[categoryKey];
+        if (!category) return categoryKey;
+
+        return category.index > 1
+            ? `${category.categoryName} ${category.index}`
+            : category.categoryName;
+    }
+
     return (
         <>
             {/* Weapon Selected List */}
@@ -18,17 +27,17 @@ function WeaponPartsList({ categories, selectedParts }) {
             >
                 <Typography variant="h6">Weapon Selected List</Typography>
                 <Box sx={{ padding: 2 }}>
-                    {categories.map((category, index) => (
-                        <Grid2 container spacing={2} key={index}>
+                    {categoryKeys.map((categoryKey) => (
+                        <Grid2 container spacing={2} key={categoryKey}>
                             <Grid2 size={3}>
-                                <Typography>{category}</Typography>
+                                <Typography>{getCategoryLabel(categoryKey)}</Typography>
                             </Grid2>
                             <Grid2 size={1}>
                                 <Typography>:</Typography>
                             </Grid2>
                             <Grid2 size={8}>
                                 <Typography>
-                                    {selectedParts?.[category]?.["name"]}
+                                    {selectedParts?.[categoryKey]?.["name"]}
                                 </Typography>
                             </Grid2>
                         </Grid2>

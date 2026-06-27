@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Typography, Select, MenuItem, styled } from "@mui/material";
 import { GUN_TYPES } from "../../constants/gunTypes";
 import {
@@ -37,7 +37,7 @@ function WeaponSelector({
             setSelectedGunSlots(categoryArrayList);
             setSelectedParts({});
         }
-    }, [selectedType]);
+    }, [selectedType, setSelectedGun, setSelectedGunSlots, setSelectedParts]);
 
     const handleChange = (event) => {
         setSelectedType(event.target.value);
