@@ -143,8 +143,9 @@ function PartSelector({
                                         sx={{
                                             display: "flex",
                                             flexDirection: "column",
-                                            alignItems: "flex-start",
+                                            alignItems: "center",
                                             maxWidth: 160,
+                                            textAlign: "center",
                                         }}
                                     >
                                         <Typography
@@ -181,8 +182,8 @@ function PartSelector({
                                 position: "relative",
                                 textTransform: "none",
                                 minHeight: parentHint ? 58 : 48,
-                                alignItems: "flex-start",
-                                pl: 1.5 + depth * 1.25,
+                                alignItems: "center",
+                                px: 1.5,
                                 background: "transparent",
                                 "&.Mui-selected": {
                                     background: "transparent",
