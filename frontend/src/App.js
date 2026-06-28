@@ -160,11 +160,17 @@ const TarkovWeaponSim = () => {
         <>
             {/* // サイドバーとその他要素で横並びにする */}
             <Header />
-            <Box sx={{ display: "flex" }}>
+            <Box
+                sx={{
+                    display: "flex",
+                    alignItems: "stretch",
+                    minHeight: "calc(100vh - 48px)",
+                }}
+            >
                 <Sidebar />
                 {/* ここから再度縦並び */}
                 {/* flex 1 は、画面横幅いっぱい使うような設定 */}
-                <Box sx={{ flex: 1, padding: 3, overflow: "hidden" }}>
+                <Box sx={{ flex: 1, padding: 3, overflowX: "hidden" }}>
                     {error && <ErrorMessage message={error} />}
                     {/* 再度横並び */}
                     <Grid2 container spacing={2}>
