@@ -37,6 +37,11 @@ const TarkovWeaponSim = () => {
     const [selectedAmmo, setSelectedAmmo] = useState(null);
     const [error, setError] = useState("");
     const [enabledCategories, setEnabledCategories] = useState({});
+    const [parameterThresholds, setParameterThresholds] = useState({
+        weight: "",
+        ergonomics: "",
+        price: "",
+    });
 
     useEffect(() => {
         const newParameters = Object.values(selectedParts).reduce(
@@ -179,7 +184,11 @@ const TarkovWeaponSim = () => {
 
                     <Grid2 container spacing={2} sx={{ mt: 3 }}>
                         <Grid2 size={6}>
-                            <WeaponStatus parameters={parameters} />
+                            <WeaponStatus
+                                parameters={parameters}
+                                thresholds={parameterThresholds}
+                                setThresholds={setParameterThresholds}
+                            />
                         </Grid2>
                         <Grid2 size={6}>
                             <AmmoSelector
