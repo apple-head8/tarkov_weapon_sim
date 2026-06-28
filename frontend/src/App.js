@@ -43,18 +43,24 @@ const TarkovWeaponSim = () => {
         price: "",
     });
 
+    function toNumberOrZero(value) {
+        return typeof value === "number" && Number.isFinite(value) ? value : 0;
+    }
+
     useEffect(() => {
         const newParameters = Object.values(selectedParts).reduce(
             (acc, part) => {
-                acc.weight += part.weight || 0;
-                acc.ergonomics += part.ergonomicsModifier || 0;
-                acc.price += part.lastLowPrice || 0;
+                acc.weight += toNumberOrZero(part.weight);
+                acc.ergonomics += toNumberOrZero(part.ergonomicsModifier);
+                acc.price += toNumberOrZero(part.lastLowPrice);
                 return acc;
             },
             {
-                weight: selectedGun?.weight || 0,
-                ergonomics: selectedGun?.properties?.ergonomics || 0,
-                price: selectedGun?.lastLowPrice || 0,
+                weight: toNumberOrZero(selectedGun?.weight),
+                ergonomics: toNumberOrZero(
+                    selectedGun?.properties?.ergonomics
+                ),
+                price: toNumberOrZero(selectedGun?.lastLowPrice),
             }
         );
         setParameters(newParameters);

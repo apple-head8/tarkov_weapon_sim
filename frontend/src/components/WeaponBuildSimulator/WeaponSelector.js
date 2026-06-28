@@ -79,7 +79,7 @@ function WeaponSelector({
                 weight: matchedItem?.weight || 0,
                 ergonomicsModifier: matchedItem?.ergonomicsModifier || 0,
                 image512pxLink: matchedItem?.image512pxLink || null,
-                lastLowPrice: matchedItem?.lastLowPrice || "-",
+                lastLowPrice: matchedItem?.lastLowPrice ?? null,
             };
         });
 

@@ -15,8 +15,13 @@ const PartCard = ({
     isSelectedCard = false,
     onClick,
 }) => {
-    // partがない場合は空カードを表示
     const hasPart = !!part;
+
+    function formatPrice(value) {
+        return typeof value === "number" && Number.isFinite(value)
+            ? `¥${value.toLocaleString()}`
+            : "-";
+    }
 
     const card = (
         <Card
@@ -74,13 +79,13 @@ const PartCard = ({
                         bottom: 0,
                         width: "100%",
                         background: "rgba(50,50,50,0.7)",
-                        height: 48, // 高さを増やす（32→48程度）
+                        height: 48,
                         "& .MuiImageListItemBar-title": {
                             fontSize: "0.8rem",
                             fontWeight: "bold",
-                            whiteSpace: "normal", // 折り返し許可
+                            whiteSpace: "normal",
                             display: "-webkit-box",
-                            WebkitLineClamp: 2, // 2行まで表示
+                            WebkitLineClamp: 2,
                             WebkitBoxOrient: "vertical",
                             overflow: "hidden",
                         },
@@ -103,7 +108,7 @@ const PartCard = ({
                             エルゴ: {part.ergonomicsModifier ?? 0}
                         </Typography>
                         <Typography variant="body2" align="center">
-                            価格: ¥{part.lastLowPrice?.toLocaleString() ?? "-"}
+                            価格: {formatPrice(part.lastLowPrice)}
                         </Typography>
                     </>
                 ) : (

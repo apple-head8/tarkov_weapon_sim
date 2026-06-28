@@ -38,6 +38,10 @@ const STATUS_ITEMS = [
 ];
 
 function WeaponStatus({ parameters, thresholds, setThresholds }) {
+    function toNumberOrZero(value) {
+        return typeof value === "number" && Number.isFinite(value) ? value : 0;
+    }
+
     function clampPercent(value, max) {
         return Math.min(Math.max((value / max) * 100, 0), 100);
     }
@@ -76,7 +80,7 @@ function WeaponStatus({ parameters, thresholds, setThresholds }) {
     }
 
     function StatusBar({ item }) {
-        const value = parameters[item.key] ?? 0;
+        const value = toNumberOrZero(parameters[item.key]);
         const threshold = getThresholdValue(item.key);
         const max = getBarMax(item);
         const percent = clampPercent(value, max);
