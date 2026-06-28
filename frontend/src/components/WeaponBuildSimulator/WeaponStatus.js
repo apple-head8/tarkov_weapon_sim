@@ -2,6 +2,58 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 function WeaponStatus({ parameters }) {
+    function clampPercent(value, max) {
+        return Math.min(Math.max((value / max) * 100, 0), 100);
+    }
+
+    function StatusBar({ label, value, displayValue, max, color }) {
+        const percent = clampPercent(value, max);
+
+        return (
+            <Box>
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        gap: 2,
+                        mb: 0.5,
+                    }}
+                >
+                    <Typography
+                        sx={{
+                            color: "text.secondary",
+                            fontSize: "0.82rem",
+                            fontWeight: 700,
+                        }}
+                    >
+                        {label}
+                    </Typography>
+                    <Typography sx={{ fontSize: "0.82rem", fontWeight: 700 }}>
+                        {displayValue}
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{
+                        height: 8,
+                        backgroundColor: "rgba(255,255,255,0.08)",
+                        borderRadius: 999,
+                        overflow: "hidden",
+                    }}
+                >
+                    <Box
+                        sx={{
+                            width: `${percent}%`,
+                            height: "100%",
+                            backgroundColor: color,
+                            borderRadius: 999,
+                            transition: "width 0.2s ease",
+                        }}
+                    />
+                </Box>
+            </Box>
+        );
+    }
+
     return (
         <>
             {/* WeaponStatus */}
@@ -15,14 +67,35 @@ function WeaponStatus({ parameters }) {
                 }}
             >
                 <Typography variant="h6">Weapon Parameters</Typography>
-                <Box sx={{ padding: 2 }}>
-                    <Typography>
-                        Weight: {parameters.weight.toFixed(2)}kg
-                    </Typography>
-                    <Typography>Ergonomics: {parameters.ergonomics}</Typography>
-                    <Typography>
-                        Price: ¥{parameters.price.toLocaleString()}
-                    </Typography>
+                <Box
+                    sx={{
+                        padding: 2,
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: 1.5,
+                    }}
+                >
+                    <StatusBar
+                        label="Weight"
+                        value={parameters.weight}
+                        displayValue={`${parameters.weight.toFixed(2)} kg`}
+                        max={8}
+                        color="#8b9cff"
+                    />
+                    <StatusBar
+                        label="Ergonomics"
+                        value={parameters.ergonomics}
+                        displayValue={parameters.ergonomics}
+                        max={100}
+                        color="#bb86fc"
+                    />
+                    <StatusBar
+                        label="Price"
+                        value={parameters.price}
+                        displayValue={`¥${parameters.price.toLocaleString()}`}
+                        max={500000}
+                        color="#c026d3"
+                    />
                 </Box>
             </Box>
         </>
