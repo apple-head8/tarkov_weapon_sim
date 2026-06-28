@@ -16,7 +16,6 @@ function WeaponPartsList({ categoryKeys, categories, selectedParts }) {
             {/* Weapon Selected List */}
             <Box
                 sx={{
-                    marginTop: 3,
                     padding: 2,
                     backgroundColor: "#2a2a2a",
                     color: "#fff",

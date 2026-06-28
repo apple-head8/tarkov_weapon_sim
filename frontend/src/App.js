@@ -9,6 +9,7 @@ import PresetList from "./components/WeaponBuildSimulator/PresetList";
 import Header from "./components/common/Header";
 import WeaponSelector from "./components/WeaponBuildSimulator/WeaponSelector";
 import PartSelector from "./components/WeaponBuildSimulator/PartSelector";
+import AmmoSelector from "./components/WeaponBuildSimulator/AmmoSelector";
 import { categoryArrayList } from "./constants/categoryList";
 import ErrorMessage from "./components/common/ErrorMessage";
 import { findConflictingPart } from "./utils/conflict";
@@ -30,6 +31,7 @@ const TarkovWeaponSim = () => {
     const [presets, setPresets] = useState([]);
     const [selectedTab, setSelectedTab] = useState(null);
     const [selectedGunSlots, setSelectedGunSlots] = useState(categoryArrayList);
+    const [selectedAmmo, setSelectedAmmo] = useState(null);
     const [error, setError] = useState("");
     const [enabledCategories, setEnabledCategories] = useState({});
 
@@ -118,6 +120,7 @@ const TarkovWeaponSim = () => {
             parts: { ...selectedParts },
             parameters: { ...parameters },
             gun: selectedGun,
+            ammo: selectedAmmo,
         };
         setPresets([...presets, newPreset]);
         setPresetName("");
@@ -127,6 +130,7 @@ const TarkovWeaponSim = () => {
         setSelectedGun(preset.gun);
         setSelectedParts(preset.parts);
         setParameters(preset.parameters);
+        setSelectedAmmo(preset.ammo ?? null);
     };
 
     return (
@@ -166,16 +170,26 @@ const TarkovWeaponSim = () => {
                         </Grid2>
                     </Grid2>
 
-                    <Grid2 container spacing={2}>
+                    <Grid2 container spacing={2} sx={{ mt: 3 }}>
                         <Grid2 size={6}>
+                            <WeaponStatus parameters={parameters} />
+                        </Grid2>
+                        <Grid2 size={6}>
+                            <AmmoSelector
+                                selectedGun={selectedGun}
+                                selectedAmmo={selectedAmmo}
+                                setSelectedAmmo={setSelectedAmmo}
+                            />
+                        </Grid2>
+                    </Grid2>
+
+                    <Grid2 container spacing={2} sx={{ mt: 2 }}>
+                        <Grid2 size={12}>
                             <WeaponPartsList
                                 categoryKeys={sortedCategories}
                                 categories={enabledCategories}
                                 selectedParts={selectedParts}
                             />
-                        </Grid2>
-                        <Grid2 size={6}>
-                            <WeaponStatus parameters={parameters} />
                         </Grid2>
                     </Grid2>
 

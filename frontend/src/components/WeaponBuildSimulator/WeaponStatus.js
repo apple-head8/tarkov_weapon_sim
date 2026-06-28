@@ -7,7 +7,6 @@ function WeaponStatus({ parameters }) {
             {/* WeaponStatus */}
             <Box
                 sx={{
-                    marginTop: 3,
                     padding: 2,
                     backgroundColor: "#2a2a2a",
                     color: "#fff",
