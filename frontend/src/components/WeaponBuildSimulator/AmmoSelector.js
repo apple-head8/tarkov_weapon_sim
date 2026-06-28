@@ -128,7 +128,6 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                 color: "#fff",
                 borderRadius: 1,
                 boxShadow: "0 2px 5px rgba(0, 0, 0, 0.5)",
-                height: "100%",
             }}
         >
             <Typography variant="h6">Ammo</Typography>
