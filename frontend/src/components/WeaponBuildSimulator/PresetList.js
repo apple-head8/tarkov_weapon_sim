@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 
 const PresetList = ({ presets, handleLoadPreset }) => {
@@ -28,7 +28,7 @@ const PresetList = ({ presets, handleLoadPreset }) => {
                     <CardContent>
                         <Typography variant="body1">{preset.name}</Typography>
                         <Typography variant="body2">
-                            Gun: {preset.gun.name}
+                            武器: {preset.gun.name}
                         </Typography>
                     </CardContent>
                     <Button
@@ -36,7 +36,7 @@ const PresetList = ({ presets, handleLoadPreset }) => {
                         size="small"
                         onClick={() => handleLoadPreset(preset)}
                     >
-                        プリセットをロード
+                        読み込み
                     </Button>
                 </Card>
             ))}

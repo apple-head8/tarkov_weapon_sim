@@ -14,7 +14,7 @@ function Header() {
             >
                 <Toolbar variant="dense">
                     <Typography variant="h6" color="inherit" component="div">
-                        Tarkov Weapon Sim
+                        タルコフ武器シミュレーター
                     </Typography>
                 </Toolbar>
             </AppBar>

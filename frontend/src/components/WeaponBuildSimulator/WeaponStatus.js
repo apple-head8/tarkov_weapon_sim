@@ -66,7 +66,7 @@ function WeaponStatus({ parameters }) {
                     boxShadow: "0 2px 5px rgba(0, 0, 0, 0.5)",
                 }}
             >
-                <Typography variant="h6">Weapon Parameters</Typography>
+                <Typography variant="h6">武器性能</Typography>
                 <Box
                     sx={{
                         padding: 2,
@@ -76,21 +76,21 @@ function WeaponStatus({ parameters }) {
                     }}
                 >
                     <StatusBar
-                        label="Weight"
+                        label="重量"
                         value={parameters.weight}
                         displayValue={`${parameters.weight.toFixed(2)} kg`}
                         max={8}
                         color="#8b9cff"
                     />
                     <StatusBar
-                        label="Ergonomics"
+                        label="エルゴノミクス"
                         value={parameters.ergonomics}
                         displayValue={parameters.ergonomics}
                         max={100}
                         color="#bb86fc"
                     />
                     <StatusBar
-                        label="Price"
+                        label="価格"
                         value={parameters.price}
                         displayValue={`¥${parameters.price.toLocaleString()}`}
                         max={500000}

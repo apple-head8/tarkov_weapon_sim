@@ -154,12 +154,12 @@ function WeaponSelector({
             }}
         >
             <Typography variant="h6" gutterBottom>
-                Weapon Selector
+                武器選択
             </Typography>
 
             {/* Gun Type Selection */}
             <Typography variant="body2" gutterBottom>
-                Select Gun Type
+                武器種別
             </Typography>
             <StyledSelect
                 labelId="gun-type-select-label"
@@ -178,7 +178,7 @@ function WeaponSelector({
 
             {/* Gun Model Selection */}
             <Typography variant="body2" gutterBottom>
-                Select Gun Model
+                武器
             </Typography>
             <StyledSelect
                 value={selectedGun.id ?? ""}

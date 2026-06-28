@@ -1,4 +1,4 @@
-import recieverData from "../data/reciever.json"; // JSONファイルをインポート
+import recieverData from "../data/reciever.json";
 import scopeData from "../data/scope.json";
 
 export const categoryList = [
@@ -21,6 +21,35 @@ export const categoryList = [
     "FrontSight",
     "Scope",
 ];
+
+export const categoryLabelMap = {
+    RearSight: "リアサイト",
+    Grips: "グリップ",
+    Stocks: "ストック",
+    Muzzles: "マズル",
+    Magazine: "マガジン",
+    Barrel: "バレル",
+    Handguard: "ハンドガード",
+    Mount: "マウント",
+    Tactical: "タクティカル",
+    Bipod: "バイポッド",
+    NightVision: "ナイトビジョン",
+    Foregrip: "フォアグリップ",
+    Gasblock: "ガスブロック",
+    Launcher: "ランチャー",
+    Reciever: "レシーバー",
+    Charge: "チャージングハンドル",
+    FrontSight: "フロントサイト",
+    Scope: "スコープ",
+};
+
+export function getCategoryDisplayName(categoryKey, categoryInfo = null) {
+    const baseKey = categoryInfo?.categoryName ?? categoryKey?.split("#")[0];
+    const label = categoryLabelMap[baseKey] ?? baseKey ?? "";
+    const index = categoryInfo?.index;
+
+    return index > 1 ? `${label} ${index}` : label;
+}
 
 export const categoryArrayList = {
     RearSight: [],
@@ -97,8 +126,6 @@ export const categoryListMapping = {
     mod_stock_axis: "Stocks",
 };
 
-// カテゴリ名→jsonファイル名を探しに行く
-// 選択したパーツのJsonデータを探すために使用
 export const PART_DATA_MAP = {
     Reciever: recieverData,
     Scope: scopeData,

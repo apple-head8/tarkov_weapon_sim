@@ -52,23 +52,23 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
         const heavyBleed = formatModifier(properties.heavyBleedModifier);
 
         if (recoil) {
-            effects.push(`Recoil ${recoil}`);
+            effects.push(`反動 ${recoil}`);
         }
 
         if (lightBleed) {
-            effects.push(`Light Bleed ${lightBleed}`);
+            effects.push(`軽出血 ${lightBleed}`);
         }
 
         if (heavyBleed) {
-            effects.push(`Heavy Bleed ${heavyBleed}`);
+            effects.push(`重出血 ${heavyBleed}`);
         }
 
         if (properties.tracer) {
-            effects.push(`Tracer ${properties.tracerColor ?? ""}`.trim());
+            effects.push(`曳光 ${properties.tracerColor ?? ""}`.trim());
         }
 
         if (properties.projectileCount > 1) {
-            effects.push(`Pellets x${properties.projectileCount}`);
+            effects.push(`ペレット x${properties.projectileCount}`);
         }
 
         return effects;
@@ -130,7 +130,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                 boxShadow: "0 2px 5px rgba(0, 0, 0, 0.5)",
             }}
         >
-            <Typography variant="h6">Ammo</Typography>
+            <Typography variant="h6">弾薬</Typography>
             <Box sx={{ padding: 2 }}>
                 <Select
                     value={selectedAmmo?.id ?? ""}
@@ -142,7 +142,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
 
                         if (!ammo) return "";
 
-                        return `${ammo.name} / Armor ${ammo.properties?.armorDamage ?? "-"}`;
+                        return `${ammo.name} / アーマー ${ammo.properties?.armorDamage ?? "-"}`;
                     }}
                     fullWidth
                     size="small"
@@ -174,7 +174,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                                         flexShrink: 0,
                                     }}
                                 >
-                                    Armor {ammo.properties?.armorDamage ?? "-"}
+                                    アーマー {ammo.properties?.armorDamage ?? "-"}
                                 </Typography>
                             </Box>
                         </MenuItem>
@@ -183,13 +183,13 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
 
                 {!caliber && (
                     <Typography sx={{ color: "text.secondary" }}>
-                        Select a weapon to choose ammo.
+                        武器を選択すると弾薬を選べます。
                     </Typography>
                 )}
 
                 {caliber && !ammoOptions.length && (
                     <Typography sx={{ color: "text.secondary" }}>
-                        No ammo data for {caliber}.
+                        {caliber} の弾薬データがありません。
                     </Typography>
                 )}
 
@@ -203,19 +203,19 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                             }}
                         >
                             <AmmoStatCard
-                                label="Damage"
+                                label="ダメージ"
                                 value={properties.damage}
                             />
                             <AmmoStatCard
-                                label="Penetration"
+                                label="貫通力"
                                 value={properties.penetrationPower}
                             />
                             <AmmoStatCard
-                                label="Armor Damage"
+                                label="アーマー"
                                 value={properties.armorDamage}
                             />
                             <AmmoStatCard
-                                label="Speed"
+                                label="初速"
                                 value={properties.initialSpeed}
                                 unit="m/s"
                             />
@@ -248,7 +248,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                                     variant="body2"
                                     sx={{ color: "text.secondary" }}
                                 >
-                                    No special effects
+                                    特殊効果なし
                                 </Typography>
                             )}
                         </Box>

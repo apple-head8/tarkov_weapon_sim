@@ -10,7 +10,10 @@ import Header from "./components/common/Header";
 import WeaponSelector from "./components/WeaponBuildSimulator/WeaponSelector";
 import PartSelector from "./components/WeaponBuildSimulator/PartSelector";
 import AmmoSelector from "./components/WeaponBuildSimulator/AmmoSelector";
-import { categoryArrayList } from "./constants/categoryList";
+import {
+    categoryArrayList,
+    getCategoryDisplayName,
+} from "./constants/categoryList";
 import ErrorMessage from "./components/common/ErrorMessage";
 import { findConflictingPart } from "./utils/conflict";
 import {
@@ -89,8 +92,12 @@ const TarkovWeaponSim = () => {
             // 競合が見つかった場合はエラーメッセージを表示して終了
             const { category: conflictedCategory, part: conflictedItem } =
                 conflicted;
+            const conflictedCategoryName = getCategoryDisplayName(
+                conflictedCategory,
+                enabledCategories[conflictedCategory]
+            );
             setError(
-                `${part.name} は ${conflictedItem.name}（${conflictedCategory}）と競合しています。`
+                `${part.name} は ${conflictedItem.name}（${conflictedCategoryName}）と競合しています。`
             );
             return;
         }
@@ -204,7 +211,7 @@ const TarkovWeaponSim = () => {
                             boxShadow: "0 2px 5px rgba(0, 0, 0, 0.5)",
                         }}
                     >
-                        <Typography variant="h6">Save Preset</Typography>
+                        <Typography variant="h6">プリセット保存</Typography>
                         <PresetSave
                             presetName={presetName}
                             setPresetName={setPresetName}

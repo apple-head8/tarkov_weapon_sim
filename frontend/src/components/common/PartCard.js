@@ -67,7 +67,7 @@ const PartCard = ({
                     />
                 )}
                 <ImageListItemBar
-                    title={hasPart ? part.name ?? "　" : "No part selected"}
+                    title={hasPart ? part.name ?? "" : "未選択"}
                     position="bottom"
                     sx={{
                         position: "absolute",
@@ -97,13 +97,13 @@ const PartCard = ({
                 {hasPart ? (
                     <>
                         <Typography variant="body2" align="center">
-                            Weight: {part.weight ?? 0}kg
+                            重量: {part.weight ?? 0}kg
                         </Typography>
                         <Typography variant="body2" align="center">
-                            Ergo: {part.ergonomicsModifier ?? 0}
+                            エルゴ: {part.ergonomicsModifier ?? 0}
                         </Typography>
                         <Typography variant="body2" align="center">
-                            Price: ¥{part.lastLowPrice?.toLocaleString() ?? "-"}
+                            価格: ¥{part.lastLowPrice?.toLocaleString() ?? "-"}
                         </Typography>
                     </>
                 ) : (
@@ -112,7 +112,7 @@ const PartCard = ({
                         align="center"
                         sx={{ color: "#999" }}
                     >
-                        No data
+                        データなし
                     </Typography>
                 )}
             </CardContent>

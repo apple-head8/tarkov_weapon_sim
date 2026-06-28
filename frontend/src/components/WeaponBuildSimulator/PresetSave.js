@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Button, TextField } from "@mui/material";
 
 const PresetSave = ({ presetName, setPresetName, handleSavePreset }) => {
@@ -7,7 +7,7 @@ const PresetSave = ({ presetName, setPresetName, handleSavePreset }) => {
             <TextField
                 variant="outlined"
                 size="small"
-                label="Preset Name"
+                label="プリセット名"
                 value={presetName}
                 onChange={(e) => setPresetName(e.target.value)}
                 sx={{ flex: 1, backgroundColor: "#fff" }}
@@ -17,7 +17,7 @@ const PresetSave = ({ presetName, setPresetName, handleSavePreset }) => {
                 color="primary"
                 onClick={handleSavePreset}
             >
-                Save
+                保存
             </Button>
         </Box>
     );

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Tabs, Tab, Box, Tooltip, Typography } from "@mui/material";
 import PartCard from "../common/PartCard";
+import { getCategoryDisplayName } from "../../constants/categoryList";
 
 function PartSelector({
     selectedTab,
@@ -85,9 +86,7 @@ function PartSelector({
         const category = categories[categoryKey];
         if (!category) return categoryKey;
 
-        return category.index > 1
-            ? `${category.categoryName} ${category.index}`
-            : category.categoryName;
+        return getCategoryDisplayName(categoryKey, category);
     }
 
     function getParentHint(categoryKey) {

@@ -1,14 +1,13 @@
 import React from "react";
 import { Box, Typography, Grid2 } from "@mui/material";
+import { getCategoryDisplayName } from "../../constants/categoryList";
 
 function WeaponPartsList({ categoryKeys, categories, selectedParts }) {
     function getCategoryLabel(categoryKey) {
         const category = categories[categoryKey];
         if (!category) return categoryKey;
 
-        return category.index > 1
-            ? `${category.categoryName} ${category.index}`
-            : category.categoryName;
+        return getCategoryDisplayName(categoryKey, category);
     }
 
     return (
@@ -25,7 +24,7 @@ function WeaponPartsList({ categoryKeys, categories, selectedParts }) {
                     height: "auto",
                 }}
             >
-                <Typography variant="h6">Weapon Selected List</Typography>
+                <Typography variant="h6">装着パーツ</Typography>
                 <Box sx={{ padding: 2 }}>
                     {categoryKeys.map((categoryKey) => (
                         <Grid2
