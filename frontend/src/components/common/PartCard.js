@@ -6,6 +6,7 @@ import {
     Typography,
     Box,
     ImageListItemBar,
+    Tooltip,
 } from "@mui/material";
 
 const PartCard = ({
@@ -17,7 +18,7 @@ const PartCard = ({
     // partがない場合は空カードを表示
     const hasPart = !!part;
 
-    return (
+    const card = (
         <Card
             sx={{
                 width: 150,
@@ -116,6 +117,14 @@ const PartCard = ({
                 )}
             </CardContent>
         </Card>
+    );
+
+    return hasPart ? (
+        <Tooltip title={part.name ?? ""} arrow>
+            {card}
+        </Tooltip>
+    ) : (
+        card
     );
 };
 
