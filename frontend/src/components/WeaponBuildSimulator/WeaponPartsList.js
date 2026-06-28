@@ -22,21 +22,42 @@ function WeaponPartsList({ categoryKeys, categories, selectedParts }) {
                     color: "#fff",
                     borderRadius: 1,
                     boxShadow: "0 2px 5px rgba(0, 0, 0, 0.5)",
-                    height: "320px",
+                    minHeight: "320px",
+                    height: "auto",
                 }}
             >
                 <Typography variant="h6">Weapon Selected List</Typography>
                 <Box sx={{ padding: 2 }}>
                     {categoryKeys.map((categoryKey) => (
-                        <Grid2 container spacing={2} key={categoryKey}>
+                        <Grid2
+                            container
+                            spacing={2}
+                            key={categoryKey}
+                            sx={{
+                                py: 0.5,
+                                borderBottom: "1px solid rgba(255,255,255,0.08)",
+                            }}
+                        >
                             <Grid2 size={3}>
-                                <Typography>{getCategoryLabel(categoryKey)}</Typography>
+                                <Typography
+                                    sx={{
+                                        overflowWrap: "anywhere",
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    {getCategoryLabel(categoryKey)}
+                                </Typography>
                             </Grid2>
                             <Grid2 size={1}>
                                 <Typography>:</Typography>
                             </Grid2>
                             <Grid2 size={8}>
-                                <Typography>
+                                <Typography
+                                    sx={{
+                                        overflowWrap: "anywhere",
+                                        whiteSpace: "normal",
+                                    }}
+                                >
                                     {selectedParts?.[categoryKey]?.["name"]}
                                 </Typography>
                             </Grid2>
