@@ -1,4 +1,5 @@
 import recieverData from "../data/reciever.json"; // JSONファイルをインポート
+import scopeData from "../data/scope.json";
 
 export const categoryList = [
     "RearSight",
@@ -10,6 +11,8 @@ export const categoryList = [
     "Handguard",
     "Mount",
     "Tactical",
+    "Bipod",
+    "NightVision",
     "Foregrip",
     "Gasblock",
     "Launcher",
@@ -29,6 +32,8 @@ export const categoryArrayList = {
     Handguard: [],
     Mount: [],
     Tactical: [],
+    Bipod: [],
+    NightVision: [],
     Foregrip: [],
     Gasblock: [],
     Launcher: [],
@@ -47,6 +52,8 @@ export const categoryListMapping = {
     mod_stock_akms: "Stocks",
     mod_sight_rear: "RearSight",
     mod_muzzle: "Muzzles",
+    mod_muzzle_000: "Muzzles",
+    mod_muzzle_001: "Muzzles",
     mod_magazine: "Magazine",
     mod_barrel: "Barrel",
     mod_handguard: "Handguard",
@@ -54,23 +61,45 @@ export const categoryListMapping = {
     mod_mount_000: "Mount",
     mod_mount_001: "Mount",
     mod_mount_002: "Mount",
+    mod_mount_003: "Mount",
+    mod_mount_004: "Mount",
+    mod_mount_005: "Mount",
+    mod_mount_006: "Mount",
     mod_tactical: "Tactical",
+    mod_tactical001: "Tactical",
+    mod_tactical002: "Tactical",
     mod_tactical_000: "Tactical",
     mod_tactical_001: "Tactical",
     mod_tactical_002: "Tactical",
+    mod_tactical_003: "Tactical",
+    mod_tactical_004: "Tactical",
+    mod_tactical_2: "Tactical",
+    mod_flashlight: "Tactical",
+    mod_bipod: "Bipod",
+    mod_nvg: "NightVision",
     mod_foregrip: "Foregrip",
     mod_gas_block: "Gasblock",
     mod_launcher: "Launcher",
     mod_reciever: "Reciever",
     mod_charge: "Charge",
     mod_charge_001: "Charge",
+    mod_pistolgrip: "Grips",
+    mod_pistolgrip_000: "Grips",
+    mod_pistolgrip_001: "Grips",
     mod_sight_front: "FrontSight",
     mod_scope: "Scope",
+    mod_scope_000: "Scope",
+    mod_scope_001: "Scope",
+    mod_scope_002: "Scope",
+    mod_scope_003: "Scope",
+    mod_stock_002: "Stocks",
+    mod_stock_003: "Stocks",
+    mod_stock_axis: "Stocks",
 };
 
 // カテゴリ名→jsonファイル名を探しに行く
 // 選択したパーツのJsonデータを探すために使用
 export const PART_DATA_MAP = {
     Reciever: recieverData,
-    // 必要に応じて追加
+    Scope: scopeData,
 };
