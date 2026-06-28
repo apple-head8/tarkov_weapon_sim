@@ -1,0 +1,459 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "6644920d49817dc7d505ca71",
+        "name": "BT10 V8 Atlas Bipod",
+        "normalizedName": "bt10-v8-atlas-bipod",
+        "shortName": "BT10",
+        "basePrice": 8523,
+        "avg24hPrice": 28855,
+        "lastLowPrice": 27776,
+        "weight": 0.312,
+        "ergonomicsModifier": -3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6644920d49817dc7d505ca71-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6644920d49817dc7d505ca71-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "622f16a1a5958f63c67f1737",
+            "name": "HK G36 hand stop"
+          },
+          {
+            "id": "5888961624597754281f93f3",
+            "name": "Harris S-BRM 6-9\" Bipod"
+          }
+        ],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": -3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "バイポッド",
+            "normalizedName": "bipod"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5888961624597754281f93f3",
+        "name": "Harris S-BRM 6-9\" Bipod",
+        "normalizedName": "harris-s-brm-6-9-bipod",
+        "shortName": "S-BRM",
+        "basePrice": 4207,
+        "avg24hPrice": 23354,
+        "lastLowPrice": 28282,
+        "weight": 0.277,
+        "ergonomicsModifier": -5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5888961624597754281f93f3-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5888961624597754281f93f3-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": -5,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "バイポッド",
+            "normalizedName": "bipod"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "622b397c9a3d4327e41843b6",
+        "name": "HK G36 bipod",
+        "normalizedName": "hk-g36-bipod",
+        "shortName": "G36",
+        "basePrice": 4269,
+        "avg24hPrice": 20000,
+        "lastLowPrice": 20000,
+        "weight": 0.226,
+        "ergonomicsModifier": -4,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/622b397c9a3d4327e41843b6-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/622b397c9a3d4327e41843b6-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": -4,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "バイポッド",
+            "normalizedName": "bipod"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "676175bb48fa5c377e06fc36",
+        "name": "KAC MWS Bipod Adapter",
+        "normalizedName": "kac-mws-bipod-adapter",
+        "shortName": "MWS BA",
+        "basePrice": 1054,
+        "avg24hPrice": 9999,
+        "lastLowPrice": 9999,
+        "weight": 0.042,
+        "ergonomicsModifier": -1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/676175bb48fa5c377e06fc36-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/676175bb48fa5c377e06fc36-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "categories": [
+          {
+            "name": "マウント",
+            "normalizedName": "mount"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ],
+        "properties": {
+          "ergonomics": -1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": [
+            {
+              "nameId": "mod_bipod",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "5888961624597754281f93f3",
+                    "name": "Harris S-BRM 6-9\" Bipod",
+                    "normalizedName": "harris-s-brm-6-9-bipod",
+                    "shortName": "S-BRM",
+                    "basePrice": 4207,
+                    "avg24hPrice": 23354,
+                    "lastLowPrice": 28282,
+                    "weight": 0.277,
+                    "ergonomicsModifier": -5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5888961624597754281f93f3-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5888961624597754281f93f3-8x.webp",
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "66012d9a3dff5074ed002e33",
+        "name": "M60 bipod",
+        "normalizedName": "m60-bipod",
+        "shortName": "M60",
+        "basePrice": 2541,
+        "avg24hPrice": 35000,
+        "lastLowPrice": 35000,
+        "weight": 0.537,
+        "ergonomicsModifier": -8,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/66012d9a3dff5074ed002e33-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/66012d9a3dff5074ed002e33-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": -8,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "バイポッド",
+            "normalizedName": "bipod"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "680f6d9a4d7624d36e06527b",
+        "name": "MDR BLK LBL ALX Bipod 16",
+        "normalizedName": "mdr-blk-lbl-alx-bipod-16",
+        "shortName": "ALX 16",
+        "basePrice": 7800,
+        "avg24hPrice": 11086,
+        "lastLowPrice": 11000,
+        "weight": 0.243,
+        "ergonomicsModifier": 2,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/680f6d9a4d7624d36e06527b-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/680f6d9a4d7624d36e06527b-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 2,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "バイポッド",
+            "normalizedName": "bipod"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "680f7e4aeee716732708e84e",
+        "name": "MDR BLK LBL ALX Bipod 20",
+        "normalizedName": "mdr-blk-lbl-alx-bipod-20",
+        "shortName": "ALX 20",
+        "basePrice": 8600,
+        "avg24hPrice": 58541,
+        "lastLowPrice": 27600,
+        "weight": 0.28,
+        "ergonomicsModifier": 3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/680f7e4aeee716732708e84e-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/680f7e4aeee716732708e84e-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "バイポッド",
+            "normalizedName": "bipod"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6464d870bb2c580352070cc4",
+        "name": "PK bipod",
+        "normalizedName": "pk-bipod",
+        "shortName": "PK",
+        "basePrice": 4828,
+        "avg24hPrice": 43333,
+        "lastLowPrice": 43333,
+        "weight": 0.47,
+        "ergonomicsModifier": -8,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6464d870bb2c580352070cc4-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6464d870bb2c580352070cc4-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5c1cd46f2e22164bef5cfedb",
+            "name": "Zenit RK-1 tactical foregrip on B-25U mount"
+          }
+        ],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": -8,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "バイポッド",
+            "normalizedName": "bipod"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "56ea8222d2720b69698b4567",
+        "name": "SV-98 bipod",
+        "normalizedName": "sv-98-bipod",
+        "shortName": "SV-98",
+        "basePrice": 4269,
+        "avg24hPrice": 9257,
+        "lastLowPrice": 4644,
+        "weight": 0.472,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/56ea8222d2720b69698b4567-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/56ea8222d2720b69698b4567-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "バイポッド",
+            "normalizedName": "bipod"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      }
+    ]
+  }
+}

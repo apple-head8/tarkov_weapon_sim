@@ -1,5 +1,21 @@
 import recieverData from "../data/reciever.json";
 import scopeData from "../data/scope.json";
+import rearSightData from "../data/rear_sight.json";
+import gripsData from "../data/grips.json";
+import stocksData from "../data/stocks.json";
+import muzzlesData from "../data/muzzles.json";
+import magazineData from "../data/magazine.json";
+import barrelData from "../data/barrel.json";
+import handguardData from "../data/handguard.json";
+import mountData from "../data/mount.json";
+import tacticalData from "../data/tactical.json";
+import bipodData from "../data/bipod.json";
+import nightVisionData from "../data/night_vision.json";
+import foregripData from "../data/foregrip.json";
+import gasblockData from "../data/gasblock.json";
+import launcherData from "../data/launcher.json";
+import chargeData from "../data/charge.json";
+import frontSightData from "../data/front_sight.json";
 
 export const categoryList = [
     "RearSight",
@@ -127,6 +143,22 @@ export const categoryListMapping = {
 };
 
 export const PART_DATA_MAP = {
+    RearSight: rearSightData,
+    Grips: gripsData,
+    Stocks: stocksData,
+    Muzzles: muzzlesData,
+    Magazine: magazineData,
+    Barrel: barrelData,
+    Handguard: handguardData,
+    Mount: mountData,
+    Tactical: tacticalData,
+    Bipod: bipodData,
+    NightVision: nightVisionData,
+    Foregrip: foregripData,
+    Gasblock: gasblockData,
+    Launcher: launcherData,
     Reciever: recieverData,
+    Charge: chargeData,
+    FrontSight: frontSightData,
     Scope: scopeData,
 };

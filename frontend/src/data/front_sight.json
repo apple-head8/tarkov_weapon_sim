@@ -1,0 +1,1688 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "5a0f096dfcdbcb0176308b15",
+        "name": "AKMPシステム フロントサイトデバイス",
+        "normalizedName": "akmp-system-front-sight-device",
+        "shortName": "AKMP FS",
+        "basePrice": 470,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.01,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5a0f096dfcdbcb0176308b15-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5a0f096dfcdbcb0176308b15-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5aba62f8d8ce87001943946b",
+        "name": "APS front sight",
+        "normalizedName": "aps-front-sight",
+        "shortName": "APS FS",
+        "basePrice": 501,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5aba62f8d8ce87001943946b-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5aba62f8d8ce87001943946b-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "55d4af3a4bdc2d972f8b456f",
+        "name": "AR-15 Leapers UTG Low Profile A2 front sight",
+        "normalizedName": "ar-15-leapers-utg-low-profile-a2-front-sight",
+        "shortName": "LPA2 FS",
+        "basePrice": 600,
+        "avg24hPrice": 4000,
+        "lastLowPrice": 4000,
+        "weight": 0.176,
+        "ergonomicsModifier": -0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/55d4af3a4bdc2d972f8b456f-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/55d4af3a4bdc2d972f8b456f-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5caf16a2ae92152ac412efbc",
+        "name": "ASh-12 folding front sight",
+        "normalizedName": "ash-12-folding-front-sight",
+        "shortName": "ASh-12 FS",
+        "basePrice": 2233,
+        "avg24hPrice": 2000,
+        "lastLowPrice": 2000,
+        "weight": 0.07,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5caf16a2ae92152ac412efbc-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5caf16a2ae92152ac412efbc-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "674fe8dd362ea1f88b0e2792",
+        "name": "Chaos HK Style front sight",
+        "normalizedName": "chaos-hk-style-front-sight",
+        "shortName": "Chaos FS",
+        "basePrice": 964,
+        "avg24hPrice": 11111,
+        "lastLowPrice": 11111,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/674fe8dd362ea1f88b0e2792-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/674fe8dd362ea1f88b0e2792-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "619f4d304c58466fe1228437",
+        "name": "Chiappa Rhino front sight",
+        "normalizedName": "chiappa-rhino-front-sight",
+        "shortName": "CR FS",
+        "basePrice": 502,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.003,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/619f4d304c58466fe1228437-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/619f4d304c58466fe1228437-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "619f52454c58466fe122843b",
+        "name": "Chiappa Rhino Red Fiber Optic front sight",
+        "normalizedName": "chiappa-rhino-red-fiber-optic-front-sight",
+        "shortName": "CR RF",
+        "basePrice": 890,
+        "avg24hPrice": 35000,
+        "lastLowPrice": 35000,
+        "weight": 0.003,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/619f52454c58466fe122843b-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/619f52454c58466fe122843b-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5d3eb536a4b9363b1f22f8e2",
+        "name": "FN Five-seveN MK2 front sight",
+        "normalizedName": "fn-five-seven-mk2-front-sight",
+        "shortName": "5-7 FS",
+        "basePrice": 800,
+        "avg24hPrice": 7777,
+        "lastLowPrice": 7777,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5d3eb536a4b9363b1f22f8e2-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5d3eb536a4b9363b1f22f8e2-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "630765777d50ff5e8a1ea718",
+        "name": "Glock 19X front sight",
+        "normalizedName": "glock-19x-front-sight",
+        "shortName": "G19X FS",
+        "basePrice": 800,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/630765777d50ff5e8a1ea718-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/630765777d50ff5e8a1ea718-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5a7d90eb159bd400165484f1",
+        "name": "Glock Dead Ringer Snake Eye front sight",
+        "normalizedName": "glock-dead-ringer-snake-eye-front-sight",
+        "shortName": "G SE FS",
+        "basePrice": 1903,
+        "avg24hPrice": 5500,
+        "lastLowPrice": 5500,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5a7d90eb159bd400165484f1-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5a7d90eb159bd400165484f1-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5a6f58f68dc32e000a311390",
+        "name": "Glock front sight",
+        "normalizedName": "glock-front-sight",
+        "shortName": "Glock FS",
+        "basePrice": 502,
+        "avg24hPrice": 39999,
+        "lastLowPrice": 39999,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5a6f58f68dc32e000a311390-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5a6f58f68dc32e000a311390-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5a7d9104159bd400134c8c21",
+        "name": "Glock TruGlo TFX front sight",
+        "normalizedName": "glock-truglo-tfx-front-sight",
+        "shortName": "G TFX FS",
+        "basePrice": 1010,
+        "avg24hPrice": 10000,
+        "lastLowPrice": 10000,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5a7d9104159bd400134c8c21-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5a7d9104159bd400134c8c21-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5a71e0048dc32e000c52ecc8",
+        "name": "Glock ZEV Tech フロントサイト",
+        "normalizedName": "glock-zev-tech-front-sight",
+        "shortName": "G ZT FS",
+        "basePrice": 1300,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5a71e0048dc32e000c52ecc8-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5a71e0048dc32e000c52ecc8-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "623166e08c43374ca1567195",
+        "name": "HK G36 front sight",
+        "normalizedName": "hk-g36-front-sight",
+        "shortName": "G36 FS",
+        "basePrice": 2350,
+        "avg24hPrice": 2555,
+        "lastLowPrice": 2555,
+        "weight": 0.07,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/623166e08c43374ca1567195-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/623166e08c43374ca1567195-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5b2389515acfc4771e1be0c0",
+            "name": "Burris AR-P.E.P.R. 30mm ring scope mount"
+          },
+          {
+            "id": "618b9643526131765025ab35",
+            "name": "Geissele Super Precision 30mm ring scope mount"
+          },
+          {
+            "id": "618bab21526131765025ab3f",
+            "name": "Geissele Super Precision 30mm ring scope mount (DDC)"
+          },
+          {
+            "id": "5c86592b2e2216000e69e77c",
+            "name": "IEA Mil-Optics KH/F 34mm one-piece magmount"
+          },
+          {
+            "id": "5a37ca54c4a282000d72296a",
+            "name": "JP Enterprises Flat-Top 30mm ring scope mount"
+          },
+          {
+            "id": "57c69dd424597774c03b7bbc",
+            "name": "Lobaev Arms 30mm scope mount"
+          },
+          {
+            "id": "5b3b99265acfc4704b4a1afb",
+            "name": "Nightforce Magmount 30mm ring scope mount"
+          },
+          {
+            "id": "5aa66a9be5b5b0214e506e89",
+            "name": "Nightforce Magmount 34mm ring scope mount"
+          },
+          {
+            "id": "5aa66c72e5b5b00016327c93",
+            "name": "Nightforce Magmount 34mm ring scope mount with Ruggedized Accessory Platform"
+          },
+          {
+            "id": "6171407e50224f204c1da3c5",
+            "name": "Recknagel Era-Tac 30mm ring scope mount"
+          },
+          {
+            "id": "61713cc4d8e3106d9806c109",
+            "name": "Recknagel Era-Tac 34mm ring scope mount"
+          }
+        ],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "680b87fc9402a78e7504a057",
+        "name": "HK G36 KAC Front Flip Up Sight",
+        "normalizedName": "hk-g36-kac-front-flip-up-sight",
+        "shortName": "KAC G36",
+        "basePrice": 2433,
+        "avg24hPrice": 2432,
+        "lastLowPrice": 2432,
+        "weight": 0.067,
+        "ergonomicsModifier": 0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/680b87fc9402a78e7504a057-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/680b87fc9402a78e7504a057-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "622b4d7df9cfc87d675d2ded",
+            "name": "HK G36 HKV 3x carry handle"
+          },
+          {
+            "id": "622b4f54dc8dcc0ba8742f85",
+            "name": "HK G36 HKV ZF 1.5x carry handle"
+          },
+          {
+            "id": "622b3d5cf9cfc87d675d2de9",
+            "name": "HK G36 optic rail with flip-up sights"
+          },
+          {
+            "id": "622b3c081b89c677a33bcda6",
+            "name": "HK G36 sight mount"
+          }
+        ],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5ba26b01d4351e0085325a51",
+        "name": "HK MP7 flip-up front sight",
+        "normalizedName": "hk-mp7-flip-up-front-sight",
+        "shortName": "MP7 FS",
+        "basePrice": 602,
+        "avg24hPrice": 1000,
+        "lastLowPrice": 1000,
+        "weight": 0.13,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5ba26b01d4351e0085325a51-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5ba26b01d4351e0085325a51-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6194f35c18a3974e5e7421e6",
+        "name": "HK USP front sight",
+        "normalizedName": "hk-usp-front-sight",
+        "shortName": "USP FS",
+        "basePrice": 600,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.003,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6194f35c18a3974e5e7421e6-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6194f35c18a3974e5e7421e6-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6194f3286db0f2477964e67d",
+        "name": "HK USP Tactical front sight",
+        "normalizedName": "hk-usp-tactical-front-sight",
+        "shortName": "USPT FS",
+        "basePrice": 700,
+        "avg24hPrice": 50000,
+        "lastLowPrice": 50000,
+        "weight": 0.005,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6194f3286db0f2477964e67d-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6194f3286db0f2477964e67d-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c17804b2e2216152006c02f",
+        "name": "KAC Folding front sight",
+        "normalizedName": "kac-folding-front-sight",
+        "shortName": "KAC FS",
+        "basePrice": 2233,
+        "avg24hPrice": 4500,
+        "lastLowPrice": 4500,
+        "weight": 0.07,
+        "ergonomicsModifier": 0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c17804b2e2216152006c02f-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c17804b2e2216152006c02f-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5dfa3d950dee1b22f862eae0",
+        "name": "KAC Folding Micro front sight",
+        "normalizedName": "kac-folding-micro-front-sight",
+        "shortName": "KAC MFS",
+        "basePrice": 2433,
+        "avg24hPrice": 28742,
+        "lastLowPrice": 26666,
+        "weight": 0.07,
+        "ergonomicsModifier": 0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5dfa3d950dee1b22f862eae0-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5dfa3d950dee1b22f862eae0-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5fb6567747ce63734e3fa1dc",
+        "name": "KRISS Defiance low profile flip-up front sight",
+        "normalizedName": "kriss-defiance-low-profile-flip-up-front-sight",
+        "shortName": "Defiance FS",
+        "basePrice": 2200,
+        "avg24hPrice": 12899,
+        "lastLowPrice": 12222,
+        "weight": 0.02,
+        "ergonomicsModifier": 0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5fb6567747ce63734e3fa1dc-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5fb6567747ce63734e3fa1dc-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5e81ee213397a21db957f6a6",
+        "name": "M1911A1 front sight",
+        "normalizedName": "m1911a1-front-sight",
+        "shortName": "1911 FS",
+        "basePrice": 502,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.003,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5e81ee213397a21db957f6a6-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5e81ee213397a21db957f6a6-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5addba3e5acfc4001669f0ab",
+        "name": "M1A SA National Match .062 Blade front sight",
+        "normalizedName": "m1a-sa-national-match-062-blade-front-sight",
+        "shortName": ".062 Blade",
+        "basePrice": 1628,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.038,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5addba3e5acfc4001669f0ab-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5addba3e5acfc4001669f0ab-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5aafa49ae5b5b00015042a58",
+        "name": "M1A SA XS Post .125 Blade front sight",
+        "normalizedName": "m1a-sa-xs-post-125-blade-front-sight",
+        "shortName": ".125 Blade",
+        "basePrice": 1624,
+        "avg24hPrice": 15999,
+        "lastLowPrice": 15999,
+        "weight": 0.038,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5aafa49ae5b5b00015042a58-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5aafa49ae5b5b00015042a58-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5f3e78a7fbf956000b716b8e",
+        "name": "M45A1 Novak Lomount front sight",
+        "normalizedName": "m45a1-novak-lomount-front-sight",
+        "shortName": "Lomount FS",
+        "basePrice": 750,
+        "avg24hPrice": 69420,
+        "lastLowPrice": 69420,
+        "weight": 0.002,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5f3e78a7fbf956000b716b8e-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5f3e78a7fbf956000b716b8e-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5cadd919ae921500126a77f3",
+        "name": "M9A3 front sight",
+        "normalizedName": "m9a3-front-sight",
+        "shortName": "M9A3 FS",
+        "basePrice": 460,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5cadd919ae921500126a77f3-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5cadd919ae921500126a77f3-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5bc09a30d4351e00367fb7c8",
+        "name": "Magpul MBUS Gen2 flip-up front sight",
+        "normalizedName": "magpul-mbus-gen2-flip-up-front-sight",
+        "shortName": "MBUS FS",
+        "basePrice": 2444,
+        "avg24hPrice": 9348,
+        "lastLowPrice": 8000,
+        "weight": 0.034,
+        "ergonomicsModifier": 0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5bc09a30d4351e00367fb7c8-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5bc09a30d4351e00367fb7c8-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c18b90d2e2216152142466b",
+        "name": "Magpul MBUS Gen2 flip-up front sight (FDE)",
+        "normalizedName": "magpul-mbus-gen2-flip-up-front-sight-fde",
+        "shortName": "MBUS FS",
+        "basePrice": 2400,
+        "avg24hPrice": 8666,
+        "lastLowPrice": 9000,
+        "weight": 0.034,
+        "ergonomicsModifier": 0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c18b90d2e2216152142466b-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c18b90d2e2216152142466b-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5fc0fa362770a0045c59c677",
+        "name": "MCX flip-up front sight",
+        "normalizedName": "mcx-flip-up-front-sight",
+        "shortName": "MCX FS",
+        "basePrice": 2350,
+        "avg24hPrice": 3000,
+        "lastLowPrice": 3000,
+        "weight": 0.065,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5fc0fa362770a0045c59c677-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5fc0fa362770a0045c59c677-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5894a73486f77426d259076c",
+        "name": "MPX flip-up front sight",
+        "normalizedName": "mpx-flip-up-front-sight",
+        "shortName": "MPX FS",
+        "basePrice": 600,
+        "avg24hPrice": 1599,
+        "lastLowPrice": 1599,
+        "weight": 0.13,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5894a73486f77426d259076c-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5894a73486f77426d259076c-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "56d5a661d2720bd8418b456b",
+        "name": "P226 front sight",
+        "normalizedName": "p226-front-sight",
+        "shortName": "P226 FS",
+        "basePrice": 500,
+        "avg24hPrice": 999,
+        "lastLowPrice": 999,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/56d5a661d2720bd8418b456b-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/56d5a661d2720bd8418b456b-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c07b36c0db834002a1259e9",
+        "name": "P226 Meprolight TRU-DOT Night front sight",
+        "normalizedName": "p226-meprolight-tru-dot-night-front-sight",
+        "shortName": "P226 TD FS",
+        "basePrice": 1500,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.07,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c07b36c0db834002a1259e9-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c07b36c0db834002a1259e9-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "60228a76d62c9b14ed777a66",
+        "name": "PL-15 front sight",
+        "normalizedName": "pl-15-front-sight",
+        "shortName": "PL-15 FS",
+        "basePrice": 800,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/60228a76d62c9b14ed777a66-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/60228a76d62c9b14ed777a66-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "60228a850ddce744014caf69",
+        "name": "PL-15 拡張フロントサイト",
+        "normalizedName": "pl-15-extended-front-sight",
+        "shortName": "PL-15 FS ext.",
+        "basePrice": 950,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.007,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/60228a850ddce744014caf69-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/60228a850ddce744014caf69-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c471ba12e221602b3137d76",
+        "name": "SVDS front sight",
+        "normalizedName": "svds-front-sight",
+        "shortName": "SVDS FS",
+        "basePrice": 524,
+        "avg24hPrice": 571,
+        "lastLowPrice": 571,
+        "weight": 0.08,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c471ba12e221602b3137d76-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c471ba12e221602b3137d76-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "64119d672c6d6f921a0929fb",
+        "name": "SVT-40 front sight",
+        "normalizedName": "svt-40-front-sight",
+        "shortName": "SVT FS",
+        "basePrice": 350,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.07,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/64119d672c6d6f921a0929fb-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/64119d672c6d6f921a0929fb-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "アイアンサイト",
+            "normalizedName": "ironsight"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      }
+    ]
+  }
+}

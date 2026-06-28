@@ -1,0 +1,1963 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "62811cd7308cb521f87a8f99",
+        "name": "AI AXMC .338 LM bolt assembly",
+        "normalizedName": "ai-axmc-338-lm-bolt-assembly",
+        "shortName": "AXMC .338LM",
+        "basePrice": 13000,
+        "avg24hPrice": 13333,
+        "lastLowPrice": 13333,
+        "weight": 0.45,
+        "ergonomicsModifier": -3,
+        "accuracyModifier": 0,
+        "recoilModifier": -1,
+        "image512pxLink": "https://assets.tarkov.dev/62811cd7308cb521f87a8f99-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/62811cd7308cb521f87a8f99-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5a6086ea4f39f99cd479502f",
+            "name": "7.62x51mm M61"
+          },
+          {
+            "id": "5a608bf24f39f98ffc77720e",
+            "name": "7.62x51mm M62 Tracer"
+          },
+          {
+            "id": "58dd3ad986f77403051cba8f",
+            "name": "7.62x51mm M80"
+          },
+          {
+            "id": "5e023e53d4353e3302577c4c",
+            "name": "7.62x51mm BCP FMJ"
+          },
+          {
+            "id": "5efb0c1bd79ff02a1f5e68d9",
+            "name": "7.62x51mm M993"
+          },
+          {
+            "id": "5e023e6e34d52a55c3304f71",
+            "name": "7.62x51mm TCW SP"
+          },
+          {
+            "id": "5e023e88277cce2b522ff2b1",
+            "name": "7.62x51mm Ultra Nosler"
+          }
+        ],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": -3,
+          "recoilModifier": -0.01,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6130ca3fd92c473c77020dbd",
+        "name": "AK CSS knurled charging handle",
+        "normalizedName": "ak-css-knurled-charging-handle",
+        "shortName": "CSS AK",
+        "basePrice": 5000,
+        "avg24hPrice": 26670,
+        "lastLowPrice": 18000,
+        "weight": 0.015,
+        "ergonomicsModifier": 3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6130ca3fd92c473c77020dbd-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6130ca3fd92c473c77020dbd-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5648ac824bdc2ded0b8b457d",
+        "name": "AK Zenit RP-1 charging handle",
+        "normalizedName": "ak-zenit-rp-1-charging-handle",
+        "shortName": "RP-1",
+        "basePrice": 2663,
+        "avg24hPrice": 9581,
+        "lastLowPrice": 7000,
+        "weight": 0.017,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5648ac824bdc2ded0b8b457d-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5648ac824bdc2ded0b8b457d-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5df8e085bb49d91fb446d6a8",
+        "name": "AR-10 KAC ambidextrous charging handle",
+        "normalizedName": "ar-10-kac-ambidextrous-charging-handle",
+        "shortName": "KAC Ambi",
+        "basePrice": 1050,
+        "avg24hPrice": 29722,
+        "lastLowPrice": 15000,
+        "weight": 0.046,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5df8e085bb49d91fb446d6a8-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5df8e085bb49d91fb446d6a8-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5df8e053bb49d91fb446d6a6",
+        "name": "AR-10 KAC charging handle",
+        "normalizedName": "ar-10-kac-charging-handle",
+        "shortName": "KAC",
+        "basePrice": 850,
+        "avg24hPrice": 115000,
+        "lastLowPrice": 50000,
+        "weight": 0.041,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5df8e053bb49d91fb446d6a6-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5df8e053bb49d91fb446d6a6-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6932ac762e27c68c800bd836",
+        "name": "AR-10 KAC charging handle (Taupe)",
+        "normalizedName": "ar-10-kac-charging-handle-taupe",
+        "shortName": "KAC",
+        "basePrice": 830,
+        "avg24hPrice": 29781,
+        "lastLowPrice": 5000,
+        "weight": 0.041,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6932ac762e27c68c800bd836-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6932ac762e27c68c800bd836-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c0faf68d174af02a96260b8",
+        "name": "AR-15 ADAR 2-15 charging handle",
+        "normalizedName": "ar-15-adar-2-15-charging-handle",
+        "shortName": "ADAR",
+        "basePrice": 603,
+        "avg24hPrice": 599,
+        "lastLowPrice": 599,
+        "weight": 0.039,
+        "ergonomicsModifier": 0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c0faf68d174af02a96260b8-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c0faf68d174af02a96260b8-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0.5,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "56ea7165d2720b6e518b4583",
+        "name": "AR-15 Badger Ordnance Tactical Charging Handle Latch",
+        "normalizedName": "ar-15-badger-ordnance-tactical-charging-handle-latch",
+        "shortName": "BOTL",
+        "basePrice": 3677,
+        "avg24hPrice": 16998,
+        "lastLowPrice": 16998,
+        "weight": 0.064,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/56ea7165d2720b6e518b4583-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/56ea7165d2720b6e518b4583-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "55d44fd14bdc2d962f8b456e",
+        "name": "AR-15 Colt charging handle",
+        "normalizedName": "ar-15-colt-charging-handle",
+        "shortName": "AR-15",
+        "basePrice": 1404,
+        "avg24hPrice": 1500,
+        "lastLowPrice": 1999,
+        "weight": 0.035,
+        "ergonomicsModifier": 0.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/55d44fd14bdc2d962f8b456e-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/55d44fd14bdc2d962f8b456e-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0.5,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "68a63a9522b1e0bd360afe5f",
+        "name": "AR-15 Colt early type charging handle ",
+        "normalizedName": "ar-15-colt-early-type-charging-handle",
+        "shortName": "AR-15 ET",
+        "basePrice": 1114,
+        "avg24hPrice": 1217,
+        "lastLowPrice": 1217,
+        "weight": 0.035,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/68a63a9522b1e0bd360afe5f-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/68a63a9522b1e0bd360afe5f-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "651bf5617b3b552ef6712cb7",
+        "name": "AR-15 Daniel Defense GRIP-N-RIP charging handle",
+        "normalizedName": "ar-15-daniel-defense-grip-n-rip-charging-handle",
+        "shortName": "GNR",
+        "basePrice": 4408,
+        "avg24hPrice": 22224,
+        "lastLowPrice": 19000,
+        "weight": 0.043,
+        "ergonomicsModifier": 2,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/651bf5617b3b552ef6712cb7-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/651bf5617b3b552ef6712cb7-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 2,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5ea16d4d5aad6446a939753d",
+        "name": "AR-15 Geissele ACH charging handle (DDC)",
+        "normalizedName": "ar-15-geissele-ach-charging-handle-ddc",
+        "shortName": "ACH",
+        "basePrice": 5180,
+        "avg24hPrice": 41083,
+        "lastLowPrice": 50000,
+        "weight": 0.03,
+        "ergonomicsModifier": 2,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5ea16d4d5aad6446a939753d-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5ea16d4d5aad6446a939753d-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 2,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5bb20dbcd4351e44f824c04e",
+        "name": "AR-15 HK Extended Latch charging handle",
+        "normalizedName": "ar-15-hk-extended-latch-charging-handle",
+        "shortName": "Ext. Latch",
+        "basePrice": 2917,
+        "avg24hPrice": 25832,
+        "lastLowPrice": 23333,
+        "weight": 0.064,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5bb20dbcd4351e44f824c04e-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5bb20dbcd4351e44f824c04e-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "675307301f7c19a9780f2668",
+        "name": "AR-15 Magpul B.A.D. Lever bolt release",
+        "normalizedName": "ar-15-magpul-bad-lever-bolt-release",
+        "shortName": "B.A.D.",
+        "basePrice": 5180,
+        "avg24hPrice": 18155,
+        "lastLowPrice": 15555,
+        "weight": 0.03,
+        "ergonomicsModifier": 2,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/675307301f7c19a9780f2668-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/675307301f7c19a9780f2668-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5d4405aaa4b9361e6a4e6bd3",
+            "name": "TX-15 5.56x45 Lightweight upper receiver"
+          },
+          {
+            "id": "63f5ed14534b2c3d5479a677",
+            "name": "AR-15 Aeroknox AX-15 5.56x45 upper receiver"
+          },
+          {
+            "id": "59bfe68886f7746004266202",
+            "name": "AR-15 Vltor MUR-1S 5.56x45 upper receiver"
+          }
+        ],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 2,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6033749e88382f4fab3fd2c5",
+        "name": "AR-15 MASP Industries Ambidextrous Battle Charging Handle",
+        "normalizedName": "ar-15-masp-industries-ambidextrous-battle-charging-handle",
+        "shortName": "MASP",
+        "basePrice": 2119,
+        "avg24hPrice": 48000,
+        "lastLowPrice": 48000,
+        "weight": 0.035,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6033749e88382f4fab3fd2c5-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6033749e88382f4fab3fd2c5-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "68caabebc71156cf470bc186",
+        "name": "AR-15 Precision Reflex M84 Gas Buster Charging Handle",
+        "normalizedName": "ar-15-precision-reflex-m84-gas-buster-charging-handle",
+        "shortName": "M84 GB",
+        "basePrice": 7800,
+        "avg24hPrice": 18430,
+        "lastLowPrice": 17500,
+        "weight": 0.049,
+        "ergonomicsModifier": 2,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/68caabebc71156cf470bc186-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/68caabebc71156cf470bc186-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 2,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5b2240bf5acfc40dc528af69",
+        "name": "AR-15 Radian Weapons Raptor charging handle (FDE)",
+        "normalizedName": "ar-15-radian-weapons-raptor-charging-handle-fde",
+        "shortName": "Raptor",
+        "basePrice": 6765,
+        "avg24hPrice": 24889,
+        "lastLowPrice": 25555,
+        "weight": 0.04,
+        "ergonomicsModifier": 3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5b2240bf5acfc40dc528af69-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5b2240bf5acfc40dc528af69-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5d44334ba4b9362b346d1948",
+        "name": "AR-15 Radian Weapons Raptor charging handle (Tungsten Grey)",
+        "normalizedName": "ar-15-radian-weapons-raptor-charging-handle-tungsten-grey",
+        "shortName": "Raptor",
+        "basePrice": 6426,
+        "avg24hPrice": 68272,
+        "lastLowPrice": 66665,
+        "weight": 0.04,
+        "ergonomicsModifier": 3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5d44334ba4b9362b346d1948-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5d44334ba4b9362b346d1948-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6895bf08e2d16810ba0bf43e",
+        "name": "AR-15 Radian Weapons Raptor-SD charging handle",
+        "normalizedName": "ar-15-radian-weapons-raptor-sd-charging-handle",
+        "shortName": "Raptor-SD",
+        "basePrice": 7965,
+        "avg24hPrice": 197777,
+        "lastLowPrice": 224999,
+        "weight": 0.04,
+        "ergonomicsModifier": 3.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6895bf08e2d16810ba0bf43e-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6895bf08e2d16810ba0bf43e-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3.5,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5f633ff5c444ce7e3c30a006",
+        "name": "AR-15 Rainier Arms Avalanche MOD2 charging handle",
+        "normalizedName": "ar-15-rainier-arms-avalanche-mod2-charging-handle",
+        "shortName": "Avalanche",
+        "basePrice": 7474,
+        "avg24hPrice": 24763,
+        "lastLowPrice": 20000,
+        "weight": 0.028,
+        "ergonomicsModifier": 3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5f633ff5c444ce7e3c30a006-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5f633ff5c444ce7e3c30a006-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "625ec45bb14d7326ac20f572",
+        "name": "Benelli M3 Super 90 charging handle",
+        "normalizedName": "benelli-m3-super-90-charging-handle",
+        "shortName": "M3",
+        "basePrice": 1300,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.013,
+        "ergonomicsModifier": 3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/625ec45bb14d7326ac20f572-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/625ec45bb14d7326ac20f572-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5cc6ea78e4a949000e1ea3c1",
+        "name": "FN P90 charging handle",
+        "normalizedName": "fn-p90-charging-handle",
+        "shortName": "P90",
+        "basePrice": 1600,
+        "avg24hPrice": 16666,
+        "lastLowPrice": 16666,
+        "weight": 0.017,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5cc6ea78e4a949000e1ea3c1-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5cc6ea78e4a949000e1ea3c1-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5cc6ea85e4a949000e1ea3c3",
+        "name": "FN P90 K&M The Handler charging handle",
+        "normalizedName": "fn-p90-km-the-handler-charging-handle",
+        "shortName": "TheHandler",
+        "basePrice": 2663,
+        "avg24hPrice": 16431,
+        "lastLowPrice": 15555,
+        "weight": 0.019,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5cc6ea85e4a949000e1ea3c3-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5cc6ea85e4a949000e1ea3c3-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6181688c6c780c1e710c9b04",
+        "name": "FN SCAR charging handle",
+        "normalizedName": "fn-scar-charging-handle",
+        "shortName": "SCAR CH",
+        "basePrice": 2400,
+        "avg24hPrice": 28000,
+        "lastLowPrice": 28000,
+        "weight": 0.017,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6181688c6c780c1e710c9b04-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6181688c6c780c1e710c9b04-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5d2f2d5748f03572ec0c0139",
+        "name": "HK MP5K cocking handle",
+        "normalizedName": "hk-mp5k-cocking-handle",
+        "shortName": "MP5K CH",
+        "basePrice": 1550,
+        "avg24hPrice": 20000,
+        "lastLowPrice": 20000,
+        "weight": 0.11,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5d2f2d5748f03572ec0c0139-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5d2f2d5748f03572ec0c0139-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "61702d8a67085e45ef140b24",
+        "name": "HK417 E1 Extended Charging Handle",
+        "normalizedName": "hk417-e1-extended-charging-handle",
+        "shortName": "417 E1",
+        "basePrice": 2200,
+        "avg24hPrice": 23111,
+        "lastLowPrice": 23111,
+        "weight": 0.041,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/61702d8a67085e45ef140b24-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/61702d8a67085e45ef140b24-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "67c5418f26265106dd06979e",
+        "name": "M1895/MXLR Ranger Point Precision medium loop lever",
+        "normalizedName": "m1895mxlr-ranger-point-precision-medium-loop-lever",
+        "shortName": "RPP lever",
+        "basePrice": 3790,
+        "avg24hPrice": 19899,
+        "lastLowPrice": 29999,
+        "weight": 0.064,
+        "ergonomicsModifier": 5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/67c5418f26265106dd06979e-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/67c5418f26265106dd06979e-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 5,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5fbcc640016cce60e8341acc",
+        "name": "MCX charging handle",
+        "normalizedName": "mcx-charging-handle",
+        "shortName": "MCX",
+        "basePrice": 733,
+        "avg24hPrice": 2420,
+        "lastLowPrice": 2420,
+        "weight": 0.035,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5fbcc640016cce60e8341acc-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5fbcc640016cce60e8341acc-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6529109524cbe3c74a05e5b7",
+        "name": "MCX-SPEAR charging handle",
+        "normalizedName": "mcx-spear-charging-handle",
+        "shortName": "SPEAR",
+        "basePrice": 1578,
+        "avg24hPrice": 1000,
+        "lastLowPrice": 1000,
+        "weight": 0.035,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6529109524cbe3c74a05e5b7-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6529109524cbe3c74a05e5b7-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "606587bd6d0bd7580617bacc",
+        "name": "Mk47 ambidextrous charging handle",
+        "normalizedName": "mk47-ambidextrous-charging-handle",
+        "shortName": "Mk47 Ambi",
+        "basePrice": 2200,
+        "avg24hPrice": 11111,
+        "lastLowPrice": 11111,
+        "weight": 0.03,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/606587bd6d0bd7580617bacc-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/606587bd6d0bd7580617bacc-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5926c32286f774616e42de99",
+        "name": "MP5 コッキングハンドル",
+        "normalizedName": "hk-mp5-cocking-handle",
+        "shortName": "MP5 CH",
+        "basePrice": 1650,
+        "avg24hPrice": 27777,
+        "lastLowPrice": 27777,
+        "weight": 0.126,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5926c32286f774616e42de99-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5926c32286f774616e42de99-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5de922d4b11454561e39239f",
+        "name": "MP9 charging handle",
+        "normalizedName": "mp9-charging-handle",
+        "shortName": "MP9 CH",
+        "basePrice": 650,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.02,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5de922d4b11454561e39239f-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5de922d4b11454561e39239f-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "58949edd86f77409483e16a9",
+        "name": "MPX ambidextrous charging handle",
+        "normalizedName": "mpx-ambidextrous-charging-handle",
+        "shortName": "MPX 2x",
+        "basePrice": 730,
+        "avg24hPrice": 888,
+        "lastLowPrice": 888,
+        "weight": 0.033,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/58949edd86f77409483e16a9-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/58949edd86f77409483e16a9-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c5db6b32e221600102611a0",
+        "name": "MPX Geissele SCH charging handle",
+        "normalizedName": "mpx-geissele-sch-charging-handle",
+        "shortName": "MPX SCH",
+        "basePrice": 1780,
+        "avg24hPrice": 10000,
+        "lastLowPrice": 10000,
+        "weight": 0.03,
+        "ergonomicsModifier": 2,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c5db6b32e221600102611a0-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c5db6b32e221600102611a0-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 2,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6761492dc53ebe8c0f0a5efe",
+        "name": "MPX GEN 2 ambidextrous charging handle",
+        "normalizedName": "mpx-gen-2-ambidextrous-charging-handle",
+        "shortName": "MPX GEN2",
+        "basePrice": 1430,
+        "avg24hPrice": 24944,
+        "lastLowPrice": 24000,
+        "weight": 0.029,
+        "ergonomicsModifier": 1.5,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/6761492dc53ebe8c0f0a5efe-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/6761492dc53ebe8c0f0a5efe-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1.5,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "58949fac86f77409483e16aa",
+        "name": "MPX single latch charging handle",
+        "normalizedName": "mpx-single-latch-charging-handle",
+        "shortName": "MPX 1x",
+        "basePrice": 700,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.032,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/58949fac86f77409483e16aa-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/58949fac86f77409483e16aa-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "67c54183b032bbdb530201bc",
+        "name": "MXLR loop lever",
+        "normalizedName": "mxlr-loop-lever",
+        "shortName": "MXLR loop",
+        "basePrice": 890,
+        "avg24hPrice": 9999,
+        "lastLowPrice": 9999,
+        "weight": 0.064,
+        "ergonomicsModifier": 3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/67c54183b032bbdb530201bc-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/67c54183b032bbdb530201bc-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "68c16f15efac701f800dfd36",
+        "name": "NL545 charging handle",
+        "normalizedName": "nl545-charging-handle",
+        "shortName": "NL545 CH",
+        "basePrice": 1450,
+        "avg24hPrice": 99999,
+        "lastLowPrice": 99999,
+        "weight": 0.035,
+        "ergonomicsModifier": 1,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/68c16f15efac701f800dfd36-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/68c16f15efac701f800dfd36-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 1,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "673cb4054ff4aa8f86076f4a",
+        "name": "Sako TRG M10 .338 LM bolt assembly",
+        "normalizedName": "sako-trg-m10-338-lm-bolt-assembly",
+        "shortName": "M10 .338LM",
+        "basePrice": 15500,
+        "avg24hPrice": 40000,
+        "lastLowPrice": 40000,
+        "weight": 0.45,
+        "ergonomicsModifier": -2,
+        "accuracyModifier": 0,
+        "recoilModifier": -1,
+        "image512pxLink": "https://assets.tarkov.dev/673cb4054ff4aa8f86076f4a-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/673cb4054ff4aa8f86076f4a-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5a6086ea4f39f99cd479502f",
+            "name": "7.62x51mm M61"
+          },
+          {
+            "id": "5a608bf24f39f98ffc77720e",
+            "name": "7.62x51mm M62 Tracer"
+          },
+          {
+            "id": "58dd3ad986f77403051cba8f",
+            "name": "7.62x51mm M80"
+          },
+          {
+            "id": "5e023e53d4353e3302577c4c",
+            "name": "7.62x51mm BCP FMJ"
+          },
+          {
+            "id": "5efb0c1bd79ff02a1f5e68d9",
+            "name": "7.62x51mm M993"
+          },
+          {
+            "id": "5e023e6e34d52a55c3304f71",
+            "name": "7.62x51mm TCW SP"
+          },
+          {
+            "id": "5e023e88277cce2b522ff2b1",
+            "name": "7.62x51mm Ultra Nosler"
+          }
+        ],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": -2,
+          "recoilModifier": -0.01,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "62e7c880f68e7a0676050c7c",
+        "name": "Steyr AUG A1 charging handle",
+        "normalizedName": "steyr-aug-a1-charging-handle",
+        "shortName": "AUG A1",
+        "basePrice": 1000,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.013,
+        "ergonomicsModifier": 2,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/62e7c880f68e7a0676050c7c-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/62e7c880f68e7a0676050c7c-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 2,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "62ebbc53e3c1e1ec7c02c44f",
+        "name": "Steyr AUG A3 charging handle",
+        "normalizedName": "steyr-aug-a3-charging-handle",
+        "shortName": "AUG A3",
+        "basePrice": 1700,
+        "avg24hPrice": 2200,
+        "lastLowPrice": 2200,
+        "weight": 0.011,
+        "ergonomicsModifier": 3,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/62ebbc53e3c1e1ec7c02c44f-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/62ebbc53e3c1e1ec7c02c44f-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": 3,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "チャージングハンドル",
+            "normalizedName": "charging-handle"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      }
+    ]
+  }
+}

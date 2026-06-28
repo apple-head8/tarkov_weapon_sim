@@ -15,6 +15,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "fetch:data": "node scripts/fetchData.js",
+    "fetch:ammo": "node scripts/fetchAmmoData.js",
+    "fetch:parts": "node scripts/fetchWeaponPartsData.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
