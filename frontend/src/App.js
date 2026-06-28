@@ -76,7 +76,12 @@ const TarkovWeaponSim = () => {
         // 最初のタブに自動で切り替える
         const keys = Object.keys(enabledCategories || []);
 
-        if (keys.length > 0 && !keys.includes(selectedTab)) {
+        if (keys.length === 0) {
+            setSelectedTab(null);
+            return;
+        }
+
+        if (!keys.includes(selectedTab)) {
             setSelectedTab(keys[0]);
         }
     }, [enabledCategories, selectedTab]);

@@ -1,6 +1,7 @@
 export const GUN_TYPES = {
     "": "",
     Pistols: "ハンドガン",
+    Revolvers: "リボルバー",
     Submachine_guns: "サブマシンガン",
     assault_rifle: "アサルトライフル",
     Assault_carbines: "アサルトカービン",
@@ -9,4 +10,5 @@ export const GUN_TYPES = {
     Bolt_action_rifles: "ボルトアクションライフル",
     Shotguns: "ショットガン",
     Granade_launchers: "グレネードランチャー",
+    Rocket_launchers: "ロケットランチャー",
 };

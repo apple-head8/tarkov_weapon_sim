@@ -3,6 +3,10 @@ const { spawnSync } = require("child_process");
 
 const tasks = [
     {
+        name: "メイン武器データ",
+        script: "fetchWeaponData.js",
+    },
+    {
         name: "武器パーツデータ",
         script: "fetchWeaponPartsData.js",
     },

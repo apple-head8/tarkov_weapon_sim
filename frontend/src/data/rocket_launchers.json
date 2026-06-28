@@ -1,0 +1,57 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "676bf44c5539167c3603e869",
+        "name": "RShG-2 72.5mm ロケットランチャー",
+        "normalizedName": "rshg-2-725mm-rocket-launcher",
+        "shortName": "RShG-2",
+        "basePrice": 42500,
+        "avg24hPrice": 118632,
+        "lastLowPrice": 79500,
+        "weight": 3.77,
+        "properties": {
+          "caliber": "Caliber725",
+          "ergonomics": 39,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 150,
+          "recoilVertical": 180,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "Rocket Launcher",
+            "normalizedName": "rocket-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ],
+        "containsItems": [
+          {
+            "item": {
+              "id": "67446fdd752be02c220f27b3",
+              "name": "ShG-2 アサルトロケット",
+              "types": [
+                "ammo",
+                "noFlea"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

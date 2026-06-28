@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Box, Typography, Select, MenuItem, styled } from "@mui/material";
 import { GUN_TYPES } from "../../constants/gunTypes";
 import {
     categoryArrayList,
     categoryListMapping,
 } from "../../constants/categoryList";
-import assaultRifleData from "../../data/assault_rifle.json"; // JSONファイルをインポート
+import { WEAPON_DATA_MAP } from "../../constants/weaponDataMap";
 
 function WeaponSelector({
     selectedGun,
@@ -15,93 +15,74 @@ function WeaponSelector({
     setEnabledCategories,
 }) {
     const [selectedType, setSelectedType] = useState("");
-    const [gunLists, setGunLists] = useState("");
+
+    const gunLists = useMemo(() => {
+        if (!selectedType) return [];
+
+        return WEAPON_DATA_MAP[selectedType]?.data?.items ?? [];
+    }, [selectedType]);
 
     useEffect(() => {
-        if (selectedType) {
-            if (selectedType === "assault_rifle") {
-                setGunLists(
-                    assaultRifleData.data.items.filter(
-                        (item) => Object.keys(item.properties).length > 0,
-                    ),
-                );
-            } else {
-                setGunLists("");
-                setSelectedGun("");
-                setSelectedGunSlots(categoryArrayList);
-                setSelectedParts({});
-            }
-        } else {
-            setGunLists("");
-            setSelectedGun("");
-            setSelectedGunSlots(categoryArrayList);
-            setSelectedParts({});
-        }
-    }, [selectedType, setSelectedGun, setSelectedGunSlots, setSelectedParts]);
+        setSelectedGun("");
+        setSelectedGunSlots(categoryArrayList);
+        setSelectedParts({});
+        setEnabledCategories({});
+    }, [
+        selectedType,
+        setSelectedGun,
+        setSelectedGunSlots,
+        setSelectedParts,
+        setEnabledCategories,
+    ]);
 
-    const handleChange = (event) => {
+    const handleTypeChange = (event) => {
         setSelectedType(event.target.value);
     };
 
-    const slotMapping = categoryListMapping;
+    const handleGunChange = (event) => {
+        const id = event.target.value;
+        const gun = gunLists.find((item) => item.id === id);
 
-    // 銃選択時のイベント
-    const handleGunChange = (e) => {
-        const id = e.target.value;
-        const gun = assaultRifleData.data.items.find((x) => x.id === id);
-        setSelectedGun(gun);
+        setSelectedGun(gun ?? "");
         handleDefaultParts(gun);
     };
 
-    // 武器選択時の初期パーツセット
     const handleDefaultParts = (gunInfo) => {
-        if (!gunInfo || !gunInfo.containsItems) {
+        if (!gunInfo?.containsItems) {
             setSelectedParts({});
             return;
         }
 
         const defaultParts = {};
+
         gunInfo.containsItems.forEach((contained) => {
             const item = contained.item;
-            const slot = gunInfo.properties?.slots?.find((s) =>
-                s.filters.allowedItems.some(
-                    (allowed) => allowed.id === item.id,
-                ),
+            const slot = gunInfo.properties?.slots?.find((slot) =>
+                slot.filters?.allowedItems?.some(
+                    (allowedItem) => allowedItem.id === item.id
+                )
             );
 
-            // // 初期パーツに子要素があったときの考慮
-            // // この考慮が必要かどうかはあとから精査
-            // // ここではtypesを確認してreceiver.jsonなどから詳細を取得
-            // if (item.types?.includes("pistolGrip")) {
-            //     const receiverItem = receiverData.data.items.find(
-            //         (r) => r.id === item.id
-            //     );
-            //     if (receiverItem) {
-            //         console.log("Receiver found:", receiverItem);
-            //         // ここで receiverItem.properties.slots を使っても良い
-            //     }
-            // }
+            if (!slot) return;
 
-            if (slot) {
-                const matchedItem = slot.filters.allowedItems.find(
-                    (i) => i.id === item.id,
-                );
-                const category = slotMapping[slot.nameId] || null;
+            const matchedItem = slot.filters.allowedItems.find(
+                (allowedItem) => allowedItem.id === item.id
+            );
+            const category = categoryListMapping[slot.nameId] || null;
 
-                if (category) {
-                    defaultParts[category] = {
-                        id: item.id,
-                        name: item.name,
-                        category: category,
-                        weight: matchedItem?.weight || 0,
-                        ergonomicsModifier:
-                            matchedItem?.ergonomicsModifier || 0,
-                        image512pxLink: matchedItem?.image512pxLink || null,
-                        lastLowPrice: matchedItem?.lastLowPrice || "-",
-                    };
-                }
-            }
+            if (!category) return;
+
+            defaultParts[category] = {
+                id: item.id,
+                name: item.name,
+                category,
+                weight: matchedItem?.weight || 0,
+                ergonomicsModifier: matchedItem?.ergonomicsModifier || 0,
+                image512pxLink: matchedItem?.image512pxLink || null,
+                lastLowPrice: matchedItem?.lastLowPrice || "-",
+            };
         });
+
         setSelectedParts(defaultParts);
     };
 
@@ -138,7 +119,7 @@ function WeaponSelector({
                 theme.palette.mode === "dark" ? "#4a4a4a" : "#e0e0e0",
         },
         color: theme.palette.mode === "dark" ? "white" : "black",
-        height: "40px", // 高さを少し小さめに調整
+        height: "40px",
     }));
 
     return (
@@ -157,7 +138,6 @@ function WeaponSelector({
                 武器選択
             </Typography>
 
-            {/* Gun Type Selection */}
             <Typography variant="body2" gutterBottom>
                 武器種別
             </Typography>
@@ -165,7 +145,7 @@ function WeaponSelector({
                 labelId="gun-type-select-label"
                 id="gun-type-select"
                 value={selectedType}
-                onChange={handleChange}
+                onChange={handleTypeChange}
                 fullWidth
                 size="small"
             >
@@ -176,22 +156,22 @@ function WeaponSelector({
                 ))}
             </StyledSelect>
 
-            {/* Gun Model Selection */}
             <Typography variant="body2" gutterBottom>
                 武器
             </Typography>
             <StyledSelect
-                value={selectedGun.id ?? ""}
+                value={selectedGun?.id ?? ""}
                 onChange={handleGunChange}
                 fullWidth
                 size="small"
+                disabled={!gunLists.length}
             >
-                {gunLists === "" ? (
-                    <MenuItem key={1} value={""}></MenuItem>
+                {gunLists.length === 0 ? (
+                    <MenuItem key="empty" value="" />
                 ) : (
-                    gunLists.map((value, index) => (
-                        <StyledMenuItem key={index} value={value.id}>
-                            {value.name}
+                    gunLists.map((weapon) => (
+                        <StyledMenuItem key={weapon.id} value={weapon.id}>
+                            {weapon.name}
                         </StyledMenuItem>
                     ))
                 )}

@@ -18,6 +18,7 @@
     "fetch:data": "node scripts/fetchData.js",
     "fetch:ammo": "node scripts/fetchAmmoData.js",
     "fetch:parts": "node scripts/fetchWeaponPartsData.js",
+    "fetch:weapons": "node scripts/fetchWeaponData.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

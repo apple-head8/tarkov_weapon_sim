@@ -245,18 +245,6 @@ async function main() {
         });
     });
 
-    const weaponModMap = new Map();
-    Object.values(categoryItems).forEach((itemsById) => {
-        itemsById.forEach((item, id) => {
-            weaponModMap.set(id, item);
-        });
-    });
-
-    const weaponMods = sortItems([...weaponModMap.values()]);
-
-    writeJson(path.resolve(dataDir, "weapon_mods.json"), weaponMods);
-    console.log(`Wrote ${weaponMods.length} weapon mods to weapon_mods.json`);
-
     Object.entries(CATEGORY_OUTPUT_FILES).forEach(([category, fileName]) => {
         const outputPath = path.resolve(dataDir, fileName);
         const items = sortItems([...categoryItems[category].values()]);
