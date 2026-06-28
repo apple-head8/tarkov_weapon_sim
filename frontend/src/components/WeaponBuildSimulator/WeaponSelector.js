@@ -22,8 +22,8 @@ function WeaponSelector({
             if (selectedType === "assault_rifle") {
                 setGunLists(
                     assaultRifleData.data.items.filter(
-                        (item) => Object.keys(item.properties).length > 0
-                    )
+                        (item) => Object.keys(item.properties).length > 0,
+                    ),
                 );
             } else {
                 setGunLists("");
@@ -64,7 +64,9 @@ function WeaponSelector({
         gunInfo.containsItems.forEach((contained) => {
             const item = contained.item;
             const slot = gunInfo.properties?.slots?.find((s) =>
-                s.filters.allowedItems.some((allowed) => allowed.id === item.id)
+                s.filters.allowedItems.some(
+                    (allowed) => allowed.id === item.id,
+                ),
             );
 
             // // 初期パーツに子要素があったときの考慮
@@ -82,7 +84,7 @@ function WeaponSelector({
 
             if (slot) {
                 const matchedItem = slot.filters.allowedItems.find(
-                    (i) => i.id === item.id
+                    (i) => i.id === item.id,
                 );
                 const category = slotMapping[slot.nameId] || null;
 
@@ -194,9 +196,6 @@ function WeaponSelector({
                     ))
                 )}
             </StyledSelect>
-
-            {/* 武器の画像などをここに置く */}
-            <Box>武器の画像を表示する領域</Box>
         </Box>
     );
 }
