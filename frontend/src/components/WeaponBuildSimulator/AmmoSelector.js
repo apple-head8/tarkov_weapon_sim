@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from "react";
-import { Box, MenuItem, Select, Typography } from "@mui/material";
+import { Box, Chip, MenuItem, Select, Typography } from "@mui/material";
 import ammoData from "../../data/ammo.json";
 
 function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
@@ -29,11 +29,96 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
     }, [ammoOptions, selectedAmmo, setSelectedAmmo]);
 
     const properties = selectedAmmo?.properties;
+    const ammoEffects = buildAmmoEffects(properties);
 
     const handleAmmoChange = (event) => {
         const ammo = ammoOptions.find((item) => item.id === event.target.value);
         setSelectedAmmo(ammo ?? null);
     };
+
+    function formatModifier(value) {
+        if (!value) return null;
+
+        const percent = Math.round(value * 100);
+        return `${percent > 0 ? "+" : ""}${percent}%`;
+    }
+
+    function buildAmmoEffects(properties) {
+        if (!properties) return [];
+
+        const effects = [];
+        const recoil = formatModifier(properties.recoilModifier);
+        const lightBleed = formatModifier(properties.lightBleedModifier);
+        const heavyBleed = formatModifier(properties.heavyBleedModifier);
+
+        if (recoil) {
+            effects.push(`Recoil ${recoil}`);
+        }
+
+        if (lightBleed) {
+            effects.push(`Light Bleed ${lightBleed}`);
+        }
+
+        if (heavyBleed) {
+            effects.push(`Heavy Bleed ${heavyBleed}`);
+        }
+
+        if (properties.tracer) {
+            effects.push(`Tracer ${properties.tracerColor ?? ""}`.trim());
+        }
+
+        if (properties.projectileCount > 1) {
+            effects.push(`Pellets x${properties.projectileCount}`);
+        }
+
+        return effects;
+    }
+
+    function AmmoStatCard({ label, value, unit }) {
+        return (
+            <Box
+                sx={{
+                    minWidth: 112,
+                    flex: "1 1 112px",
+                    padding: 1.25,
+                    backgroundColor: "rgba(255,255,255,0.06)",
+                    border: "1px solid rgba(255,255,255,0.1)",
+                    borderRadius: 1,
+                }}
+            >
+                <Typography
+                    sx={{
+                        color: "text.secondary",
+                        fontSize: "0.72rem",
+                        lineHeight: 1.2,
+                    }}
+                >
+                    {label}
+                </Typography>
+                <Typography
+                    sx={{
+                        fontSize: "1.35rem",
+                        fontWeight: 700,
+                        lineHeight: 1.25,
+                    }}
+                >
+                    {value ?? "-"}
+                    {value != null && unit ? (
+                        <Typography
+                            component="span"
+                            sx={{
+                                ml: 0.5,
+                                color: "text.secondary",
+                                fontSize: "0.75rem",
+                            }}
+                        >
+                            {unit}
+                        </Typography>
+                    ) : null}
+                </Typography>
+            </Box>
+        );
+    }
 
     return (
         <Box
@@ -51,6 +136,15 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                 <Select
                     value={selectedAmmo?.id ?? ""}
                     onChange={handleAmmoChange}
+                    renderValue={(selectedId) => {
+                        const ammo = ammoOptions.find(
+                            (item) => item.id === selectedId
+                        );
+
+                        if (!ammo) return "";
+
+                        return `${ammo.name} / Armor ${ammo.properties?.armorDamage ?? "-"}`;
+                    }}
                     fullWidth
                     size="small"
                     disabled={!ammoOptions.length}
@@ -58,7 +152,32 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                 >
                     {ammoOptions.map((ammo) => (
                         <MenuItem key={ammo.id} value={ammo.id}>
-                            {ammo.name}
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    gap: 2,
+                                    width: "100%",
+                                }}
+                            >
+                                <Typography
+                                    sx={{
+                                        overflow: "hidden",
+                                        textOverflow: "ellipsis",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    {ammo.name}
+                                </Typography>
+                                <Typography
+                                    sx={{
+                                        color: "text.secondary",
+                                        flexShrink: 0,
+                                    }}
+                                >
+                                    Armor {ammo.properties?.armorDamage ?? "-"}
+                                </Typography>
+                            </Box>
                         </MenuItem>
                     ))}
                 </Select>
@@ -76,41 +195,65 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                 )}
 
                 {properties && (
-                    <Box
-                        sx={{
-                            display: "grid",
-                            gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-                            gap: 1,
-                        }}
-                    >
-                        <Typography>Damage: {properties.damage ?? "-"}</Typography>
-                        <Typography>
-                            Penetration: {properties.penetrationPower ?? "-"}
-                        </Typography>
-                        <Typography>
-                            Armor Damage: {properties.armorDamage ?? "-"}
-                        </Typography>
-                        <Typography>
-                            Recoil: {properties.recoilModifier ?? 0}
-                        </Typography>
-                        <Typography>
-                            Accuracy: {properties.accuracyModifier ?? 0}
-                        </Typography>
-                        <Typography>
-                            Speed: {properties.initialSpeed ?? "-"} m/s
-                        </Typography>
-                        <Typography>
-                            Frag:{" "}
-                            {properties.fragmentationChance != null
-                                ? `${Math.round(
-                                      properties.fragmentationChance * 100
-                                  )}%`
-                                : "-"}
-                        </Typography>
-                        <Typography>
-                            Count: {properties.projectileCount ?? 1}
-                        </Typography>
-                    </Box>
+                    <>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexWrap: "wrap",
+                                gap: 1,
+                            }}
+                        >
+                            <AmmoStatCard
+                                label="Damage"
+                                value={properties.damage}
+                            />
+                            <AmmoStatCard
+                                label="Penetration"
+                                value={properties.penetrationPower}
+                            />
+                            <AmmoStatCard
+                                label="Armor Damage"
+                                value={properties.armorDamage}
+                            />
+                            <AmmoStatCard
+                                label="Speed"
+                                value={properties.initialSpeed}
+                                unit="m/s"
+                            />
+                        </Box>
+                        <Box
+                            sx={{
+                                mt: 1.5,
+                                display: "flex",
+                                flexWrap: "wrap",
+                                gap: 1,
+                            }}
+                        >
+                            {ammoEffects.length > 0 ? (
+                                ammoEffects.map((effect) => (
+                                    <Chip
+                                        key={effect}
+                                        label={effect}
+                                        size="small"
+                                        sx={{
+                                            backgroundColor:
+                                                "rgba(187,134,252,0.12)",
+                                            border:
+                                                "1px solid rgba(187,134,252,0.35)",
+                                            color: "#fff",
+                                        }}
+                                    />
+                                ))
+                            ) : (
+                                <Typography
+                                    variant="body2"
+                                    sx={{ color: "text.secondary" }}
+                                >
+                                    No special effects
+                                </Typography>
+                            )}
+                        </Box>
+                    </>
                 )}
             </Box>
         </Box>

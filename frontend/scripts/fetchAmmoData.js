@@ -20,6 +20,8 @@ query {
         accuracyModifier
         recoilModifier
         fragmentationChance
+        lightBleedModifier
+        heavyBleedModifier
         initialSpeed
         projectileCount
         tracer
