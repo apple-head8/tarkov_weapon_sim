@@ -80,6 +80,7 @@ function WeaponSelector({
                 ergonomicsModifier: matchedItem?.ergonomicsModifier || 0,
                 image512pxLink: matchedItem?.image512pxLink || null,
                 lastLowPrice: matchedItem?.lastLowPrice ?? null,
+                isDefaultPart: true,
             };
         });
 

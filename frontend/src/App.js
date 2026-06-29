@@ -52,7 +52,9 @@ const TarkovWeaponSim = () => {
             (acc, part) => {
                 acc.weight += toNumberOrZero(part.weight);
                 acc.ergonomics += toNumberOrZero(part.ergonomicsModifier);
-                acc.price += toNumberOrZero(part.lastLowPrice);
+                if (!part.isDefaultPart) {
+                    acc.price += toNumberOrZero(part.lastLowPrice);
+                }
                 return acc;
             },
             {
