@@ -85,6 +85,8 @@ export function buildDefaultPartsForGun(gun) {
         const slots = item?.properties?.slots;
         if (!Array.isArray(slots)) return;
 
+        const defaultPartsToVisit = [];
+
         slots.forEach((slot) => {
             const categoryName = categoryListMapping[slot.nameId];
             const allowedItems = slot.filters?.allowedItems;
@@ -115,7 +117,14 @@ export function buildDefaultPartsForGun(gun) {
                 defaultItem
             );
 
-            const fullPart = getPartDefinition(categoryKey, defaultItem.id);
+            defaultPartsToVisit.push({
+                categoryKey,
+                partId: defaultItem.id,
+            });
+        });
+
+        defaultPartsToVisit.forEach(({ categoryKey, partId }) => {
+            const fullPart = getPartDefinition(categoryKey, partId);
             visitSlots(fullPart);
         });
     }
