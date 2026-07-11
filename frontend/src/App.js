@@ -13,11 +13,11 @@ import AmmoSelector from "./components/WeaponBuildSimulator/AmmoSelector";
 import {
     categoryArrayList,
     getCategoryDisplayName,
-    categoryListMapping,
 } from "./constants/categoryList";
 import ErrorMessage from "./components/common/ErrorMessage";
 import { findConflictingPart } from "./utils/conflict";
 import {
+    buildDefaultPartIdsBySlotKey,
     buildOrderedCategoryKeys,
     buildSlotsAndCategories,
     removeCategoryAndDescendants,
@@ -31,47 +31,6 @@ function getMarketPrice(item) {
     return toNumberOrZero(
         item?.avg24hPrice ?? item?.lastLowPrice ?? item?.basePrice
     );
-}
-
-function createUniqueCategoryKey(categoryName, categoryCounts) {
-    const currentCount = categoryCounts[categoryName] ?? 0;
-    categoryCounts[categoryName] = currentCount + 1;
-
-    return currentCount === 0 ? categoryName : `${categoryName}#${currentCount + 1}`;
-}
-
-function buildDefaultPartIdsBySlotKey(gun) {
-    if (!gun?.containsItems || !gun?.properties?.slots) {
-        return {};
-    }
-
-    const defaultItemIds = new Set(
-        gun.containsItems
-            .map((contained) => contained.item?.id)
-            .filter(Boolean)
-    );
-    const categoryCounts = {};
-    const defaultPartIds = {};
-
-    gun.properties.slots.forEach((slot) => {
-        const categoryName = categoryListMapping[slot.nameId];
-        const allowedItems = slot.filters?.allowedItems;
-
-        if (!categoryName || !Array.isArray(allowedItems)) {
-            return;
-        }
-
-        const categoryKey = createUniqueCategoryKey(categoryName, categoryCounts);
-        const defaultItem = allowedItems.find((allowedItem) =>
-            defaultItemIds.has(allowedItem.id)
-        );
-
-        if (defaultItem) {
-            defaultPartIds[categoryKey] = defaultItem.id;
-        }
-    });
-
-    return defaultPartIds;
 }
 
 const TarkovWeaponSim = () => {

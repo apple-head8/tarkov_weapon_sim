@@ -1,11 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Box, Typography, Select, MenuItem, styled } from "@mui/material";
 import { GUN_TYPES } from "../../constants/gunTypes";
-import {
-    categoryArrayList,
-    categoryListMapping,
-} from "../../constants/categoryList";
+import { categoryArrayList } from "../../constants/categoryList";
 import { WEAPON_DATA_MAP } from "../../constants/weaponDataMap";
+import { buildDefaultPartsForGun } from "../../utils/weaponBuild";
 
 function WeaponSelector({
     selectedGun,
@@ -48,45 +46,7 @@ function WeaponSelector({
     };
 
     const handleDefaultParts = (gunInfo) => {
-        if (!gunInfo?.containsItems) {
-            setSelectedParts({});
-            return;
-        }
-
-        const defaultParts = {};
-
-        gunInfo.containsItems.forEach((contained) => {
-            const item = contained.item;
-            const slot = gunInfo.properties?.slots?.find((slot) =>
-                slot.filters?.allowedItems?.some(
-                    (allowedItem) => allowedItem.id === item.id
-                )
-            );
-
-            if (!slot) return;
-
-            const matchedItem = slot.filters.allowedItems.find(
-                (allowedItem) => allowedItem.id === item.id
-            );
-            const category = categoryListMapping[slot.nameId] || null;
-
-            if (!category) return;
-
-            defaultParts[category] = {
-                id: item.id,
-                name: item.name,
-                category,
-                weight: matchedItem?.weight || 0,
-                ergonomicsModifier: matchedItem?.ergonomicsModifier || 0,
-                image512pxLink: matchedItem?.image512pxLink || null,
-                basePrice: matchedItem?.basePrice ?? null,
-                avg24hPrice: matchedItem?.avg24hPrice ?? null,
-                lastLowPrice: matchedItem?.lastLowPrice ?? null,
-                isDefaultPart: true,
-            };
-        });
-
-        setSelectedParts(defaultParts);
+        setSelectedParts(buildDefaultPartsForGun(gunInfo));
     };
 
     const StyledSelect = styled(Select)(({ theme }) => ({

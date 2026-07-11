@@ -49,6 +49,97 @@ export function getPartDefinition(categoryKey, partId) {
     return data?.data?.items?.find((item) => item.id === partId) ?? null;
 }
 
+function createSelectedDefaultPart(categoryKey, allowedItem) {
+    return {
+        ...allowedItem,
+        category: categoryKey,
+        isDefaultPart: true,
+    };
+}
+
+/**
+ * Build the initially equipped parts for a weapon, including nested default parts.
+ *
+ * Some weapons keep default parts under another default part instead of the weapon
+ * root. For example, AKMSN's wooden handguard is attached under the AKM gas tube.
+ * This function follows those default part slots recursively so the UI starts with
+ * the same assembled state as the weapon data.
+ *
+ * @param {Object|null} gun Weapon data from the local JSON files.
+ * @returns {Object.<string, Object>} Selected parts keyed by slot category key.
+ */
+export function buildDefaultPartsForGun(gun) {
+    if (!gun?.containsItems || !gun?.properties?.slots) {
+        return {};
+    }
+
+    const defaultItemIds = new Set(
+        gun.containsItems
+            .map((contained) => contained.item?.id)
+            .filter(Boolean)
+    );
+    const selectedParts = {};
+    const enabledCategories = {};
+
+    function visitSlots(item) {
+        const slots = item?.properties?.slots;
+        if (!Array.isArray(slots)) return;
+
+        slots.forEach((slot) => {
+            const categoryName = categoryListMapping[slot.nameId];
+            const allowedItems = slot.filters?.allowedItems;
+
+            if (!categoryName || !Array.isArray(allowedItems)) {
+                return;
+            }
+
+            const categoryKey = createUniqueSlotKey(
+                categoryName,
+                enabledCategories
+            );
+
+            enabledCategories[categoryKey] = {
+                categoryName,
+            };
+
+            const defaultItem = allowedItems.find((allowedItem) =>
+                defaultItemIds.has(allowedItem.id)
+            );
+
+            if (!defaultItem) {
+                return;
+            }
+
+            selectedParts[categoryKey] = createSelectedDefaultPart(
+                categoryKey,
+                defaultItem
+            );
+
+            const fullPart = getPartDefinition(categoryKey, defaultItem.id);
+            visitSlots(fullPart);
+        });
+    }
+
+    visitSlots(gun);
+
+    return selectedParts;
+}
+
+/**
+ * Build a lookup table that tells which part is the default for each slot key.
+ *
+ * @param {Object|null} gun Weapon data from the local JSON files.
+ * @returns {Object.<string, string>} Default part id keyed by slot category key.
+ */
+export function buildDefaultPartIdsBySlotKey(gun) {
+    return Object.fromEntries(
+        Object.entries(buildDefaultPartsForGun(gun)).map(([categoryKey, part]) => [
+            categoryKey,
+            part.id,
+        ])
+    );
+}
+
 /**
  * 同名カテゴリが複数出た場合にも区別できるカテゴリキーを作る。
  *
