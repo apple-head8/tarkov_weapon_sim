@@ -7,8 +7,8 @@
         "normalizedName": "as-val-9x39-special-assault-rifle",
         "shortName": "AS VAL",
         "basePrice": 66869,
-        "avg24hPrice": 132998,
-        "lastLowPrice": 90000,
+        "avg24hPrice": 111279,
+        "lastLowPrice": 88000,
         "weight": 1.092,
         "categories": [
           {
@@ -122,8 +122,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c44dd02459772d2e0ae249-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c44dd02459772d2e0ae249-8x.webp",
                     "basePrice": 23346,
-                    "avg24hPrice": 42000,
-                    "lastLowPrice": 24999,
+                    "avg24hPrice": 100000,
+                    "lastLowPrice": 23333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -139,8 +139,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57838c962459774a1651ec63-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57838c962459774a1651ec63-8x.webp",
                     "basePrice": 22507,
-                    "avg24hPrice": 23333,
-                    "lastLowPrice": 23333,
+                    "avg24hPrice": 24550,
+                    "lastLowPrice": 24550,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -163,7 +163,7 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c44f4f2459772d2c627113-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c44f4f2459772d2c627113-8x.webp",
                     "basePrice": 1599,
-                    "avg24hPrice": 49832,
+                    "avg24hPrice": 49999,
                     "lastLowPrice": 49999,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
@@ -204,8 +204,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57838f0b2459774a256959b2-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57838f0b2459774a256959b2-8x.webp",
                     "basePrice": 4637,
-                    "avg24hPrice": 8333,
-                    "lastLowPrice": 6666,
+                    "avg24hPrice": 9836,
+                    "lastLowPrice": 9000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -221,8 +221,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57838f9f2459774a150289a0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57838f9f2459774a150289a0-8x.webp",
                     "basePrice": 5999,
-                    "avg24hPrice": 13911,
-                    "lastLowPrice": 7000,
+                    "avg24hPrice": 12120,
+                    "lastLowPrice": 11000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -238,8 +238,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a9e81fba2750c00164f6b11-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a9e81fba2750c00164f6b11-8x.webp",
                     "basePrice": 20019,
-                    "avg24hPrice": 49677,
-                    "lastLowPrice": 43333,
+                    "avg24hPrice": 49285,
+                    "lastLowPrice": 49420,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -255,8 +255,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65118f531b90b4fc77015083-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65118f531b90b4fc77015083-8x.webp",
                     "basePrice": 20051,
-                    "avg24hPrice": 67473,
-                    "lastLowPrice": 45000,
+                    "avg24hPrice": 68806,
+                    "lastLowPrice": 70419,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -279,8 +279,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a69a2ed8dc32e000d46d1f1-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a69a2ed8dc32e000d46d1f1-8x.webp",
                     "basePrice": 8200,
-                    "avg24hPrice": 59586,
-                    "lastLowPrice": 37777,
+                    "avg24hPrice": 66354,
+                    "lastLowPrice": 74000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -301,8 +301,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c44fa82459772d2d75e415-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c44fa82459772d2d75e415-8x.webp",
                     "basePrice": 1490,
-                    "avg24hPrice": 50000,
-                    "lastLowPrice": 50000,
+                    "avg24hPrice": 2123,
+                    "lastLowPrice": 2123,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -335,8 +335,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6878cc5bd0c26d57bf0aa37a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6878cc5bd0c26d57bf0aa37a-8x.webp",
                     "basePrice": 11900,
-                    "avg24hPrice": 32950,
-                    "lastLowPrice": 38888,
+                    "avg24hPrice": 29534,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -359,8 +359,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c450252459772d28133253-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c450252459772d28133253-8x.webp",
                     "basePrice": 3111,
-                    "avg24hPrice": 25555,
-                    "lastLowPrice": 100000,
+                    "avg24hPrice": 4550,
+                    "lastLowPrice": 4000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -376,8 +376,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6878ccf4181ac8a5b5077236-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6878ccf4181ac8a5b5077236-8x.webp",
                     "basePrice": 14525,
-                    "avg24hPrice": 44024,
-                    "lastLowPrice": 34989,
+                    "avg24hPrice": 56466,
+                    "lastLowPrice": 28000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -405,8 +405,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6130ca3fd92c473c77020dbd-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6130ca3fd92c473c77020dbd-8x.webp",
                     "basePrice": 5000,
-                    "avg24hPrice": 26403,
-                    "lastLowPrice": 20999,
+                    "avg24hPrice": 21876,
+                    "lastLowPrice": 15555,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -422,8 +422,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5648ac824bdc2ded0b8b457d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5648ac824bdc2ded0b8b457d-8x.webp",
                     "basePrice": 2663,
-                    "avg24hPrice": 9530,
-                    "lastLowPrice": 6000,
+                    "avg24hPrice": 11770,
+                    "lastLowPrice": 6058,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -446,8 +446,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-8x.webp",
                     "basePrice": 10140,
-                    "avg24hPrice": 19270,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 12234,
+                    "lastLowPrice": 11888,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -468,8 +468,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-8x.webp",
                     "basePrice": 7260,
-                    "avg24hPrice": 7600,
-                    "lastLowPrice": 7600,
+                    "avg24hPrice": 8999,
+                    "lastLowPrice": 7499,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -594,8 +594,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57486e672459770abd687134-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57486e672459770abd687134-8x.webp",
                     "basePrice": 14150,
-                    "avg24hPrice": 24074,
-                    "lastLowPrice": 31111,
+                    "avg24hPrice": 42520,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -611,8 +611,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-8x.webp",
                     "basePrice": 8430,
-                    "avg24hPrice": 9094,
-                    "lastLowPrice": 9000,
+                    "avg24hPrice": 16368,
+                    "lastLowPrice": 17420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -673,8 +673,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-8x.webp",
                     "basePrice": 14500,
-                    "avg24hPrice": 17999,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 20262,
+                    "lastLowPrice": 19999,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -719,8 +719,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-8x.webp",
                     "basePrice": 13732,
-                    "avg24hPrice": 14989,
-                    "lastLowPrice": 14989,
+                    "avg24hPrice": 14968,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -889,8 +889,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-8x.webp",
                     "basePrice": 5302,
-                    "avg24hPrice": 15674,
-                    "lastLowPrice": 14500,
+                    "avg24hPrice": 10524,
+                    "lastLowPrice": 11333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -906,8 +906,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5e569a2e56edd02abe09f280-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5e569a2e56edd02abe09f280-8x.webp",
                     "basePrice": 6400,
-                    "avg24hPrice": 19142,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 27461,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -980,8 +980,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-8x.webp",
                     "basePrice": 1750,
-                    "avg24hPrice": 15025,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 21979,
+                    "lastLowPrice": 20000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1042,8 +1042,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-8x.webp",
                     "basePrice": 2000,
-                    "avg24hPrice": 16475,
-                    "lastLowPrice": 13000,
+                    "avg24hPrice": 10000,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1112,8 +1112,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-8x.webp",
                     "basePrice": 5118,
-                    "avg24hPrice": 14999,
-                    "lastLowPrice": 14999,
+                    "avg24hPrice": 15000,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -1129,8 +1129,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-8x.webp",
                     "basePrice": 7800,
-                    "avg24hPrice": 24946,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 21948,
+                    "lastLowPrice": 13000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1159,8 +1159,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-8x.webp",
                     "basePrice": 7600,
-                    "avg24hPrice": 30103,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 23279,
+                    "lastLowPrice": 17555,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1193,8 +1193,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-8x.webp",
                     "basePrice": 6100,
-                    "avg24hPrice": 15228,
-                    "lastLowPrice": 15228,
+                    "avg24hPrice": 39798,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1307,8 +1307,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-8x.webp",
                     "basePrice": 10980,
-                    "avg24hPrice": 22222,
-                    "lastLowPrice": 22222,
+                    "avg24hPrice": 14336,
+                    "lastLowPrice": 13800,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1381,8 +1381,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-8x.webp",
                     "basePrice": 9562,
-                    "avg24hPrice": 26447,
-                    "lastLowPrice": 39997,
+                    "avg24hPrice": 26269,
+                    "lastLowPrice": 17666,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1478,8 +1478,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-8x.webp",
                     "basePrice": 17784,
-                    "avg24hPrice": 19188,
-                    "lastLowPrice": 16000,
+                    "avg24hPrice": 17005,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1524,8 +1524,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-8x.webp",
                     "basePrice": 19784,
-                    "avg24hPrice": 19643,
-                    "lastLowPrice": 18100,
+                    "avg24hPrice": 18244,
+                    "lastLowPrice": 19998,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1570,8 +1570,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-8x.webp",
                     "basePrice": 18784,
-                    "avg24hPrice": 32166,
-                    "lastLowPrice": 18000,
+                    "avg24hPrice": 16941,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1616,8 +1616,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5dff8db859400025ea5150d4-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5dff8db859400025ea5150d4-8x.webp",
                     "basePrice": 9100,
-                    "avg24hPrice": 28848,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 30082,
+                    "lastLowPrice": 29000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1690,8 +1690,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/67069c8cee8138ed2f05ad34-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/67069c8cee8138ed2f05ad34-8x.webp",
                     "basePrice": 1752,
-                    "avg24hPrice": 24466,
-                    "lastLowPrice": 20000,
+                    "avg24hPrice": 22080,
+                    "lastLowPrice": 22221,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1804,8 +1804,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/67069cbbb29a2cd33803338c-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/67069cbbb29a2cd33803338c-8x.webp",
                     "basePrice": 1723,
-                    "avg24hPrice": 15949,
-                    "lastLowPrice": 17599,
+                    "avg24hPrice": 16292,
+                    "lastLowPrice": 9420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -1925,8 +1925,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/651178336cad06c37c049eb4-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/651178336cad06c37c049eb4-8x.webp",
                     "basePrice": 1123,
-                    "avg24hPrice": 10000,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 22000,
+                    "lastLowPrice": 22000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -1943,7 +1943,7 @@
                     "image8xLink": "https://assets.tarkov.dev/6565bb7eb4b12a56eb04b084-8x.webp",
                     "basePrice": 1123,
                     "avg24hPrice": 33333,
-                    "lastLowPrice": 33333,
+                    "lastLowPrice": 30000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -2128,8 +2128,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/68712ce2251b8d4c6c04ec1f-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/68712ce2251b8d4c6c04ec1f-8x.webp",
                     "basePrice": 9346,
-                    "avg24hPrice": 25817,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 34375,
+                    "lastLowPrice": 31111,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -2152,7 +2152,7 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c44f4f2459772d2c627113-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c44f4f2459772d2c627113-8x.webp",
                     "basePrice": 1599,
-                    "avg24hPrice": 49832,
+                    "avg24hPrice": 49999,
                     "lastLowPrice": 49999,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
@@ -2193,8 +2193,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57838f0b2459774a256959b2-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57838f0b2459774a256959b2-8x.webp",
                     "basePrice": 4637,
-                    "avg24hPrice": 8333,
-                    "lastLowPrice": 6666,
+                    "avg24hPrice": 9836,
+                    "lastLowPrice": 9000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -2210,8 +2210,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57838f9f2459774a150289a0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57838f9f2459774a150289a0-8x.webp",
                     "basePrice": 5999,
-                    "avg24hPrice": 13911,
-                    "lastLowPrice": 7000,
+                    "avg24hPrice": 12120,
+                    "lastLowPrice": 11000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -2227,8 +2227,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a9e81fba2750c00164f6b11-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a9e81fba2750c00164f6b11-8x.webp",
                     "basePrice": 20019,
-                    "avg24hPrice": 49677,
-                    "lastLowPrice": 43333,
+                    "avg24hPrice": 49285,
+                    "lastLowPrice": 49420,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -2244,8 +2244,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65118f531b90b4fc77015083-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65118f531b90b4fc77015083-8x.webp",
                     "basePrice": 20051,
-                    "avg24hPrice": 67473,
-                    "lastLowPrice": 45000,
+                    "avg24hPrice": 68806,
+                    "lastLowPrice": 70419,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -2268,8 +2268,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a69a2ed8dc32e000d46d1f1-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a69a2ed8dc32e000d46d1f1-8x.webp",
                     "basePrice": 8200,
-                    "avg24hPrice": 59586,
-                    "lastLowPrice": 37777,
+                    "avg24hPrice": 66354,
+                    "lastLowPrice": 74000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2290,8 +2290,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c44fa82459772d2d75e415-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c44fa82459772d2d75e415-8x.webp",
                     "basePrice": 1490,
-                    "avg24hPrice": 50000,
-                    "lastLowPrice": 50000,
+                    "avg24hPrice": 2123,
+                    "lastLowPrice": 2123,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -2324,8 +2324,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6878cc5bd0c26d57bf0aa37a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6878cc5bd0c26d57bf0aa37a-8x.webp",
                     "basePrice": 11900,
-                    "avg24hPrice": 32950,
-                    "lastLowPrice": 38888,
+                    "avg24hPrice": 29534,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -2348,8 +2348,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c450252459772d28133253-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c450252459772d28133253-8x.webp",
                     "basePrice": 3111,
-                    "avg24hPrice": 25555,
-                    "lastLowPrice": 100000,
+                    "avg24hPrice": 4550,
+                    "lastLowPrice": 4000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -2365,8 +2365,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6878ccf4181ac8a5b5077236-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6878ccf4181ac8a5b5077236-8x.webp",
                     "basePrice": 14525,
-                    "avg24hPrice": 44024,
-                    "lastLowPrice": 34989,
+                    "avg24hPrice": 56466,
+                    "lastLowPrice": 28000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2394,8 +2394,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-8x.webp",
                     "basePrice": 10140,
-                    "avg24hPrice": 19270,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 12234,
+                    "lastLowPrice": 11888,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2416,8 +2416,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-8x.webp",
                     "basePrice": 7260,
-                    "avg24hPrice": 7600,
-                    "lastLowPrice": 7600,
+                    "avg24hPrice": 8999,
+                    "lastLowPrice": 7499,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2542,8 +2542,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57486e672459770abd687134-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57486e672459770abd687134-8x.webp",
                     "basePrice": 14150,
-                    "avg24hPrice": 24074,
-                    "lastLowPrice": 31111,
+                    "avg24hPrice": 42520,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -2559,8 +2559,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-8x.webp",
                     "basePrice": 8430,
-                    "avg24hPrice": 9094,
-                    "lastLowPrice": 9000,
+                    "avg24hPrice": 16368,
+                    "lastLowPrice": 17420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2621,8 +2621,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-8x.webp",
                     "basePrice": 14500,
-                    "avg24hPrice": 17999,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 20262,
+                    "lastLowPrice": 19999,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2667,8 +2667,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-8x.webp",
                     "basePrice": 13732,
-                    "avg24hPrice": 14989,
-                    "lastLowPrice": 14989,
+                    "avg24hPrice": 14968,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2837,8 +2837,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-8x.webp",
                     "basePrice": 5302,
-                    "avg24hPrice": 15674,
-                    "lastLowPrice": 14500,
+                    "avg24hPrice": 10524,
+                    "lastLowPrice": 11333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -2854,8 +2854,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5e569a2e56edd02abe09f280-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5e569a2e56edd02abe09f280-8x.webp",
                     "basePrice": 6400,
-                    "avg24hPrice": 19142,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 27461,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2928,8 +2928,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-8x.webp",
                     "basePrice": 1750,
-                    "avg24hPrice": 15025,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 21979,
+                    "lastLowPrice": 20000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -2990,8 +2990,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-8x.webp",
                     "basePrice": 2000,
-                    "avg24hPrice": 16475,
-                    "lastLowPrice": 13000,
+                    "avg24hPrice": 10000,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3060,8 +3060,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-8x.webp",
                     "basePrice": 5118,
-                    "avg24hPrice": 14999,
-                    "lastLowPrice": 14999,
+                    "avg24hPrice": 15000,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -3077,8 +3077,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-8x.webp",
                     "basePrice": 7800,
-                    "avg24hPrice": 24946,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 21948,
+                    "lastLowPrice": 13000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3107,8 +3107,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-8x.webp",
                     "basePrice": 7600,
-                    "avg24hPrice": 30103,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 23279,
+                    "lastLowPrice": 17555,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3141,8 +3141,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-8x.webp",
                     "basePrice": 6100,
-                    "avg24hPrice": 15228,
-                    "lastLowPrice": 15228,
+                    "avg24hPrice": 39798,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3255,8 +3255,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-8x.webp",
                     "basePrice": 10980,
-                    "avg24hPrice": 22222,
-                    "lastLowPrice": 22222,
+                    "avg24hPrice": 14336,
+                    "lastLowPrice": 13800,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3329,8 +3329,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-8x.webp",
                     "basePrice": 9562,
-                    "avg24hPrice": 26447,
-                    "lastLowPrice": 39997,
+                    "avg24hPrice": 26269,
+                    "lastLowPrice": 17666,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3426,8 +3426,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-8x.webp",
                     "basePrice": 17784,
-                    "avg24hPrice": 19188,
-                    "lastLowPrice": 16000,
+                    "avg24hPrice": 17005,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3472,8 +3472,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-8x.webp",
                     "basePrice": 19784,
-                    "avg24hPrice": 19643,
-                    "lastLowPrice": 18100,
+                    "avg24hPrice": 18244,
+                    "lastLowPrice": 19998,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3518,8 +3518,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-8x.webp",
                     "basePrice": 18784,
-                    "avg24hPrice": 32166,
-                    "lastLowPrice": 18000,
+                    "avg24hPrice": 16941,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3564,8 +3564,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5dff8db859400025ea5150d4-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5dff8db859400025ea5150d4-8x.webp",
                     "basePrice": 9100,
-                    "avg24hPrice": 28848,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 30082,
+                    "lastLowPrice": 29000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3638,8 +3638,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/67069c8cee8138ed2f05ad34-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/67069c8cee8138ed2f05ad34-8x.webp",
                     "basePrice": 1752,
-                    "avg24hPrice": 24466,
-                    "lastLowPrice": 20000,
+                    "avg24hPrice": 22080,
+                    "lastLowPrice": 22221,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3752,8 +3752,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/67069cbbb29a2cd33803338c-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/67069cbbb29a2cd33803338c-8x.webp",
                     "basePrice": 1723,
-                    "avg24hPrice": 15949,
-                    "lastLowPrice": 17599,
+                    "avg24hPrice": 16292,
+                    "lastLowPrice": 9420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3873,8 +3873,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/687128c4505fed5f370b1625-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/687128c4505fed5f370b1625-8x.webp",
                     "basePrice": 9814,
-                    "avg24hPrice": 42069,
-                    "lastLowPrice": 20000,
+                    "avg24hPrice": 16666,
+                    "lastLowPrice": 16666,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -3911,8 +3911,8 @@
         "normalizedName": "kbp-9a-91-9x39-compact-assault-rifle",
         "shortName": "9A-91",
         "basePrice": 19370,
-        "avg24hPrice": 30824,
-        "lastLowPrice": 39975,
+        "avg24hPrice": 29559,
+        "lastLowPrice": 29000,
         "weight": 0.92,
         "categories": [
           {
@@ -4016,8 +4016,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6450ec2e7da7133e5a09ca96-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6450ec2e7da7133e5a09ca96-8x.webp",
                     "basePrice": 4499,
-                    "avg24hPrice": 5634,
-                    "lastLowPrice": 6000,
+                    "avg24hPrice": 9855,
+                    "lastLowPrice": 6589,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -4088,8 +4088,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-8x.webp",
                     "basePrice": 10140,
-                    "avg24hPrice": 19270,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 12234,
+                    "lastLowPrice": 11888,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4110,8 +4110,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-8x.webp",
                     "basePrice": 7260,
-                    "avg24hPrice": 7600,
-                    "lastLowPrice": 7600,
+                    "avg24hPrice": 8999,
+                    "lastLowPrice": 7499,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4236,8 +4236,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57486e672459770abd687134-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57486e672459770abd687134-8x.webp",
                     "basePrice": 14150,
-                    "avg24hPrice": 24074,
-                    "lastLowPrice": 31111,
+                    "avg24hPrice": 42520,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -4253,8 +4253,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-8x.webp",
                     "basePrice": 8430,
-                    "avg24hPrice": 9094,
-                    "lastLowPrice": 9000,
+                    "avg24hPrice": 16368,
+                    "lastLowPrice": 17420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4315,8 +4315,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-8x.webp",
                     "basePrice": 17784,
-                    "avg24hPrice": 19188,
-                    "lastLowPrice": 16000,
+                    "avg24hPrice": 17005,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4361,8 +4361,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-8x.webp",
                     "basePrice": 19784,
-                    "avg24hPrice": 19643,
-                    "lastLowPrice": 18100,
+                    "avg24hPrice": 18244,
+                    "lastLowPrice": 19998,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4407,8 +4407,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-8x.webp",
                     "basePrice": 18784,
-                    "avg24hPrice": 32166,
-                    "lastLowPrice": 18000,
+                    "avg24hPrice": 16941,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4453,8 +4453,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-8x.webp",
                     "basePrice": 14500,
-                    "avg24hPrice": 17999,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 20262,
+                    "lastLowPrice": 19999,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4499,8 +4499,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-8x.webp",
                     "basePrice": 13732,
-                    "avg24hPrice": 14989,
-                    "lastLowPrice": 14989,
+                    "avg24hPrice": 14968,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4669,8 +4669,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-8x.webp",
                     "basePrice": 5302,
-                    "avg24hPrice": 15674,
-                    "lastLowPrice": 14500,
+                    "avg24hPrice": 10524,
+                    "lastLowPrice": 11333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -4686,8 +4686,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-8x.webp",
                     "basePrice": 1750,
-                    "avg24hPrice": 15025,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 21979,
+                    "lastLowPrice": 20000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4748,8 +4748,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-8x.webp",
                     "basePrice": 2000,
-                    "avg24hPrice": 16475,
-                    "lastLowPrice": 13000,
+                    "avg24hPrice": 10000,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4818,8 +4818,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-8x.webp",
                     "basePrice": 5118,
-                    "avg24hPrice": 14999,
-                    "lastLowPrice": 14999,
+                    "avg24hPrice": 15000,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -4835,8 +4835,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-8x.webp",
                     "basePrice": 7800,
-                    "avg24hPrice": 24946,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 21948,
+                    "lastLowPrice": 13000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4865,8 +4865,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-8x.webp",
                     "basePrice": 7600,
-                    "avg24hPrice": 30103,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 23279,
+                    "lastLowPrice": 17555,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -4899,8 +4899,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-8x.webp",
                     "basePrice": 6100,
-                    "avg24hPrice": 15228,
-                    "lastLowPrice": 15228,
+                    "avg24hPrice": 39798,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5013,8 +5013,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-8x.webp",
                     "basePrice": 10980,
-                    "avg24hPrice": 22222,
-                    "lastLowPrice": 22222,
+                    "avg24hPrice": 14336,
+                    "lastLowPrice": 13800,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5087,8 +5087,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-8x.webp",
                     "basePrice": 9562,
-                    "avg24hPrice": 26447,
-                    "lastLowPrice": 39997,
+                    "avg24hPrice": 26269,
+                    "lastLowPrice": 17666,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5201,8 +5201,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/645123013d52156624001fd1-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/645123013d52156624001fd1-8x.webp",
                     "basePrice": 7900,
-                    "avg24hPrice": 15000,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 30000,
+                    "lastLowPrice": 30000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -5218,8 +5218,8 @@
         "normalizedName": "kbp-vsk-94-9x39-rifle",
         "shortName": "VSK-94",
         "basePrice": 19370,
-        "avg24hPrice": 51464,
-        "lastLowPrice": 44444,
+        "avg24hPrice": 49551,
+        "lastLowPrice": 49000,
         "weight": 0.92,
         "categories": [
           {
@@ -5314,8 +5314,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6450ec2e7da7133e5a09ca96-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6450ec2e7da7133e5a09ca96-8x.webp",
                     "basePrice": 4499,
-                    "avg24hPrice": 5634,
-                    "lastLowPrice": 6000,
+                    "avg24hPrice": 9855,
+                    "lastLowPrice": 6589,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -5338,8 +5338,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6452519e3d52156624001fd5-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6452519e3d52156624001fd5-8x.webp",
                     "basePrice": 1696,
-                    "avg24hPrice": 30000,
-                    "lastLowPrice": 30000,
+                    "avg24hPrice": 5000,
+                    "lastLowPrice": 5000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -5362,8 +5362,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-8x.webp",
                     "basePrice": 10140,
-                    "avg24hPrice": 19270,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 12234,
+                    "lastLowPrice": 11888,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5384,8 +5384,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-8x.webp",
                     "basePrice": 7260,
-                    "avg24hPrice": 7600,
-                    "lastLowPrice": 7600,
+                    "avg24hPrice": 8999,
+                    "lastLowPrice": 7499,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5510,8 +5510,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57486e672459770abd687134-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57486e672459770abd687134-8x.webp",
                     "basePrice": 14150,
-                    "avg24hPrice": 24074,
-                    "lastLowPrice": 31111,
+                    "avg24hPrice": 42520,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -5527,8 +5527,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-8x.webp",
                     "basePrice": 8430,
-                    "avg24hPrice": 9094,
-                    "lastLowPrice": 9000,
+                    "avg24hPrice": 16368,
+                    "lastLowPrice": 17420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5589,8 +5589,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-8x.webp",
                     "basePrice": 17784,
-                    "avg24hPrice": 19188,
-                    "lastLowPrice": 16000,
+                    "avg24hPrice": 17005,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5635,8 +5635,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-8x.webp",
                     "basePrice": 19784,
-                    "avg24hPrice": 19643,
-                    "lastLowPrice": 18100,
+                    "avg24hPrice": 18244,
+                    "lastLowPrice": 19998,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5681,8 +5681,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-8x.webp",
                     "basePrice": 18784,
-                    "avg24hPrice": 32166,
-                    "lastLowPrice": 18000,
+                    "avg24hPrice": 16941,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5727,8 +5727,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-8x.webp",
                     "basePrice": 14500,
-                    "avg24hPrice": 17999,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 20262,
+                    "lastLowPrice": 19999,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5773,8 +5773,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-8x.webp",
                     "basePrice": 13732,
-                    "avg24hPrice": 14989,
-                    "lastLowPrice": 14989,
+                    "avg24hPrice": 14968,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -5943,8 +5943,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-8x.webp",
                     "basePrice": 5302,
-                    "avg24hPrice": 15674,
-                    "lastLowPrice": 14500,
+                    "avg24hPrice": 10524,
+                    "lastLowPrice": 11333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -5960,8 +5960,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-8x.webp",
                     "basePrice": 1750,
-                    "avg24hPrice": 15025,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 21979,
+                    "lastLowPrice": 20000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6022,8 +6022,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-8x.webp",
                     "basePrice": 2000,
-                    "avg24hPrice": 16475,
-                    "lastLowPrice": 13000,
+                    "avg24hPrice": 10000,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6092,8 +6092,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-8x.webp",
                     "basePrice": 5118,
-                    "avg24hPrice": 14999,
-                    "lastLowPrice": 14999,
+                    "avg24hPrice": 15000,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -6109,8 +6109,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-8x.webp",
                     "basePrice": 7800,
-                    "avg24hPrice": 24946,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 21948,
+                    "lastLowPrice": 13000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6139,8 +6139,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-8x.webp",
                     "basePrice": 7600,
-                    "avg24hPrice": 30103,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 23279,
+                    "lastLowPrice": 17555,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6173,8 +6173,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-8x.webp",
                     "basePrice": 6100,
-                    "avg24hPrice": 15228,
-                    "lastLowPrice": 15228,
+                    "avg24hPrice": 39798,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6287,8 +6287,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-8x.webp",
                     "basePrice": 10980,
-                    "avg24hPrice": 22222,
-                    "lastLowPrice": 22222,
+                    "avg24hPrice": 14336,
+                    "lastLowPrice": 13800,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6361,8 +6361,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-8x.webp",
                     "basePrice": 9562,
-                    "avg24hPrice": 26447,
-                    "lastLowPrice": 39997,
+                    "avg24hPrice": 26269,
+                    "lastLowPrice": 17666,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6475,8 +6475,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/645123013d52156624001fd1-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/645123013d52156624001fd1-8x.webp",
                     "basePrice": 7900,
-                    "avg24hPrice": 15000,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 30000,
+                    "lastLowPrice": 30000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -6492,8 +6492,8 @@
         "normalizedName": "molot-arms-vpo-101-vepr-hunter-762x51-carbine",
         "shortName": "VPO-101 Vepr-Hunter",
         "basePrice": 38978,
-        "avg24hPrice": 49857,
-        "lastLowPrice": 42069,
+        "avg24hPrice": 44199,
+        "lastLowPrice": 42000,
         "weight": 2.092,
         "categories": [
           {
@@ -6634,8 +6634,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5649d9a14bdc2d79388b4580-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5649d9a14bdc2d79388b4580-8x.webp",
                     "basePrice": 2698,
-                    "avg24hPrice": 5220,
-                    "lastLowPrice": 1999,
+                    "avg24hPrice": 19000,
+                    "lastLowPrice": 19000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6680,8 +6680,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c503b1c2e221602b21d6e9d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c503b1c2e221602b21d6e9d-8x.webp",
                     "basePrice": 300,
-                    "avg24hPrice": 5000,
-                    "lastLowPrice": 5000,
+                    "avg24hPrice": 2000,
+                    "lastLowPrice": 2000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -6721,8 +6721,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5f63405df5750b524b45f114-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5f63405df5750b524b45f114-8x.webp",
                     "basePrice": 5400,
-                    "avg24hPrice": 18000,
-                    "lastLowPrice": 18000,
+                    "avg24hPrice": 30000,
+                    "lastLowPrice": 30000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -6745,8 +6745,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c503ad32e2216398b5aada2-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c503ad32e2216398b5aada2-8x.webp",
                     "basePrice": 3850,
-                    "avg24hPrice": 14408,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 17461,
+                    "lastLowPrice": 16666,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -6762,8 +6762,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c503ac82e221602b21d6e9a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c503ac82e221602b21d6e9a-8x.webp",
                     "basePrice": 1100,
-                    "avg24hPrice": 1100,
-                    "lastLowPrice": 1100,
+                    "avg24hPrice": 22088,
+                    "lastLowPrice": 5000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -6786,8 +6786,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-8x.webp",
                     "basePrice": 10140,
-                    "avg24hPrice": 19270,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 12234,
+                    "lastLowPrice": 11888,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6808,8 +6808,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-8x.webp",
                     "basePrice": 7260,
-                    "avg24hPrice": 7600,
-                    "lastLowPrice": 7600,
+                    "avg24hPrice": 8999,
+                    "lastLowPrice": 7499,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -6934,8 +6934,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57486e672459770abd687134-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57486e672459770abd687134-8x.webp",
                     "basePrice": 14150,
-                    "avg24hPrice": 24074,
-                    "lastLowPrice": 31111,
+                    "avg24hPrice": 42520,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -6951,8 +6951,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-8x.webp",
                     "basePrice": 8430,
-                    "avg24hPrice": 9094,
-                    "lastLowPrice": 9000,
+                    "avg24hPrice": 16368,
+                    "lastLowPrice": 17420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7013,8 +7013,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-8x.webp",
                     "basePrice": 17784,
-                    "avg24hPrice": 19188,
-                    "lastLowPrice": 16000,
+                    "avg24hPrice": 17005,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7059,8 +7059,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-8x.webp",
                     "basePrice": 19784,
-                    "avg24hPrice": 19643,
-                    "lastLowPrice": 18100,
+                    "avg24hPrice": 18244,
+                    "lastLowPrice": 19998,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7105,8 +7105,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-8x.webp",
                     "basePrice": 18784,
-                    "avg24hPrice": 32166,
-                    "lastLowPrice": 18000,
+                    "avg24hPrice": 16941,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7151,8 +7151,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-8x.webp",
                     "basePrice": 14500,
-                    "avg24hPrice": 17999,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 20262,
+                    "lastLowPrice": 19999,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7197,8 +7197,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-8x.webp",
                     "basePrice": 13732,
-                    "avg24hPrice": 14989,
-                    "lastLowPrice": 14989,
+                    "avg24hPrice": 14968,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7367,8 +7367,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-8x.webp",
                     "basePrice": 5302,
-                    "avg24hPrice": 15674,
-                    "lastLowPrice": 14500,
+                    "avg24hPrice": 10524,
+                    "lastLowPrice": 11333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -7384,8 +7384,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/609a4b4fe2ff132951242d04-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/609a4b4fe2ff132951242d04-8x.webp",
                     "basePrice": 2902,
-                    "avg24hPrice": 4444,
-                    "lastLowPrice": 4444,
+                    "avg24hPrice": 16089,
+                    "lastLowPrice": 13000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -7401,8 +7401,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-8x.webp",
                     "basePrice": 1750,
-                    "avg24hPrice": 15025,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 21979,
+                    "lastLowPrice": 20000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7463,8 +7463,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-8x.webp",
                     "basePrice": 2000,
-                    "avg24hPrice": 16475,
-                    "lastLowPrice": 13000,
+                    "avg24hPrice": 10000,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7533,8 +7533,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-8x.webp",
                     "basePrice": 5118,
-                    "avg24hPrice": 14999,
-                    "lastLowPrice": 14999,
+                    "avg24hPrice": 15000,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -7550,8 +7550,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5dff8db859400025ea5150d4-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5dff8db859400025ea5150d4-8x.webp",
                     "basePrice": 9100,
-                    "avg24hPrice": 28848,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 30082,
+                    "lastLowPrice": 29000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7624,8 +7624,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-8x.webp",
                     "basePrice": 7800,
-                    "avg24hPrice": 24946,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 21948,
+                    "lastLowPrice": 13000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7654,8 +7654,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-8x.webp",
                     "basePrice": 7600,
-                    "avg24hPrice": 30103,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 23279,
+                    "lastLowPrice": 17555,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7688,8 +7688,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-8x.webp",
                     "basePrice": 6100,
-                    "avg24hPrice": 15228,
-                    "lastLowPrice": 15228,
+                    "avg24hPrice": 39798,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7802,8 +7802,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/63d114019e35b334d82302f7-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/63d114019e35b334d82302f7-8x.webp",
                     "basePrice": 7153,
-                    "avg24hPrice": 23074,
-                    "lastLowPrice": 30000,
+                    "avg24hPrice": 27089,
+                    "lastLowPrice": 19500,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7904,8 +7904,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6544d4187c5457729210d277-8x.webp",
                     "basePrice": 10980,
-                    "avg24hPrice": 22222,
-                    "lastLowPrice": 22222,
+                    "avg24hPrice": 14336,
+                    "lastLowPrice": 13800,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -7978,8 +7978,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-8x.webp",
                     "basePrice": 9562,
-                    "avg24hPrice": 26447,
-                    "lastLowPrice": 39997,
+                    "avg24hPrice": 26269,
+                    "lastLowPrice": 17666,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -8075,8 +8075,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5f63407e1b231926f2329f15-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5f63407e1b231926f2329f15-8x.webp",
                     "basePrice": 33000,
-                    "avg24hPrice": 32336,
-                    "lastLowPrice": 45000,
+                    "avg24hPrice": 43392,
+                    "lastLowPrice": 40000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -8092,8 +8092,8 @@
         "normalizedName": "molot-arms-simonov-op-sks-762x39-carbine",
         "shortName": "OP-SKS",
         "basePrice": 21814,
-        "avg24hPrice": 79767,
-        "lastLowPrice": 70000,
+        "avg24hPrice": 162647,
+        "lastLowPrice": 40000,
         "weight": 0.82,
         "categories": [
           {
@@ -8213,8 +8213,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5d0236dad7ad1a0940739d29-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5d0236dad7ad1a0940739d29-8x.webp",
                     "basePrice": 16300,
-                    "avg24hPrice": 40000,
-                    "lastLowPrice": 40000,
+                    "avg24hPrice": 47042,
+                    "lastLowPrice": 35000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -8235,8 +8235,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/587e0531245977466077a0f7-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/587e0531245977466077a0f7-8x.webp",
                     "basePrice": 1885,
-                    "avg24hPrice": 2000,
-                    "lastLowPrice": 2000,
+                    "avg24hPrice": 9000,
+                    "lastLowPrice": 9000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8252,8 +8252,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5afd7ded5acfc40017541f5e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5afd7ded5acfc40017541f5e-8x.webp",
                     "basePrice": 8654,
-                    "avg24hPrice": 19000,
-                    "lastLowPrice": 19000,
+                    "avg24hPrice": 61714,
+                    "lastLowPrice": 41500,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8269,8 +8269,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/574dad8024597745964bf05c-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/574dad8024597745964bf05c-8x.webp",
                     "basePrice": 3780,
-                    "avg24hPrice": 5000,
-                    "lastLowPrice": 5000,
+                    "avg24hPrice": 4000,
+                    "lastLowPrice": 4000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8286,8 +8286,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/653ecef836fae5a82f02b869-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/653ecef836fae5a82f02b869-8x.webp",
                     "basePrice": 12609,
-                    "avg24hPrice": 10000,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 14000,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -8310,8 +8310,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/634eff66517ccc8a960fc735-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/634eff66517ccc8a960fc735-8x.webp",
                     "basePrice": 3920,
-                    "avg24hPrice": 16550,
-                    "lastLowPrice": 4100,
+                    "avg24hPrice": 4115,
+                    "lastLowPrice": 4115,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8327,8 +8327,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/634f02331f9f536910079b51-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/634f02331f9f536910079b51-8x.webp",
                     "basePrice": 3920,
-                    "avg24hPrice": 15666,
-                    "lastLowPrice": 13333,
+                    "avg24hPrice": 38333,
+                    "lastLowPrice": 33333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -8351,8 +8351,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/61695095d92c473c7702147a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/61695095d92c473c7702147a-8x.webp",
                     "basePrice": 24500,
-                    "avg24hPrice": 45130,
-                    "lastLowPrice": 24000,
+                    "avg24hPrice": 47811,
+                    "lastLowPrice": 29800,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8368,8 +8368,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c5970672e221602b21d7855-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c5970672e221602b21d7855-8x.webp",
                     "basePrice": 16690,
-                    "avg24hPrice": 63615,
-                    "lastLowPrice": 37777,
+                    "avg24hPrice": 30010,
+                    "lastLowPrice": 23333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8385,8 +8385,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/587df583245977373c4f1129-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/587df583245977373c4f1129-8x.webp",
                     "basePrice": 5697,
-                    "avg24hPrice": 24539,
-                    "lastLowPrice": 23000,
+                    "avg24hPrice": 23298,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8402,8 +8402,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/587df3a12459772c28142567-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/587df3a12459772c28142567-8x.webp",
                     "basePrice": 1600,
-                    "avg24hPrice": 1055,
-                    "lastLowPrice": 1111,
+                    "avg24hPrice": 3222,
+                    "lastLowPrice": 3222,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -8426,8 +8426,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/587e08ee245977446b4410cf-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/587e08ee245977446b4410cf-8x.webp",
                     "basePrice": 6017,
-                    "avg24hPrice": 23332,
-                    "lastLowPrice": 5997,
+                    "avg24hPrice": 13412,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8443,8 +8443,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6415d33eda439c6a97048b5b-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6415d33eda439c6a97048b5b-8x.webp",
                     "basePrice": 7410,
-                    "avg24hPrice": 28517,
-                    "lastLowPrice": 39999,
+                    "avg24hPrice": 22555,
+                    "lastLowPrice": 15110,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -8528,8 +8528,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/634f06262e5def262d0b30ca-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/634f06262e5def262d0b30ca-8x.webp",
                     "basePrice": 1109,
-                    "avg24hPrice": 1000,
-                    "lastLowPrice": 1000,
+                    "avg24hPrice": 5000,
+                    "lastLowPrice": 5000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8545,8 +8545,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/634f05ca517ccc8a960fc748-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/634f05ca517ccc8a960fc748-8x.webp",
                     "basePrice": 1109,
-                    "avg24hPrice": 1208,
-                    "lastLowPrice": 1208,
+                    "avg24hPrice": 5678,
+                    "lastLowPrice": 5678,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8562,8 +8562,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6415c694da439c6a97048b56-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6415c694da439c6a97048b56-8x.webp",
                     "basePrice": 10161,
-                    "avg24hPrice": 29487,
-                    "lastLowPrice": 28000,
+                    "avg24hPrice": 38856,
+                    "lastLowPrice": 39999,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -8785,8 +8785,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65144ff50e00edc79406836f-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65144ff50e00edc79406836f-8x.webp",
                     "basePrice": 27543,
-                    "avg24hPrice": 67401,
-                    "lastLowPrice": 66499,
+                    "avg24hPrice": 69031,
+                    "lastLowPrice": 71111,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -8809,7 +8809,7 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c44f4f2459772d2c627113-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c44f4f2459772d2c627113-8x.webp",
                     "basePrice": 1599,
-                    "avg24hPrice": 49832,
+                    "avg24hPrice": 49999,
                     "lastLowPrice": 49999,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
@@ -8850,8 +8850,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57838f0b2459774a256959b2-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57838f0b2459774a256959b2-8x.webp",
                     "basePrice": 4637,
-                    "avg24hPrice": 8333,
-                    "lastLowPrice": 6666,
+                    "avg24hPrice": 9836,
+                    "lastLowPrice": 9000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8867,8 +8867,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57838f9f2459774a150289a0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57838f9f2459774a150289a0-8x.webp",
                     "basePrice": 5999,
-                    "avg24hPrice": 13911,
-                    "lastLowPrice": 7000,
+                    "avg24hPrice": 12120,
+                    "lastLowPrice": 11000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8884,8 +8884,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a9e81fba2750c00164f6b11-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a9e81fba2750c00164f6b11-8x.webp",
                     "basePrice": 20019,
-                    "avg24hPrice": 49677,
-                    "lastLowPrice": 43333,
+                    "avg24hPrice": 49285,
+                    "lastLowPrice": 49420,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8901,8 +8901,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65118f531b90b4fc77015083-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65118f531b90b4fc77015083-8x.webp",
                     "basePrice": 20051,
-                    "avg24hPrice": 67473,
-                    "lastLowPrice": 45000,
+                    "avg24hPrice": 68806,
+                    "lastLowPrice": 70419,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -8925,8 +8925,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a69a2ed8dc32e000d46d1f1-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a69a2ed8dc32e000d46d1f1-8x.webp",
                     "basePrice": 8200,
-                    "avg24hPrice": 59586,
-                    "lastLowPrice": 37777,
+                    "avg24hPrice": 66354,
+                    "lastLowPrice": 74000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -8947,8 +8947,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c44fa82459772d2d75e415-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c44fa82459772d2d75e415-8x.webp",
                     "basePrice": 1490,
-                    "avg24hPrice": 50000,
-                    "lastLowPrice": 50000,
+                    "avg24hPrice": 2123,
+                    "lastLowPrice": 2123,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -8981,8 +8981,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6878cc5bd0c26d57bf0aa37a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6878cc5bd0c26d57bf0aa37a-8x.webp",
                     "basePrice": 11900,
-                    "avg24hPrice": 32950,
-                    "lastLowPrice": 38888,
+                    "avg24hPrice": 29534,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -9005,8 +9005,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57c450252459772d28133253-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57c450252459772d28133253-8x.webp",
                     "basePrice": 3111,
-                    "avg24hPrice": 25555,
-                    "lastLowPrice": 100000,
+                    "avg24hPrice": 4550,
+                    "lastLowPrice": 4000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -9022,8 +9022,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6878ccf4181ac8a5b5077236-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6878ccf4181ac8a5b5077236-8x.webp",
                     "basePrice": 14525,
-                    "avg24hPrice": 44024,
-                    "lastLowPrice": 34989,
+                    "avg24hPrice": 56466,
+                    "lastLowPrice": 28000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9051,8 +9051,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6130ca3fd92c473c77020dbd-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6130ca3fd92c473c77020dbd-8x.webp",
                     "basePrice": 5000,
-                    "avg24hPrice": 26403,
-                    "lastLowPrice": 20999,
+                    "avg24hPrice": 21876,
+                    "lastLowPrice": 15555,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -9068,8 +9068,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5648ac824bdc2ded0b8b457d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5648ac824bdc2ded0b8b457d-8x.webp",
                     "basePrice": 2663,
-                    "avg24hPrice": 9530,
-                    "lastLowPrice": 6000,
+                    "avg24hPrice": 11770,
+                    "lastLowPrice": 6058,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -9092,8 +9092,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5947db3f86f77447880cf76f-8x.webp",
                     "basePrice": 10140,
-                    "avg24hPrice": 19270,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 12234,
+                    "lastLowPrice": 11888,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9114,8 +9114,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6113d6c3290d254f5e6b27db-8x.webp",
                     "basePrice": 7260,
-                    "avg24hPrice": 7600,
-                    "lastLowPrice": 7600,
+                    "avg24hPrice": 8999,
+                    "lastLowPrice": 7499,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9240,8 +9240,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57486e672459770abd687134-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57486e672459770abd687134-8x.webp",
                     "basePrice": 14150,
-                    "avg24hPrice": 24074,
-                    "lastLowPrice": 31111,
+                    "avg24hPrice": 42520,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -9257,8 +9257,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a5d5852ecee1505530b2a-8x.webp",
                     "basePrice": 8430,
-                    "avg24hPrice": 9094,
-                    "lastLowPrice": 9000,
+                    "avg24hPrice": 16368,
+                    "lastLowPrice": 17420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9319,8 +9319,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5cf638cbd7f00c06595bc936-8x.webp",
                     "basePrice": 14500,
-                    "avg24hPrice": 17999,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 20262,
+                    "lastLowPrice": 19999,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9365,8 +9365,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5a7c74b3e899ef0014332c29-8x.webp",
                     "basePrice": 13732,
-                    "avg24hPrice": 14989,
-                    "lastLowPrice": 14989,
+                    "avg24hPrice": 14968,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9535,8 +9535,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/591ee00d86f774592f7b841e-8x.webp",
                     "basePrice": 5302,
-                    "avg24hPrice": 15674,
-                    "lastLowPrice": 14500,
+                    "avg24hPrice": 10524,
+                    "lastLowPrice": 11333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -9552,8 +9552,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5e569a2e56edd02abe09f280-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5e569a2e56edd02abe09f280-8x.webp",
                     "basePrice": 6400,
-                    "avg24hPrice": 19142,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 27461,
+                    "lastLowPrice": 25000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9626,8 +9626,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5d0a29ead7ad1a0026013f27-8x.webp",
                     "basePrice": 1750,
-                    "avg24hPrice": 15025,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 21979,
+                    "lastLowPrice": 20000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9688,8 +9688,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/618a75c9a3884f56c957ca1b-8x.webp",
                     "basePrice": 2000,
-                    "avg24hPrice": 16475,
-                    "lastLowPrice": 13000,
+                    "avg24hPrice": 10000,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9758,8 +9758,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/57acb6222459771ec34b5cb0-8x.webp",
                     "basePrice": 5118,
-                    "avg24hPrice": 14999,
-                    "lastLowPrice": 14999,
+                    "avg24hPrice": 15000,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -9775,8 +9775,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c61a40d2e2216001403158d-8x.webp",
                     "basePrice": 7800,
-                    "avg24hPrice": 24946,
-                    "lastLowPrice": 24444,
+                    "avg24hPrice": 21948,
+                    "lastLowPrice": 13000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9805,8 +9805,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c90c3622e221601da359851-8x.webp",
                     "basePrice": 7600,
-                    "avg24hPrice": 30103,
-                    "lastLowPrice": 15000,
+                    "avg24hPrice": 23279,
+                    "lastLowPrice": 17555,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9839,8 +9839,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/638db77630c4240f9e06f8b6-8x.webp",
                     "basePrice": 6100,
-                    "avg24hPrice": 15228,
-                    "lastLowPrice": 15228,
+                    "avg24hPrice": 39798,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -9953,8 +9953,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65f1b1176dbd6c5ba2082eed-8x.webp",
                     "basePrice": 9562,
-                    "avg24hPrice": 26447,
-                    "lastLowPrice": 39997,
+                    "avg24hPrice": 26269,
+                    "lastLowPrice": 17666,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -10050,8 +10050,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82342f2e221644f31c060e-8x.webp",
                     "basePrice": 17784,
-                    "avg24hPrice": 19188,
-                    "lastLowPrice": 16000,
+                    "avg24hPrice": 17005,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -10096,8 +10096,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/576fd4ec2459777f0b518431-8x.webp",
                     "basePrice": 19784,
-                    "avg24hPrice": 19643,
-                    "lastLowPrice": 18100,
+                    "avg24hPrice": 18244,
+                    "lastLowPrice": 19998,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -10142,8 +10142,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c82343a2e221644f31c0611-8x.webp",
                     "basePrice": 18784,
-                    "avg24hPrice": 32166,
-                    "lastLowPrice": 18000,
+                    "avg24hPrice": 16941,
+                    "lastLowPrice": 15000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -10188,8 +10188,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/67069c8cee8138ed2f05ad34-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/67069c8cee8138ed2f05ad34-8x.webp",
                     "basePrice": 1752,
-                    "avg24hPrice": 24466,
-                    "lastLowPrice": 20000,
+                    "avg24hPrice": 22080,
+                    "lastLowPrice": 22221,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -10302,8 +10302,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/67069cbbb29a2cd33803338c-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/67069cbbb29a2cd33803338c-8x.webp",
                     "basePrice": 1723,
-                    "avg24hPrice": 15949,
-                    "lastLowPrice": 17599,
+                    "avg24hPrice": 16292,
+                    "lastLowPrice": 9420,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -10423,8 +10423,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65144f546ddb773afa0e35e1-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65144f546ddb773afa0e35e1-8x.webp",
                     "basePrice": 1623,
-                    "avg24hPrice": 25000,
-                    "lastLowPrice": 25000,
+                    "avg24hPrice": 61710,
+                    "lastLowPrice": 54000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -10440,8 +10440,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6565c3ab977bcc2dbb01c2e7-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6565c3ab977bcc2dbb01c2e7-8x.webp",
                     "basePrice": 1623,
-                    "avg24hPrice": 14013,
-                    "lastLowPrice": 11111,
+                    "avg24hPrice": 12987,
+                    "lastLowPrice": 12987,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -10457,8 +10457,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6568a6bf2c5fb7afc70bc424-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6568a6bf2c5fb7afc70bc424-8x.webp",
                     "basePrice": 2151,
-                    "avg24hPrice": 5000,
-                    "lastLowPrice": 5000,
+                    "avg24hPrice": 12222,
+                    "lastLowPrice": 12222,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -10474,8 +10474,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/688c86420e99e554a90c0fd6-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/688c86420e99e554a90c0fd6-8x.webp",
                     "basePrice": 6584,
-                    "avg24hPrice": 15442,
-                    "lastLowPrice": 15549,
+                    "avg24hPrice": 18838,
+                    "lastLowPrice": 13000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -10498,8 +10498,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/65329ebcc0d50d0c9204ace1-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/65329ebcc0d50d0c9204ace1-8x.webp",
                     "basePrice": 2200,
-                    "avg24hPrice": 2000,
-                    "lastLowPrice": 2000,
+                    "avg24hPrice": 10000,
+                    "lastLowPrice": 10000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -10672,8 +10672,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6565c0c2ff7eb7070409084c-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6565c0c2ff7eb7070409084c-8x.webp",
                     "basePrice": 2200,
-                    "avg24hPrice": 17888,
-                    "lastLowPrice": 17888,
+                    "avg24hPrice": 11111,
+                    "lastLowPrice": 11111,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -10959,8 +10959,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6410745d5dd49d77bd078485-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6410745d5dd49d77bd078485-8x.webp",
                     "basePrice": 3780,
-                    "avg24hPrice": 10000,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 44444,
+                    "lastLowPrice": 100000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -10976,8 +10976,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6888ac0f5978b35e90010b49-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6888ac0f5978b35e90010b49-8x.webp",
                     "basePrice": 8967,
-                    "avg24hPrice": 35000,
-                    "lastLowPrice": 35000,
+                    "avg24hPrice": 20000,
+                    "lastLowPrice": 20000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11000,8 +11000,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6410758c857473525b08bb77-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6410758c857473525b08bb77-8x.webp",
                     "basePrice": 3920,
-                    "avg24hPrice": 10000,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 100,
+                    "lastLowPrice": 100,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11024,8 +11024,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/641074a07fd350b98c0b3f96-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/641074a07fd350b98c0b3f96-8x.webp",
                     "basePrice": 5697,
-                    "avg24hPrice": 18872,
-                    "lastLowPrice": 19999,
+                    "avg24hPrice": 21416,
+                    "lastLowPrice": 18000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11041,8 +11041,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6422e1ea3c0f06190302161a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6422e1ea3c0f06190302161a-8x.webp",
                     "basePrice": 5697,
-                    "avg24hPrice": 18707,
-                    "lastLowPrice": 11111,
+                    "avg24hPrice": 16481,
+                    "lastLowPrice": 24000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11082,8 +11082,8 @@
         "normalizedName": "tokarev-svt-40-762x54r-rifle",
         "shortName": "SVT-40",
         "basePrice": 19331,
-        "avg24hPrice": 75863,
-        "lastLowPrice": 121443,
+        "avg24hPrice": 75161,
+        "lastLowPrice": 62661,
         "weight": 1.075,
         "categories": [
           {
@@ -11194,8 +11194,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6410745d5dd49d77bd078485-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6410745d5dd49d77bd078485-8x.webp",
                     "basePrice": 3780,
-                    "avg24hPrice": 10000,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 44444,
+                    "lastLowPrice": 100000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11211,8 +11211,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6888ac0f5978b35e90010b49-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6888ac0f5978b35e90010b49-8x.webp",
                     "basePrice": 8967,
-                    "avg24hPrice": 35000,
-                    "lastLowPrice": 35000,
+                    "avg24hPrice": 20000,
+                    "lastLowPrice": 20000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11235,8 +11235,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6410758c857473525b08bb77-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6410758c857473525b08bb77-8x.webp",
                     "basePrice": 3920,
-                    "avg24hPrice": 10000,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 100,
+                    "lastLowPrice": 100,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11259,8 +11259,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/641074a07fd350b98c0b3f96-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/641074a07fd350b98c0b3f96-8x.webp",
                     "basePrice": 5697,
-                    "avg24hPrice": 18872,
-                    "lastLowPrice": 19999,
+                    "avg24hPrice": 21416,
+                    "lastLowPrice": 18000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11276,8 +11276,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6422e1ea3c0f06190302161a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6422e1ea3c0f06190302161a-8x.webp",
                     "basePrice": 5697,
-                    "avg24hPrice": 18707,
-                    "lastLowPrice": 11111,
+                    "avg24hPrice": 16481,
+                    "lastLowPrice": 24000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11341,8 +11341,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6888954ba66a069e0405a9aa-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6888954ba66a069e0405a9aa-8x.webp",
                     "basePrice": 5378,
-                    "avg24hPrice": 18886,
-                    "lastLowPrice": 18887,
+                    "avg24hPrice": 27388,
+                    "lastLowPrice": 18876,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11358,8 +11358,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/68889c930b29b8032504f369-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/68889c930b29b8032504f369-8x.webp",
                     "basePrice": 8542,
-                    "avg24hPrice": 22777,
-                    "lastLowPrice": 22222,
+                    "avg24hPrice": 46611,
+                    "lastLowPrice": 46581,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11375,8 +11375,8 @@
         "normalizedName": "toz-simonov-sks-762x39-carbine",
         "shortName": "SKS",
         "basePrice": 19331,
-        "avg24hPrice": 44755,
-        "lastLowPrice": 28987,
+        "avg24hPrice": 33467,
+        "lastLowPrice": 29900,
         "weight": 0.82,
         "categories": [
           {
@@ -11496,8 +11496,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5d0236dad7ad1a0940739d29-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5d0236dad7ad1a0940739d29-8x.webp",
                     "basePrice": 16300,
-                    "avg24hPrice": 40000,
-                    "lastLowPrice": 40000,
+                    "avg24hPrice": 47042,
+                    "lastLowPrice": 35000,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
@@ -11518,8 +11518,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/587e0531245977466077a0f7-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/587e0531245977466077a0f7-8x.webp",
                     "basePrice": 1885,
-                    "avg24hPrice": 2000,
-                    "lastLowPrice": 2000,
+                    "avg24hPrice": 9000,
+                    "lastLowPrice": 9000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11535,8 +11535,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5afd7ded5acfc40017541f5e-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5afd7ded5acfc40017541f5e-8x.webp",
                     "basePrice": 8654,
-                    "avg24hPrice": 19000,
-                    "lastLowPrice": 19000,
+                    "avg24hPrice": 61714,
+                    "lastLowPrice": 41500,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11552,8 +11552,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/574dad8024597745964bf05c-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/574dad8024597745964bf05c-8x.webp",
                     "basePrice": 3780,
-                    "avg24hPrice": 5000,
-                    "lastLowPrice": 5000,
+                    "avg24hPrice": 4000,
+                    "lastLowPrice": 4000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11569,8 +11569,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/653ecef836fae5a82f02b869-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/653ecef836fae5a82f02b869-8x.webp",
                     "basePrice": 12609,
-                    "avg24hPrice": 10000,
-                    "lastLowPrice": 10000,
+                    "avg24hPrice": 14000,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11593,8 +11593,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/634eff66517ccc8a960fc735-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/634eff66517ccc8a960fc735-8x.webp",
                     "basePrice": 3920,
-                    "avg24hPrice": 16550,
-                    "lastLowPrice": 4100,
+                    "avg24hPrice": 4115,
+                    "lastLowPrice": 4115,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11610,8 +11610,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/634f02331f9f536910079b51-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/634f02331f9f536910079b51-8x.webp",
                     "basePrice": 3920,
-                    "avg24hPrice": 15666,
-                    "lastLowPrice": 13333,
+                    "avg24hPrice": 38333,
+                    "lastLowPrice": 33333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11634,8 +11634,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/61695095d92c473c7702147a-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/61695095d92c473c7702147a-8x.webp",
                     "basePrice": 24500,
-                    "avg24hPrice": 45130,
-                    "lastLowPrice": 24000,
+                    "avg24hPrice": 47811,
+                    "lastLowPrice": 29800,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11651,8 +11651,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/5c5970672e221602b21d7855-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/5c5970672e221602b21d7855-8x.webp",
                     "basePrice": 16690,
-                    "avg24hPrice": 63615,
-                    "lastLowPrice": 37777,
+                    "avg24hPrice": 30010,
+                    "lastLowPrice": 23333,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11668,8 +11668,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/587df583245977373c4f1129-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/587df583245977373c4f1129-8x.webp",
                     "basePrice": 5697,
-                    "avg24hPrice": 24539,
-                    "lastLowPrice": 23000,
+                    "avg24hPrice": 23298,
+                    "lastLowPrice": 14000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11685,8 +11685,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/587df3a12459772c28142567-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/587df3a12459772c28142567-8x.webp",
                     "basePrice": 1600,
-                    "avg24hPrice": 1055,
-                    "lastLowPrice": 1111,
+                    "avg24hPrice": 3222,
+                    "lastLowPrice": 3222,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   }
@@ -11709,8 +11709,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/634f06262e5def262d0b30ca-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/634f06262e5def262d0b30ca-8x.webp",
                     "basePrice": 1109,
-                    "avg24hPrice": 1000,
-                    "lastLowPrice": 1000,
+                    "avg24hPrice": 5000,
+                    "lastLowPrice": 5000,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11726,8 +11726,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/634f05ca517ccc8a960fc748-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/634f05ca517ccc8a960fc748-8x.webp",
                     "basePrice": 1109,
-                    "avg24hPrice": 1208,
-                    "lastLowPrice": 1208,
+                    "avg24hPrice": 5678,
+                    "lastLowPrice": 5678,
                     "conflictingSlotIds": [],
                     "conflictingItems": []
                   },
@@ -11743,8 +11743,8 @@
                     "image512pxLink": "https://assets.tarkov.dev/6415c694da439c6a97048b56-512.webp",
                     "image8xLink": "https://assets.tarkov.dev/6415c694da439c6a97048b56-8x.webp",
                     "basePrice": 10161,
-                    "avg24hPrice": 29487,
-                    "lastLowPrice": 28000,
+                    "avg24hPrice": 38856,
+                    "lastLowPrice": 39999,
                     "conflictingSlotIds": [],
                     "conflictingItems": [
                       {
