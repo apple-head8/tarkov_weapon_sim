@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { Box, Typography, Grid2 } from "@mui/material";
 import "./App.css";
 import Sidebar from "./components/common/Sidebar";
@@ -13,6 +13,7 @@ import AmmoSelector from "./components/WeaponBuildSimulator/AmmoSelector";
 import {
     categoryArrayList,
     getCategoryDisplayName,
+    categoryListMapping,
 } from "./constants/categoryList";
 import ErrorMessage from "./components/common/ErrorMessage";
 import { findConflictingPart } from "./utils/conflict";
@@ -21,6 +22,57 @@ import {
     buildSlotsAndCategories,
     removeCategoryAndDescendants,
 } from "./utils/weaponBuild";
+
+function toNumberOrZero(value) {
+    return typeof value === "number" && Number.isFinite(value) ? value : 0;
+}
+
+function getMarketPrice(item) {
+    return toNumberOrZero(
+        item?.avg24hPrice ?? item?.lastLowPrice ?? item?.basePrice
+    );
+}
+
+function createUniqueCategoryKey(categoryName, categoryCounts) {
+    const currentCount = categoryCounts[categoryName] ?? 0;
+    categoryCounts[categoryName] = currentCount + 1;
+
+    return currentCount === 0 ? categoryName : `${categoryName}#${currentCount + 1}`;
+}
+
+function buildDefaultPartIdsBySlotKey(gun) {
+    if (!gun?.containsItems || !gun?.properties?.slots) {
+        return {};
+    }
+
+    const defaultItemIds = new Set(
+        gun.containsItems
+            .map((contained) => contained.item?.id)
+            .filter(Boolean)
+    );
+    const categoryCounts = {};
+    const defaultPartIds = {};
+
+    gun.properties.slots.forEach((slot) => {
+        const categoryName = categoryListMapping[slot.nameId];
+        const allowedItems = slot.filters?.allowedItems;
+
+        if (!categoryName || !Array.isArray(allowedItems)) {
+            return;
+        }
+
+        const categoryKey = createUniqueCategoryKey(categoryName, categoryCounts);
+        const defaultItem = allowedItems.find((allowedItem) =>
+            defaultItemIds.has(allowedItem.id)
+        );
+
+        if (defaultItem) {
+            defaultPartIds[categoryKey] = defaultItem.id;
+        }
+    });
+
+    return defaultPartIds;
+}
 
 const TarkovWeaponSim = () => {
     const [selectedParts, setSelectedParts] = useState({});
@@ -43,17 +95,21 @@ const TarkovWeaponSim = () => {
         price: "",
     });
 
-    function toNumberOrZero(value) {
-        return typeof value === "number" && Number.isFinite(value) ? value : 0;
-    }
+    const defaultPartIdsBySlotKey = useMemo(() => {
+        return buildDefaultPartIdsBySlotKey(selectedGun);
+    }, [selectedGun]);
+
+    const isDefaultPart = useCallback((categoryKey, part) => {
+        return defaultPartIdsBySlotKey[categoryKey] === part?.id;
+    }, [defaultPartIdsBySlotKey]);
 
     useEffect(() => {
         const newParameters = Object.values(selectedParts).reduce(
             (acc, part) => {
                 acc.weight += toNumberOrZero(part.weight);
                 acc.ergonomics += toNumberOrZero(part.ergonomicsModifier);
-                if (!part.isDefaultPart) {
-                    acc.price += toNumberOrZero(part.lastLowPrice);
+                if (!isDefaultPart(part.category, part)) {
+                    acc.price += getMarketPrice(part);
                 }
                 return acc;
             },
@@ -62,11 +118,11 @@ const TarkovWeaponSim = () => {
                 ergonomics: toNumberOrZero(
                     selectedGun?.properties?.ergonomics
                 ),
-                price: toNumberOrZero(selectedGun?.lastLowPrice),
+                price: getMarketPrice(selectedGun),
             }
         );
         setParameters(newParameters);
-    }, [selectedGun, selectedParts]);
+    }, [selectedGun, selectedParts, isDefaultPart]);
 
     // パーツ選択毎に、スロットの情報等を再計算する
     useEffect(() => {
@@ -128,6 +184,7 @@ const TarkovWeaponSim = () => {
             [category]: {
                 ...part,
                 category: category,
+                isDefaultPart: isDefaultPart(category, part),
             },
         }));
     };
@@ -195,6 +252,9 @@ const TarkovWeaponSim = () => {
                                     parts={selectedGunSlots}
                                     handlePartSelect={handlePartSelect}
                                     selectedParts={selectedParts}
+                                    defaultPartIdsBySlotKey={
+                                        defaultPartIdsBySlotKey
+                                    }
                                     clearPartSelect={clearPartSelect}
                                 />
                             )}

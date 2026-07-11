@@ -17,7 +17,16 @@ const PartCard = ({
 }) => {
     const hasPart = !!part;
 
-    function formatPrice(value) {
+    function getDisplayPrice(item) {
+        return item?.avg24hPrice ?? item?.lastLowPrice ?? item?.basePrice;
+    }
+
+    function formatPrice(item) {
+        if (item?.isDefaultPart) {
+            return "標準装備";
+        }
+
+        const value = getDisplayPrice(item);
         return typeof value === "number" && Number.isFinite(value)
             ? `¥${value.toLocaleString()}`
             : "-";
@@ -108,7 +117,7 @@ const PartCard = ({
                             エルゴ: {part.ergonomicsModifier ?? 0}
                         </Typography>
                         <Typography variant="body2" align="center">
-                            価格: {formatPrice(part.lastLowPrice)}
+                            価格: {formatPrice(part)}
                         </Typography>
                     </>
                 ) : (

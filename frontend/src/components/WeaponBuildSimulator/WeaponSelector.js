@@ -79,6 +79,8 @@ function WeaponSelector({
                 weight: matchedItem?.weight || 0,
                 ergonomicsModifier: matchedItem?.ergonomicsModifier || 0,
                 image512pxLink: matchedItem?.image512pxLink || null,
+                basePrice: matchedItem?.basePrice ?? null,
+                avg24hPrice: matchedItem?.avg24hPrice ?? null,
                 lastLowPrice: matchedItem?.lastLowPrice ?? null,
                 isDefaultPart: true,
             };

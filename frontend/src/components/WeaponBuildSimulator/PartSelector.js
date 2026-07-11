@@ -11,6 +11,7 @@ function PartSelector({
     parts,
     handlePartSelect,
     selectedParts,
+    defaultPartIdsBySlotKey,
     clearPartSelect,
 }) {
     const tabRefs = useRef({});
@@ -109,6 +110,18 @@ function PartSelector({
         }
 
         return path.join(" > ");
+    }
+
+    function withDefaultPartFlag(categoryKey, part) {
+        if (!part) return part;
+
+        const isDefaultPart =
+            defaultPartIdsBySlotKey?.[categoryKey] === part.id;
+
+        return {
+            ...part,
+            isDefaultPart,
+        };
     }
 
     return (
@@ -259,7 +272,7 @@ function PartSelector({
                             key={part.id}
                         >
                             <PartCard
-                                part={part}
+                                part={withDefaultPartFlag(selectedTab, part)}
                                 isSelected={
                                     selectedParts[selectedTab]?.id === part.id
                                 }
