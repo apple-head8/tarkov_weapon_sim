@@ -21,20 +21,25 @@ function WeaponSelector({
     }, [selectedType]);
 
     useEffect(() => {
+        if (!selectedGun?.id) return;
+
+        const matchedType = Object.entries(WEAPON_DATA_MAP).find(([, data]) =>
+            data.data.items.some((weapon) => weapon.id === selectedGun.id)
+        )?.[0];
+
+        if (matchedType && matchedType !== selectedType) {
+            setSelectedType(matchedType);
+        }
+    }, [selectedGun, selectedType]);
+
+    const handleTypeChange = (event) => {
+        const type = event.target.value;
+
+        setSelectedType(type);
         setSelectedGun("");
         setSelectedGunSlots(categoryArrayList);
         setSelectedParts({});
         setEnabledCategories({});
-    }, [
-        selectedType,
-        setSelectedGun,
-        setSelectedGunSlots,
-        setSelectedParts,
-        setEnabledCategories,
-    ]);
-
-    const handleTypeChange = (event) => {
-        setSelectedType(event.target.value);
     };
 
     const handleGunChange = (event) => {

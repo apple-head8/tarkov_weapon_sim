@@ -23,6 +23,9 @@ import {
     removeCategoryAndDescendants,
 } from "./utils/weaponBuild";
 
+const PRESET_STORAGE_KEY = "tarkovWeaponSim.presets";
+const PRESET_FILE_VERSION = 1;
+
 function toNumberOrZero(value) {
     return typeof value === "number" && Number.isFinite(value) ? value : 0;
 }
@@ -31,6 +34,94 @@ function getMarketPrice(item) {
     return toNumberOrZero(
         item?.avg24hPrice ?? item?.lastLowPrice ?? item?.basePrice
     );
+}
+
+function loadStoredPresets() {
+    try {
+        const rawPresets = window.localStorage.getItem(PRESET_STORAGE_KEY);
+        if (!rawPresets) return [];
+
+        const presets = JSON.parse(rawPresets);
+        return Array.isArray(presets) ? presets : [];
+    } catch {
+        return [];
+    }
+}
+
+function saveStoredPresets(presets) {
+    window.localStorage.setItem(PRESET_STORAGE_KEY, JSON.stringify(presets));
+}
+
+function sanitizeFileName(value) {
+    return (value || "tarkov-build")
+        .trim()
+        .replace(/[\\/:*?"<>|]/g, "_")
+        .replace(/\s+/g, "_")
+        .slice(0, 80);
+}
+
+function createPresetPayload({
+    name,
+    selectedGun,
+    selectedParts,
+    parameters,
+    selectedAmmo,
+}) {
+    const now = new Date().toISOString();
+
+    return {
+        version: PRESET_FILE_VERSION,
+        id: `${selectedGun.id}-${Date.now()}`,
+        name,
+        parts: { ...selectedParts },
+        parameters: { ...parameters },
+        gun: selectedGun,
+        ammo: selectedAmmo,
+        createdAt: now,
+        updatedAt: now,
+    };
+}
+
+function normalizeImportedPreset(data) {
+    const preset = data?.version ? data : data?.preset;
+
+    if (!preset?.gun?.id || !preset?.parts || typeof preset.parts !== "object") {
+        throw new Error("Invalid preset file.");
+    }
+
+    const now = new Date().toISOString();
+
+    return {
+        version: PRESET_FILE_VERSION,
+        id: preset.id ?? `${preset.gun.id}-${Date.now()}`,
+        name: preset.name || preset.gun.name || "Imported preset",
+        parts: preset.parts,
+        parameters: preset.parameters ?? {
+            weight: 0,
+            ergonomics: 0,
+            price: 0,
+        },
+        gun: preset.gun,
+        ammo: preset.ammo ?? null,
+        createdAt: preset.createdAt ?? now,
+        updatedAt: now,
+    };
+}
+
+function downloadPresetJson(preset) {
+    const fileName = `${sanitizeFileName(preset.name)}.json`;
+    const blob = new Blob([JSON.stringify(preset, null, 2)], {
+        type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
 }
 
 const TarkovWeaponSim = () => {
@@ -42,7 +133,7 @@ const TarkovWeaponSim = () => {
     });
     const [selectedGun, setSelectedGun] = useState(""); // 選択された銃のIDを管理 TODO:初期値の精査
     const [presetName, setPresetName] = useState("");
-    const [presets, setPresets] = useState([]);
+    const [presets, setPresets] = useState(loadStoredPresets);
     const [selectedTab, setSelectedTab] = useState(null);
     const [selectedGunSlots, setSelectedGunSlots] = useState(categoryArrayList);
     const [selectedAmmo, setSelectedAmmo] = useState(null);
@@ -53,6 +144,10 @@ const TarkovWeaponSim = () => {
         ergonomics: "",
         price: "",
     });
+
+    useEffect(() => {
+        saveStoredPresets(presets);
+    }, [presets]);
 
     const defaultPartIdsBySlotKey = useMemo(() => {
         return buildDefaultPartIdsBySlotKey(selectedGun);
@@ -154,24 +249,77 @@ const TarkovWeaponSim = () => {
         );
     };
 
-    const handleSavePreset = () => {
-        if (!presetName.trim()) return;
-        const newPreset = {
-            name: presetName,
-            parts: { ...selectedParts },
-            parameters: { ...parameters },
-            gun: selectedGun,
-            ammo: selectedAmmo,
+    const handleExportCurrentPreset = () => {
+        if (!selectedGun) return;
+
+        const name = presetName.trim() || selectedGun.name || "Tarkov preset";
+        const preset = createPresetPayload({
+            name,
+            selectedGun,
+            selectedParts,
+            parameters,
+            selectedAmmo,
+        });
+
+        downloadPresetJson(preset);
+    };
+
+    const handleExportSavedPreset = (preset) => {
+        downloadPresetJson({
+            ...preset,
+            version: PRESET_FILE_VERSION,
+            updatedAt: preset.updatedAt ?? new Date().toISOString(),
+        });
+    };
+
+    const handleImportPresetFile = (file) => {
+        if (!file) return;
+
+        const reader = new FileReader();
+
+        reader.onload = () => {
+            try {
+                const importedPreset = normalizeImportedPreset(
+                    JSON.parse(reader.result)
+                );
+
+                setPresets((prev) => {
+                    const exists = prev.some(
+                        (preset) => preset.id === importedPreset.id
+                    );
+
+                    return exists
+                        ? prev.map((preset) =>
+                              preset.id === importedPreset.id
+                                  ? importedPreset
+                                  : preset
+                          )
+                        : [importedPreset, ...prev];
+                });
+                handleLoadPreset(importedPreset);
+                setError("");
+            } catch {
+                setError("プリセットJSONの読み込みに失敗しました。");
+            }
         };
-        setPresets([...presets, newPreset]);
-        setPresetName("");
+
+        reader.onerror = () => {
+            setError("プリセットJSONの読み込みに失敗しました。");
+        };
+
+        reader.readAsText(file);
     };
 
     const handleLoadPreset = (preset) => {
         setSelectedGun(preset.gun);
-        setSelectedParts(preset.parts);
-        setParameters(preset.parameters);
+        setSelectedParts(preset.parts ?? {});
+        setParameters(preset.parameters ?? parameters);
         setSelectedAmmo(preset.ammo ?? null);
+        setError("");
+    };
+
+    const handleDeletePreset = (presetId) => {
+        setPresets((prev) => prev.filter((preset) => preset.id !== presetId));
     };
 
     return (
@@ -262,11 +410,15 @@ const TarkovWeaponSim = () => {
                         <PresetSave
                             presetName={presetName}
                             setPresetName={setPresetName}
-                            handleSavePreset={handleSavePreset}
+                            handleExportCurrentPreset={handleExportCurrentPreset}
+                            handleImportPresetFile={handleImportPresetFile}
+                            canSave={Boolean(selectedGun)}
                         />
                         <PresetList
                             presets={presets}
                             handleLoadPreset={handleLoadPreset}
+                            handleDeletePreset={handleDeletePreset}
+                            handleExportSavedPreset={handleExportSavedPreset}
                         />
                     </Box>
                 </Box>
