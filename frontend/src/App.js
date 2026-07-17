@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { Box, Typography, Grid2 } from "@mui/material";
 import "./App.css";
-import Sidebar from "./components/common/Sidebar";
 import WeaponPartsList from "./components/WeaponBuildSimulator/WeaponPartsList";
 import WeaponStatus from "./components/WeaponBuildSimulator/WeaponStatus";
 import PresetSave from "./components/WeaponBuildSimulator/PresetSave";
@@ -333,7 +332,6 @@ const TarkovWeaponSim = () => {
                     minHeight: "calc(100vh - 48px)",
                 }}
             >
-                <Sidebar />
                 {/* ここから再度縦並び */}
                 {/* flex 1 は、画面横幅いっぱい使うような設定 */}
                 <Box sx={{ flex: 1, padding: 3, overflowX: "hidden" }}>
