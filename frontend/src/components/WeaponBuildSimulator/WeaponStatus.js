@@ -192,7 +192,7 @@ function WeaponStatus({ parameters, thresholds, setThresholds }) {
                 variant="body2"
                 sx={{ mt: 0.5, color: "rgba(255,255,255,0.68)" }}
             >
-                価格は avg24hPrice、lastLowPrice、basePrice の順で使用し、標準装備パーツは合計に含めません。
+                価格は24時間の平均価格を優先し、情報がない場合は基準価格で計算します。標準装備は追加費用として合計に加算しません。
             </Typography>
             <Box
                 sx={{
@@ -243,7 +243,7 @@ function WeaponStatus({ parameters, thresholds, setThresholds }) {
                             onChange={(event) =>
                                 handleThresholdChange(
                                     item.key,
-                                    event.target.value
+                                    event.target.value,
                                 )
                             }
                             slotProps={{
