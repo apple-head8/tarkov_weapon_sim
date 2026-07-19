@@ -1,0 +1,1787 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "5e81ebcd8e146c7080625e15",
+        "name": "FN40GL Mk2 grenade launcher",
+        "normalizedName": "fn40gl-mk2-40mm-grenade-launcher",
+        "shortName": "FN40GL",
+        "basePrice": 110000,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 2.92,
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ],
+        "containsItems": [
+          {
+            "item": {
+              "id": "571659bb2459771fb2755a12",
+              "name": "AR-15 Damage Industries ECS pistol grip (FDE)",
+              "types": [
+                "mods",
+                "pistolGrip"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "caliber": "Caliber40x46",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 460,
+          "recoilVertical": 230,
+          "slots": [
+            {
+              "nameId": "mod_pistol_grip",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "55d4b9964bdc2d1d4e8b456e",
+                    "name": "AR-15 Colt A2 pistol grip",
+                    "normalizedName": "ar-15-colt-a2-pistol-grip",
+                    "shortName": "A2",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 3,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/55d4b9964bdc2d1d4e8b456e-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/55d4b9964bdc2d1d4e8b456e-8x.webp",
+                    "basePrice": 1250,
+                    "avg24hPrice": 18055,
+                    "lastLowPrice": 8888,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "571659bb2459771fb2755a12",
+                    "name": "AR-15 Damage Industries ECS pistol grip (FDE)",
+                    "normalizedName": "ar-15-damage-industries-ecs-pistol-grip-fde",
+                    "shortName": "ECS FDE",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 3,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/571659bb2459771fb2755a12-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/571659bb2459771fb2755a12-8x.webp",
+                    "basePrice": 1599,
+                    "avg24hPrice": 7618,
+                    "lastLowPrice": 11999,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6113c3586c780c1e710c90bc",
+                    "name": "AR-15 F1 Firearms Skeletonized Style 1 pistol grip",
+                    "normalizedName": "ar-15-f1-firearms-skeletonized-style-1-pistol-grip",
+                    "shortName": "F1 St1",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1.5,
+                    "image512pxLink": "https://assets.tarkov.dev/6113c3586c780c1e710c90bc-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6113c3586c780c1e710c90bc-8x.webp",
+                    "basePrice": 13400,
+                    "avg24hPrice": 25333,
+                    "lastLowPrice": 20000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6113cc78d3a39d50044c065a",
+                    "name": "AR-15 F1 Firearms Skeletonized Style 2 PC pistol grip",
+                    "normalizedName": "ar-15-f1-firearms-skeletonized-style-2-pc-pistol-grip",
+                    "shortName": "F1 St2 PC",
+                    "weight": 0.087,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1.5,
+                    "image512pxLink": "https://assets.tarkov.dev/6113cc78d3a39d50044c065a-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6113cc78d3a39d50044c065a-8x.webp",
+                    "basePrice": 15500,
+                    "avg24hPrice": 33384,
+                    "lastLowPrice": 33300,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6113cce3d92c473c770200c7",
+                    "name": "AR-15 F1 Firearms Skeletonized Style 2 pistol grip",
+                    "normalizedName": "ar-15-f1-firearms-skeletonized-style-2-pistol-grip",
+                    "shortName": "F1 St2",
+                    "weight": 0.085,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1.5,
+                    "image512pxLink": "https://assets.tarkov.dev/6113cce3d92c473c770200c7-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6113cce3d92c473c770200c7-8x.webp",
+                    "basePrice": 13900,
+                    "avg24hPrice": 27846,
+                    "lastLowPrice": 27000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5bb20e18d4351e00320205d5",
+                    "name": "AR-15 HK Battle Grip pistol grip",
+                    "normalizedName": "ar-15-hk-battle-grip-pistol-grip",
+                    "shortName": "Battle Grip",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 3,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/5bb20e18d4351e00320205d5-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5bb20e18d4351e00320205d5-8x.webp",
+                    "basePrice": 2600,
+                    "avg24hPrice": 24999,
+                    "lastLowPrice": 20969,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57c55efc2459772d2c6271e7",
+                    "name": "Hogue OverMolded Rubber Grip (Black)",
+                    "normalizedName": "hogue-overmolded-rubber-grip-black",
+                    "shortName": "OMRG BLK",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/57c55efc2459772d2c6271e7-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57c55efc2459772d2c6271e7-8x.webp",
+                    "basePrice": 3720,
+                    "avg24hPrice": 19315,
+                    "lastLowPrice": 11111,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57af48872459771f0b2ebf11",
+                    "name": "Hogue OverMolded Rubber Grip (FDE)",
+                    "normalizedName": "hogue-overmolded-rubber-grip-fde",
+                    "shortName": "OMRG FDE",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/57af48872459771f0b2ebf11-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57af48872459771f0b2ebf11-8x.webp",
+                    "basePrice": 3720,
+                    "avg24hPrice": 33332,
+                    "lastLowPrice": 28000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57c55f092459772d291a8463",
+                    "name": "Hogue OverMolded Rubber Grip (Ghillie Earth)",
+                    "normalizedName": "hogue-overmolded-rubber-grip-ghillie-earth",
+                    "shortName": "OMRG GE",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/57c55f092459772d291a8463-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57c55f092459772d291a8463-8x.webp",
+                    "basePrice": 3720,
+                    "avg24hPrice": 10000,
+                    "lastLowPrice": 10000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57c55f112459772d28133310",
+                    "name": "Hogue OverMolded Rubber Grip (Ghillie Green)",
+                    "normalizedName": "hogue-overmolded-rubber-grip-ghillie-green",
+                    "shortName": "OMRG GG",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/57c55f112459772d28133310-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57c55f112459772d28133310-8x.webp",
+                    "basePrice": 3720,
+                    "avg24hPrice": 30000,
+                    "lastLowPrice": 30000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57c55f172459772d27602381",
+                    "name": "Hogue OverMolded Rubber Grip (Olive Drab)",
+                    "normalizedName": "hogue-overmolded-rubber-grip-olive-drab",
+                    "shortName": "OMRG OD",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/57c55f172459772d27602381-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57c55f172459772d27602381-8x.webp",
+                    "basePrice": 3720,
+                    "avg24hPrice": 23333,
+                    "lastLowPrice": 23333,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5a339805c4a2826c6e06d73d",
+                    "name": "AR-15 Magpul MIAD pistol grip (FDE)",
+                    "normalizedName": "ar-15-magpul-miad-pistol-grip-fde",
+                    "shortName": "MIAD",
+                    "weight": 0.05,
+                    "ergonomicsModifier": 3,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/5a339805c4a2826c6e06d73d-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5a339805c4a2826c6e06d73d-8x.webp",
+                    "basePrice": 5900,
+                    "avg24hPrice": 21424,
+                    "lastLowPrice": 15500,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "615d8faecabb9b7ad90f4d5d",
+                    "name": "AR-15 Tactical Dynamics Hexgrip pistol grip",
+                    "normalizedName": "ar-15-tactical-dynamics-hexgrip-pistol-grip",
+                    "shortName": "TD Hex",
+                    "weight": 0.064,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1.5,
+                    "image512pxLink": "https://assets.tarkov.dev/615d8faecabb9b7ad90f4d5d-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/615d8faecabb9b7ad90f4d5d-8x.webp",
+                    "basePrice": 6500,
+                    "avg24hPrice": 20008,
+                    "lastLowPrice": 17777,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5b07db875acfc40dc528a5f6",
+                    "name": "AR-15 Tactical Dynamics Skeletonized pistol grip",
+                    "normalizedName": "ar-15-tactical-dynamics-skeletonized-pistol-grip",
+                    "shortName": "TD120001",
+                    "weight": 0.038,
+                    "ergonomicsModifier": 5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1.5,
+                    "image512pxLink": "https://assets.tarkov.dev/5b07db875acfc40dc528a5f6-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5b07db875acfc40dc528a5f6-8x.webp",
+                    "basePrice": 5750,
+                    "avg24hPrice": 170837,
+                    "lastLowPrice": 170000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "63f5feead259b42f0b4d6d0f",
+                    "name": "AR-15 Aeroknox Orion pistol grip",
+                    "normalizedName": "ar-15-aeroknox-orion-pistol-grip",
+                    "shortName": "Orion",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 3,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1,
+                    "image512pxLink": "https://assets.tarkov.dev/63f5feead259b42f0b4d6d0f-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/63f5feead259b42f0b4d6d0f-8x.webp",
+                    "basePrice": 14200,
+                    "avg24hPrice": 19362,
+                    "lastLowPrice": 18599,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "68a63d4f22b1e0bd360afe6a",
+                    "name": "AR-15 Colt A1 pistol grip",
+                    "normalizedName": "ar-15-colt-a1-pistol-grip",
+                    "shortName": "A1",
+                    "weight": 0.113,
+                    "ergonomicsModifier": 2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/68a63d4f22b1e0bd360afe6a-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/68a63d4f22b1e0bd360afe6a-8x.webp",
+                    "basePrice": 1330,
+                    "avg24hPrice": 1699,
+                    "lastLowPrice": 1699,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6984b7d56be2752c150e6895",
+                    "name": "AR-15 Tyrant Designs MOD Chevron pistol grip (Black)",
+                    "normalizedName": "ar-15-tyrant-designs-mod-chevron-pistol-grip-black",
+                    "shortName": "Chevron",
+                    "weight": 0.112,
+                    "ergonomicsModifier": 6,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1.2,
+                    "image512pxLink": "https://assets.tarkov.dev/unknown-item-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/unknown-item-512.webp",
+                    "basePrice": 7000,
+                    "avg24hPrice": null,
+                    "lastLowPrice": null,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6985eb089edef67ade080b72",
+                    "name": "AR-15 Tyrant Designs MOD Chevron pistol grip (Red)",
+                    "normalizedName": "ar-15-tyrant-designs-mod-chevron-pistol-grip-red",
+                    "shortName": "Chevron",
+                    "weight": 0.112,
+                    "ergonomicsModifier": 6,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1.2,
+                    "image512pxLink": "https://assets.tarkov.dev/unknown-item-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/unknown-item-512.webp",
+                    "basePrice": 7000,
+                    "avg24hPrice": null,
+                    "lastLowPrice": null,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "698dac21772d6f3dc00e4284",
+                    "name": "AR-15 Tyrant Designs MOD Chevron pistol grip (Yellow)",
+                    "normalizedName": "ar-15-tyrant-designs-mod-chevron-pistol-grip-yellow",
+                    "shortName": "Chevron",
+                    "weight": 0.112,
+                    "ergonomicsModifier": 6,
+                    "accuracyModifier": 0,
+                    "recoilModifier": -1.2,
+                    "image512pxLink": "https://assets.tarkov.dev/unknown-item-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/unknown-item-512.webp",
+                    "basePrice": 7000,
+                    "avg24hPrice": null,
+                    "lastLowPrice": null,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            },
+            {
+              "nameId": "mod_sight_front",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "5ba26b01d4351e0085325a51",
+                    "name": "HK MP7 flip-up front sight",
+                    "normalizedName": "hk-mp7-flip-up-front-sight",
+                    "shortName": "MP7 FS",
+                    "weight": 0.13,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5ba26b01d4351e0085325a51-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5ba26b01d4351e0085325a51-8x.webp",
+                    "basePrice": 602,
+                    "avg24hPrice": 19999,
+                    "lastLowPrice": 19999,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5dfa3d950dee1b22f862eae0",
+                    "name": "KAC Folding Micro front sight",
+                    "normalizedName": "kac-folding-micro-front-sight",
+                    "shortName": "KAC MFS",
+                    "weight": 0.07,
+                    "ergonomicsModifier": 0.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5dfa3d950dee1b22f862eae0-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5dfa3d950dee1b22f862eae0-8x.webp",
+                    "basePrice": 2433,
+                    "avg24hPrice": 15500,
+                    "lastLowPrice": 3498,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c17804b2e2216152006c02f",
+                    "name": "KAC Folding front sight",
+                    "normalizedName": "kac-folding-front-sight",
+                    "shortName": "KAC FS",
+                    "weight": 0.07,
+                    "ergonomicsModifier": 0.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c17804b2e2216152006c02f-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c17804b2e2216152006c02f-8x.webp",
+                    "basePrice": 2233,
+                    "avg24hPrice": 4333,
+                    "lastLowPrice": 9999,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5bc09a30d4351e00367fb7c8",
+                    "name": "Magpul MBUS Gen2 flip-up front sight",
+                    "normalizedName": "magpul-mbus-gen2-flip-up-front-sight",
+                    "shortName": "MBUS FS",
+                    "weight": 0.034,
+                    "ergonomicsModifier": 0.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5bc09a30d4351e00367fb7c8-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5bc09a30d4351e00367fb7c8-8x.webp",
+                    "basePrice": 2444,
+                    "avg24hPrice": 13610,
+                    "lastLowPrice": 7777,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c18b90d2e2216152142466b",
+                    "name": "Magpul MBUS Gen2 flip-up front sight (FDE)",
+                    "normalizedName": "magpul-mbus-gen2-flip-up-front-sight-fde",
+                    "shortName": "MBUS FS",
+                    "weight": 0.034,
+                    "ergonomicsModifier": 0.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c18b90d2e2216152142466b-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c18b90d2e2216152142466b-8x.webp",
+                    "basePrice": 2400,
+                    "avg24hPrice": 17568,
+                    "lastLowPrice": 10000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5894a73486f77426d259076c",
+                    "name": "MPX flip-up front sight",
+                    "normalizedName": "mpx-flip-up-front-sight",
+                    "shortName": "MPX FS",
+                    "weight": 0.13,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5894a73486f77426d259076c-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5894a73486f77426d259076c-8x.webp",
+                    "basePrice": 600,
+                    "avg24hPrice": 1599,
+                    "lastLowPrice": 1599,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            },
+            {
+              "nameId": "mod_sight_rear",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "5bb20e49d4351e3bac1212de",
+                    "name": "HK 416A5 flip-up rear sight",
+                    "normalizedName": "hk-416a5-flip-up-rear-sight",
+                    "shortName": "416A5 RS",
+                    "weight": 0.14,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5bb20e49d4351e3bac1212de-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5bb20e49d4351e3bac1212de-8x.webp",
+                    "basePrice": 800,
+                    "avg24hPrice": 2000,
+                    "lastLowPrice": 2000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5ba26b17d4351e00367f9bdd",
+                    "name": "HK MP7 flip-up rear sight",
+                    "normalizedName": "hk-mp7-flip-up-rear-sight",
+                    "shortName": "MP7 RS",
+                    "weight": 0.14,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5ba26b17d4351e00367f9bdd-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5ba26b17d4351e00367f9bdd-8x.webp",
+                    "basePrice": 803,
+                    "avg24hPrice": 19888,
+                    "lastLowPrice": 19888,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5dfa3d7ac41b2312ea33362a",
+                    "name": "KAC Folding Micro rear sight",
+                    "normalizedName": "kac-folding-micro-rear-sight",
+                    "shortName": "KAC MRS",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 0.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5dfa3d7ac41b2312ea33362a-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5dfa3d7ac41b2312ea33362a-8x.webp",
+                    "basePrice": 3525,
+                    "avg24hPrice": 15000,
+                    "lastLowPrice": 15000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c1780312e221602b66cc189",
+                    "name": "KAC Folding rear sight",
+                    "normalizedName": "kac-folding-rear-sight",
+                    "shortName": "KAC RS",
+                    "weight": 0.08,
+                    "ergonomicsModifier": 0.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c1780312e221602b66cc189-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c1780312e221602b66cc189-8x.webp",
+                    "basePrice": 3325,
+                    "avg24hPrice": 7221,
+                    "lastLowPrice": 5000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5bc09a18d4351e003562b68e",
+                    "name": "Magpul MBUS Gen2 flip-up rear sight",
+                    "normalizedName": "magpul-mbus-gen2-flip-up-rear-sight",
+                    "shortName": "MBUS RS",
+                    "weight": 0.036,
+                    "ergonomicsModifier": 0.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5bc09a18d4351e003562b68e-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5bc09a18d4351e003562b68e-8x.webp",
+                    "basePrice": 3600,
+                    "avg24hPrice": 9000,
+                    "lastLowPrice": 8969,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c18b9192e2216398b5a8104",
+                    "name": "Magpul MBUS Gen2 flip-up rear sight (FDE)",
+                    "normalizedName": "magpul-mbus-gen2-flip-up-rear-sight-fde",
+                    "shortName": "MBUS RS",
+                    "weight": 0.036,
+                    "ergonomicsModifier": 0.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c18b9192e2216398b5a8104-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c18b9192e2216398b5a8104-8x.webp",
+                    "basePrice": 3600,
+                    "avg24hPrice": 23617,
+                    "lastLowPrice": 14790,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5894a81786f77427140b8347",
+                    "name": "MPX flip-up rear sight",
+                    "normalizedName": "mpx-flip-up-rear-sight",
+                    "shortName": "MPX RS",
+                    "weight": 0.14,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5894a81786f77427140b8347-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5894a81786f77427140b8347-8x.webp",
+                    "basePrice": 802,
+                    "avg24hPrice": 9999,
+                    "lastLowPrice": 9999,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            },
+            {
+              "nameId": "mod_scope",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "6284bd5f95250a29bc628a30",
+                    "name": "Milkor M2A1 グレネードランチャー用リフレックスサイト",
+                    "normalizedName": "milkor-m2a1-grenade-launcher-reflex-sight",
+                    "shortName": "M2A1",
+                    "weight": 0.6,
+                    "ergonomicsModifier": -6,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/6284bd5f95250a29bc628a30-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6284bd5f95250a29bc628a30-8x.webp",
+                    "basePrice": 41200,
+                    "avg24hPrice": 42738,
+                    "lastLowPrice": 25000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            },
+            {
+              "nameId": "mod_tactical_000",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "57fd23e32459772d0805bcf1",
+                    "name": "Holosun LS321 タクティカルデバイス",
+                    "normalizedName": "holosun-ls321-tactical-device",
+                    "shortName": "LS321",
+                    "weight": 0.19,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/57fd23e32459772d0805bcf1-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57fd23e32459772d0805bcf1-8x.webp",
+                    "basePrice": 12531,
+                    "avg24hPrice": 18851,
+                    "lastLowPrice": 14000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "544909bb4bdc2d6f028b4577",
+                    "name": "L3Harris AN/PEQ-15 タクティカルデバイス",
+                    "normalizedName": "l3harris-anpeq-15-tactical-device",
+                    "shortName": "AN/PEQ-15",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/544909bb4bdc2d6f028b4577-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/544909bb4bdc2d6f028b4577-8x.webp",
+                    "basePrice": 19137,
+                    "avg24hPrice": 12761,
+                    "lastLowPrice": 10000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5d10b49bd7ad1a1a560708b0",
+                    "name": "AN/PEQ-2 タクティカルデバイス",
+                    "normalizedName": "insight-anpeq-2-tactical-device",
+                    "shortName": "AN/PEQ-2",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5d10b49bd7ad1a1a560708b0-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5d10b49bd7ad1a1a560708b0-8x.webp",
+                    "basePrice": 10258,
+                    "avg24hPrice": 14170,
+                    "lastLowPrice": 13666,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c06595c0db834001a66af6c",
+                    "name": "L3Harris LA-5B/PEQ タクティカルデバイス",
+                    "normalizedName": "l3harris-la-5bpeq-tactical-device",
+                    "shortName": "LA-5B/PEQ",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c06595c0db834001a66af6c-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c06595c0db834001a66af6c-8x.webp",
+                    "basePrice": 16258,
+                    "avg24hPrice": 30135,
+                    "lastLowPrice": 25000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "61605d88ffa6e502ac5e7eeb",
+                    "name": "Wilcox RAPTAR ES タクティカルレンジファインダー",
+                    "normalizedName": "wilcox-raptar-es-tactical-rangefinder",
+                    "shortName": "RAPTAR",
+                    "weight": 0.308,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/61605d88ffa6e502ac5e7eeb-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/61605d88ffa6e502ac5e7eeb-8x.webp",
+                    "basePrice": 22000,
+                    "avg24hPrice": 32393,
+                    "lastLowPrice": 15555,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c5952732e2216398b5abda2",
+                    "name": "Zenit Perst-3 タクティカルデバイス",
+                    "normalizedName": "zenit-perst-3-tactical-device",
+                    "shortName": "Perst-3",
+                    "weight": 0.3,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c5952732e2216398b5abda2-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c5952732e2216398b5abda2-8x.webp",
+                    "basePrice": 17050,
+                    "avg24hPrice": 16703,
+                    "lastLowPrice": 11111,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "644a3df63b0b6f03e101e065",
+                    "name": "B.E. Meyers MAWL-C1+ タクティカルデバイス",
+                    "normalizedName": "be-meyers-mawl-c1-tactical-device",
+                    "shortName": "MAWL-C1+",
+                    "weight": 0.286,
+                    "ergonomicsModifier": -1.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/644a3df63b0b6f03e101e065-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/644a3df63b0b6f03e101e065-8x.webp",
+                    "basePrice": 20537,
+                    "avg24hPrice": 44221,
+                    "lastLowPrice": 32000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "68bedc0365e7dcf94f0cb0fc",
+                    "name": "L3Harris AN/PEQ-15 tactical device (Black)",
+                    "normalizedName": "l3harris-anpeq-15-tactical-device-black",
+                    "shortName": "AN/PEQ-15",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/68bedc0365e7dcf94f0cb0fc-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/68bedc0365e7dcf94f0cb0fc-8x.webp",
+                    "basePrice": 19137,
+                    "avg24hPrice": 25982,
+                    "lastLowPrice": 25888,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            },
+            {
+              "nameId": "mod_tactical_001",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "5a800961159bd4315e3a1657",
+                    "name": "Glock GTL21 レーザー付きタクティカルフラッシュライト",
+                    "normalizedName": "glock-gtl-21-tactical-flashlight-with-laser",
+                    "shortName": "GTL 21",
+                    "weight": 0.086,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5a800961159bd4315e3a1657-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5a800961159bd4315e3a1657-8x.webp",
+                    "basePrice": 15083,
+                    "avg24hPrice": 18197,
+                    "lastLowPrice": 14000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57fd23e32459772d0805bcf1",
+                    "name": "Holosun LS321 タクティカルデバイス",
+                    "normalizedName": "holosun-ls321-tactical-device",
+                    "shortName": "LS321",
+                    "weight": 0.19,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/57fd23e32459772d0805bcf1-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57fd23e32459772d0805bcf1-8x.webp",
+                    "basePrice": 12531,
+                    "avg24hPrice": 18851,
+                    "lastLowPrice": 14000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "544909bb4bdc2d6f028b4577",
+                    "name": "L3Harris AN/PEQ-15 タクティカルデバイス",
+                    "normalizedName": "l3harris-anpeq-15-tactical-device",
+                    "shortName": "AN/PEQ-15",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/544909bb4bdc2d6f028b4577-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/544909bb4bdc2d6f028b4577-8x.webp",
+                    "basePrice": 19137,
+                    "avg24hPrice": 12761,
+                    "lastLowPrice": 10000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c06595c0db834001a66af6c",
+                    "name": "L3Harris LA-5B/PEQ タクティカルデバイス",
+                    "normalizedName": "l3harris-la-5bpeq-tactical-device",
+                    "shortName": "LA-5B/PEQ",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c06595c0db834001a66af6c-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c06595c0db834001a66af6c-8x.webp",
+                    "basePrice": 16258,
+                    "avg24hPrice": 30135,
+                    "lastLowPrice": 25000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "626becf9582c3e319310b837",
+                    "name": "Insight WMX200 タクティカルフラッシュライト",
+                    "normalizedName": "insight-wmx200-tactical-flashlight",
+                    "shortName": "WMX200",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/626becf9582c3e319310b837-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/626becf9582c3e319310b837-8x.webp",
+                    "basePrice": 13258,
+                    "avg24hPrice": 19297,
+                    "lastLowPrice": 14444,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5cc9c20cd7f00c001336c65d",
+                    "name": "NcSTAR タクティカルブルーレーザー LAMモジュール",
+                    "normalizedName": "ncstar-tactical-blue-laser",
+                    "shortName": "TBL",
+                    "weight": 0.05,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5cc9c20cd7f00c001336c65d-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5cc9c20cd7f00c001336c65d-8x.webp",
+                    "basePrice": 4100,
+                    "avg24hPrice": 16599,
+                    "lastLowPrice": 14999,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6272370ee4013c5d7e31f418",
+                    "name": "Olight Baldr Pro レーザー付きタクティカルフラッシュライト",
+                    "normalizedName": "olight-baldr-pro-tactical-flashlight-with-laser",
+                    "shortName": "BaldrPro",
+                    "weight": 0.129,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/6272370ee4013c5d7e31f418-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6272370ee4013c5d7e31f418-8x.webp",
+                    "basePrice": 8246,
+                    "avg24hPrice": 14616,
+                    "lastLowPrice": 13333,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6272379924e29f06af4d5ecb",
+                    "name": "Olight Baldr Pro レーザー付きタクティカルフラッシュライト (Tan)",
+                    "normalizedName": "olight-baldr-pro-tactical-flashlight-with-laser-tan",
+                    "shortName": "BaldrPro",
+                    "weight": 0.129,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/6272379924e29f06af4d5ecb-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6272379924e29f06af4d5ecb-8x.webp",
+                    "basePrice": 8646,
+                    "avg24hPrice": 16506,
+                    "lastLowPrice": 10000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5d2369418abbc306c62e0c80",
+                    "name": "Steiner DBAL-PL タクティカルデバイス",
+                    "normalizedName": "steiner-dbal-pl-tactical-device",
+                    "shortName": "DBAL-PL",
+                    "weight": 0.153,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5d2369418abbc306c62e0c80-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5d2369418abbc306c62e0c80-8x.webp",
+                    "basePrice": 13500,
+                    "avg24hPrice": 22780,
+                    "lastLowPrice": 20111,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5b07dd285acfc4001754240d",
+                    "name": "Steiner LAS/TAC2 タクティカルフラッシュライト",
+                    "normalizedName": "steiner-lastac-2-tactical-flashlight",
+                    "shortName": "LAS/TAC 2",
+                    "weight": 0.086,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5b07dd285acfc4001754240d-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5b07dd285acfc4001754240d-8x.webp",
+                    "basePrice": 20907,
+                    "avg24hPrice": 37100,
+                    "lastLowPrice": 30992,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "56def37dd2720bec348b456a",
+                    "name": "SureFire X400 Ultra レーザー付きタクティカルフラッシュライト",
+                    "normalizedName": "surefire-x400-ultra-tactical-flashlight-with-laser",
+                    "shortName": "X400U",
+                    "weight": 0.138,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/56def37dd2720bec348b456a-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/56def37dd2720bec348b456a-8x.webp",
+                    "basePrice": 11200,
+                    "avg24hPrice": 14996,
+                    "lastLowPrice": 14910,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5a7b483fe899ef0016170d15",
+                    "name": "SureFire XC1 タクティカルフラッシュライト",
+                    "normalizedName": "surefire-xc1-tactical-flashlight",
+                    "shortName": "XC1",
+                    "weight": 0.05,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5a7b483fe899ef0016170d15-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5a7b483fe899ef0016170d15-8x.webp",
+                    "basePrice": 16844,
+                    "avg24hPrice": 17491,
+                    "lastLowPrice": 16998,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5a5f1ce64f39f90b401987bc",
+                    "name": "Zenit Klesch-2IKS IR レーザー付きイルミネーター",
+                    "normalizedName": "zenit-klesch-2iks-ir-illuminator-with-laser",
+                    "shortName": "2IRS",
+                    "weight": 0.17,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5a5f1ce64f39f90b401987bc-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5a5f1ce64f39f90b401987bc-8x.webp",
+                    "basePrice": 17919,
+                    "avg24hPrice": 28283,
+                    "lastLowPrice": 23000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "560d657b4bdc2da74d8b4572",
+                    "name": "Zenit 2P Klesch フラッシュライト + レーザーサイト",
+                    "normalizedName": "zenit-klesch-2p-flashlight-with-laser",
+                    "shortName": "Klesch-2P",
+                    "weight": 0.17,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/560d657b4bdc2da74d8b4572-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/560d657b4bdc2da74d8b4572-8x.webp",
+                    "basePrice": 15676,
+                    "avg24hPrice": 19861,
+                    "lastLowPrice": 19810,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5b3a337e5acfc4704b4a19a0",
+                    "name": "Zenit Klesch-2U タクティカルフラッシュライト",
+                    "normalizedName": "zenit-klesch-2u-tactical-flashlight",
+                    "shortName": "Klesch-2U",
+                    "weight": 0.259,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5b3a337e5acfc4704b4a19a0-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5b3a337e5acfc4704b4a19a0-8x.webp",
+                    "basePrice": 11399,
+                    "avg24hPrice": 25695,
+                    "lastLowPrice": 18999,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c5952732e2216398b5abda2",
+                    "name": "Zenit Perst-3 タクティカルデバイス",
+                    "normalizedName": "zenit-perst-3-tactical-device",
+                    "shortName": "Perst-3",
+                    "weight": 0.3,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c5952732e2216398b5abda2-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c5952732e2216398b5abda2-8x.webp",
+                    "basePrice": 17050,
+                    "avg24hPrice": 16703,
+                    "lastLowPrice": 11111,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6267c6396b642f77f56f5c1c",
+                    "name": "Daniel Defense 25mm accessory ring mount",
+                    "normalizedName": "daniel-defense-25mm-accessory-ring-mount",
+                    "shortName": "25mm DD",
+                    "weight": 0.06,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/6267c6396b642f77f56f5c1c-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6267c6396b642f77f56f5c1c-8x.webp",
+                    "basePrice": 2200,
+                    "avg24hPrice": 5222,
+                    "lastLowPrice": 4444,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57d17e212459775a1179a0f5",
+                    "name": "Kiba Arms 25mm accessory ring mount",
+                    "normalizedName": "kiba-arms-25mm-accessory-ring-mount",
+                    "shortName": "25mm ring",
+                    "weight": 0.085,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/57d17e212459775a1179a0f5-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57d17e212459775a1179a0f5-8x.webp",
+                    "basePrice": 2799,
+                    "avg24hPrice": 4500,
+                    "lastLowPrice": 4500,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "644a3df63b0b6f03e101e065",
+                    "name": "B.E. Meyers MAWL-C1+ タクティカルデバイス",
+                    "normalizedName": "be-meyers-mawl-c1-tactical-device",
+                    "shortName": "MAWL-C1+",
+                    "weight": 0.286,
+                    "ergonomicsModifier": -1.5,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/644a3df63b0b6f03e101e065-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/644a3df63b0b6f03e101e065-8x.webp",
+                    "basePrice": 20537,
+                    "avg24hPrice": 44221,
+                    "lastLowPrice": 32000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "68bedc0365e7dcf94f0cb0fc",
+                    "name": "L3Harris AN/PEQ-15 tactical device (Black)",
+                    "normalizedName": "l3harris-anpeq-15-tactical-device-black",
+                    "shortName": "AN/PEQ-15",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/68bedc0365e7dcf94f0cb0fc-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/68bedc0365e7dcf94f0cb0fc-8x.webp",
+                    "basePrice": 19137,
+                    "avg24hPrice": 25982,
+                    "lastLowPrice": 25888,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            },
+            {
+              "nameId": "mod_tactical_002",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "5a800961159bd4315e3a1657",
+                    "name": "Glock GTL21 レーザー付きタクティカルフラッシュライト",
+                    "normalizedName": "glock-gtl-21-tactical-flashlight-with-laser",
+                    "shortName": "GTL 21",
+                    "weight": 0.086,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5a800961159bd4315e3a1657-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5a800961159bd4315e3a1657-8x.webp",
+                    "basePrice": 15083,
+                    "avg24hPrice": 18197,
+                    "lastLowPrice": 14000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57fd23e32459772d0805bcf1",
+                    "name": "Holosun LS321 タクティカルデバイス",
+                    "normalizedName": "holosun-ls321-tactical-device",
+                    "shortName": "LS321",
+                    "weight": 0.19,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/57fd23e32459772d0805bcf1-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57fd23e32459772d0805bcf1-8x.webp",
+                    "basePrice": 12531,
+                    "avg24hPrice": 18851,
+                    "lastLowPrice": 14000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "544909bb4bdc2d6f028b4577",
+                    "name": "L3Harris AN/PEQ-15 タクティカルデバイス",
+                    "normalizedName": "l3harris-anpeq-15-tactical-device",
+                    "shortName": "AN/PEQ-15",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/544909bb4bdc2d6f028b4577-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/544909bb4bdc2d6f028b4577-8x.webp",
+                    "basePrice": 19137,
+                    "avg24hPrice": 12761,
+                    "lastLowPrice": 10000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c06595c0db834001a66af6c",
+                    "name": "L3Harris LA-5B/PEQ タクティカルデバイス",
+                    "normalizedName": "l3harris-la-5bpeq-tactical-device",
+                    "shortName": "LA-5B/PEQ",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c06595c0db834001a66af6c-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c06595c0db834001a66af6c-8x.webp",
+                    "basePrice": 16258,
+                    "avg24hPrice": 30135,
+                    "lastLowPrice": 25000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "626becf9582c3e319310b837",
+                    "name": "Insight WMX200 タクティカルフラッシュライト",
+                    "normalizedName": "insight-wmx200-tactical-flashlight",
+                    "shortName": "WMX200",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/626becf9582c3e319310b837-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/626becf9582c3e319310b837-8x.webp",
+                    "basePrice": 13258,
+                    "avg24hPrice": 19297,
+                    "lastLowPrice": 14444,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5cc9c20cd7f00c001336c65d",
+                    "name": "NcSTAR タクティカルブルーレーザー LAMモジュール",
+                    "normalizedName": "ncstar-tactical-blue-laser",
+                    "shortName": "TBL",
+                    "weight": 0.05,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5cc9c20cd7f00c001336c65d-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5cc9c20cd7f00c001336c65d-8x.webp",
+                    "basePrice": 4100,
+                    "avg24hPrice": 16599,
+                    "lastLowPrice": 14999,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6272370ee4013c5d7e31f418",
+                    "name": "Olight Baldr Pro レーザー付きタクティカルフラッシュライト",
+                    "normalizedName": "olight-baldr-pro-tactical-flashlight-with-laser",
+                    "shortName": "BaldrPro",
+                    "weight": 0.129,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/6272370ee4013c5d7e31f418-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6272370ee4013c5d7e31f418-8x.webp",
+                    "basePrice": 8246,
+                    "avg24hPrice": 14616,
+                    "lastLowPrice": 13333,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6272379924e29f06af4d5ecb",
+                    "name": "Olight Baldr Pro レーザー付きタクティカルフラッシュライト (Tan)",
+                    "normalizedName": "olight-baldr-pro-tactical-flashlight-with-laser-tan",
+                    "shortName": "BaldrPro",
+                    "weight": 0.129,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/6272379924e29f06af4d5ecb-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6272379924e29f06af4d5ecb-8x.webp",
+                    "basePrice": 8646,
+                    "avg24hPrice": 16506,
+                    "lastLowPrice": 10000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5d2369418abbc306c62e0c80",
+                    "name": "Steiner DBAL-PL タクティカルデバイス",
+                    "normalizedName": "steiner-dbal-pl-tactical-device",
+                    "shortName": "DBAL-PL",
+                    "weight": 0.153,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5d2369418abbc306c62e0c80-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5d2369418abbc306c62e0c80-8x.webp",
+                    "basePrice": 13500,
+                    "avg24hPrice": 22780,
+                    "lastLowPrice": 20111,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5b07dd285acfc4001754240d",
+                    "name": "Steiner LAS/TAC2 タクティカルフラッシュライト",
+                    "normalizedName": "steiner-lastac-2-tactical-flashlight",
+                    "shortName": "LAS/TAC 2",
+                    "weight": 0.086,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5b07dd285acfc4001754240d-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5b07dd285acfc4001754240d-8x.webp",
+                    "basePrice": 20907,
+                    "avg24hPrice": 37100,
+                    "lastLowPrice": 30992,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "56def37dd2720bec348b456a",
+                    "name": "SureFire X400 Ultra レーザー付きタクティカルフラッシュライト",
+                    "normalizedName": "surefire-x400-ultra-tactical-flashlight-with-laser",
+                    "shortName": "X400U",
+                    "weight": 0.138,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/56def37dd2720bec348b456a-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/56def37dd2720bec348b456a-8x.webp",
+                    "basePrice": 11200,
+                    "avg24hPrice": 14996,
+                    "lastLowPrice": 14910,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5a7b483fe899ef0016170d15",
+                    "name": "SureFire XC1 タクティカルフラッシュライト",
+                    "normalizedName": "surefire-xc1-tactical-flashlight",
+                    "shortName": "XC1",
+                    "weight": 0.05,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5a7b483fe899ef0016170d15-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5a7b483fe899ef0016170d15-8x.webp",
+                    "basePrice": 16844,
+                    "avg24hPrice": 17491,
+                    "lastLowPrice": 16998,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5a5f1ce64f39f90b401987bc",
+                    "name": "Zenit Klesch-2IKS IR レーザー付きイルミネーター",
+                    "normalizedName": "zenit-klesch-2iks-ir-illuminator-with-laser",
+                    "shortName": "2IRS",
+                    "weight": 0.17,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5a5f1ce64f39f90b401987bc-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5a5f1ce64f39f90b401987bc-8x.webp",
+                    "basePrice": 17919,
+                    "avg24hPrice": 28283,
+                    "lastLowPrice": 23000,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "560d657b4bdc2da74d8b4572",
+                    "name": "Zenit 2P Klesch フラッシュライト + レーザーサイト",
+                    "normalizedName": "zenit-klesch-2p-flashlight-with-laser",
+                    "shortName": "Klesch-2P",
+                    "weight": 0.17,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/560d657b4bdc2da74d8b4572-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/560d657b4bdc2da74d8b4572-8x.webp",
+                    "basePrice": 15676,
+                    "avg24hPrice": 19861,
+                    "lastLowPrice": 19810,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5b3a337e5acfc4704b4a19a0",
+                    "name": "Zenit Klesch-2U タクティカルフラッシュライト",
+                    "normalizedName": "zenit-klesch-2u-tactical-flashlight",
+                    "shortName": "Klesch-2U",
+                    "weight": 0.259,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5b3a337e5acfc4704b4a19a0-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5b3a337e5acfc4704b4a19a0-8x.webp",
+                    "basePrice": 11399,
+                    "avg24hPrice": 25695,
+                    "lastLowPrice": 18999,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "5c5952732e2216398b5abda2",
+                    "name": "Zenit Perst-3 タクティカルデバイス",
+                    "normalizedName": "zenit-perst-3-tactical-device",
+                    "shortName": "Perst-3",
+                    "weight": 0.3,
+                    "ergonomicsModifier": -2,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c5952732e2216398b5abda2-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c5952732e2216398b5abda2-8x.webp",
+                    "basePrice": 17050,
+                    "avg24hPrice": 16703,
+                    "lastLowPrice": 11111,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "6267c6396b642f77f56f5c1c",
+                    "name": "Daniel Defense 25mm accessory ring mount",
+                    "normalizedName": "daniel-defense-25mm-accessory-ring-mount",
+                    "shortName": "25mm DD",
+                    "weight": 0.06,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/6267c6396b642f77f56f5c1c-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/6267c6396b642f77f56f5c1c-8x.webp",
+                    "basePrice": 2200,
+                    "avg24hPrice": 5222,
+                    "lastLowPrice": 4444,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "57d17e212459775a1179a0f5",
+                    "name": "Kiba Arms 25mm accessory ring mount",
+                    "normalizedName": "kiba-arms-25mm-accessory-ring-mount",
+                    "shortName": "25mm ring",
+                    "weight": 0.085,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/57d17e212459775a1179a0f5-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57d17e212459775a1179a0f5-8x.webp",
+                    "basePrice": 2799,
+                    "avg24hPrice": 4500,
+                    "lastLowPrice": 4500,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  },
+                  {
+                    "id": "68bedc0365e7dcf94f0cb0fc",
+                    "name": "L3Harris AN/PEQ-15 tactical device (Black)",
+                    "normalizedName": "l3harris-anpeq-15-tactical-device-black",
+                    "shortName": "AN/PEQ-15",
+                    "weight": 0.21,
+                    "ergonomicsModifier": -1,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/68bedc0365e7dcf94f0cb0fc-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/68bedc0365e7dcf94f0cb0fc-8x.webp",
+                    "basePrice": 19137,
+                    "avg24hPrice": 25982,
+                    "lastLowPrice": 25888,
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "62178be9d0050232da3485d9",
+        "name": "ROP-30 リアクティブフレアカートリッジ (White)",
+        "normalizedName": "rop-30-reactive-flare-cartridge-white",
+        "shortName": "Flare",
+        "basePrice": 10000,
+        "avg24hPrice": 18891,
+        "lastLowPrice": 16000,
+        "weight": 0.19,
+        "containsItems": [],
+        "properties": {
+          "caliber": "Caliber26x75",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 400,
+          "recoilVertical": 170,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "675ea3d6312c0a5c4e04e317",
+        "name": "RSP-30 reactive signal cartridge (Firework)",
+        "normalizedName": "rsp-30-reactive-signal-cartridge-firework",
+        "shortName": "Firework",
+        "basePrice": 30000,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.19,
+        "containsItems": [],
+        "properties": {
+          "caliber": "Caliber26x75",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 400,
+          "recoilVertical": 170,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "66d98233302686954b0c6f81",
+        "name": "RSP-30 リアクティブシグナルカートリッジ (Blue)",
+        "normalizedName": "rsp-30-reactive-signal-cartridge-blue",
+        "shortName": "Blue",
+        "basePrice": 10000,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.19,
+        "containsItems": [],
+        "properties": {
+          "caliber": "Caliber26x75",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 400,
+          "recoilVertical": 170,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "6217726288ed9f0845317459",
+        "name": "RSP-30 リアクティブシグナルカートリッジ (Green)",
+        "normalizedName": "rsp-30-reactive-signal-cartridge-green",
+        "shortName": "Green",
+        "basePrice": 5732,
+        "avg24hPrice": 11734,
+        "lastLowPrice": 11000,
+        "weight": 0.19,
+        "containsItems": [],
+        "properties": {
+          "caliber": "Caliber26x75",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 400,
+          "recoilVertical": 170,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "62178c4d4ecf221597654e3d",
+        "name": "RSP-30 リアクティブシグナルカートリッジ (Red)",
+        "normalizedName": "rsp-30-reactive-signal-cartridge-red",
+        "shortName": "Red",
+        "basePrice": 30000,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.19,
+        "containsItems": [],
+        "properties": {
+          "caliber": "Caliber26x75",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 400,
+          "recoilVertical": 170,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "66d9f1abb16d9aacf5068468",
+        "name": "RSP-30 リアクティブシグナルカートリッジ (Special Yellow)",
+        "normalizedName": "rsp-30-reactive-signal-cartridge-special-yellow",
+        "shortName": "S-Yellow",
+        "basePrice": 10000,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.19,
+        "containsItems": [],
+        "properties": {
+          "caliber": "Caliber26x75",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 400,
+          "recoilVertical": 170,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "624c0b3340357b5f566e8766",
+        "name": "RSP-30 リアクティブシグナルカートリッジ (Yellow)",
+        "normalizedName": "rsp-30-reactive-signal-cartridge-yellow",
+        "shortName": "Yellow",
+        "basePrice": 2152,
+        "avg24hPrice": 9852,
+        "lastLowPrice": 11000,
+        "weight": 0.19,
+        "containsItems": [],
+        "properties": {
+          "caliber": "Caliber26x75",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 400,
+          "recoilVertical": 170,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "620109578d82e67e7911abf2",
+        "name": "ZiD SP-81 26x75 シグナルピストル",
+        "normalizedName": "zid-sp-81-26x75-signal-pistol",
+        "shortName": "SP-81",
+        "basePrice": 9878,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.6,
+        "containsItems": [],
+        "properties": {
+          "caliber": "Caliber26x75",
+          "ergonomics": 51,
+          "fireModes": [
+            "単発"
+          ],
+          "fireRate": 30,
+          "recoilHorizontal": 400,
+          "recoilVertical": 170,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "グレネードランチャー",
+            "normalizedName": "grenade-launcher"
+          },
+          {
+            "name": "武器",
+            "normalizedName": "weapon"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      }
+    ]
+  }
+}

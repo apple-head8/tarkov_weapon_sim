@@ -1,0 +1,597 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "5a16b93dfcdbcbcae6687261",
+        "name": "AN/PVS-14 Norotos Dual Dovetail Mount",
+        "normalizedName": "anpvs-14-norotos-dual-dovetail-mount",
+        "shortName": "DDT",
+        "basePrice": 2454,
+        "avg24hPrice": 30274,
+        "lastLowPrice": 19999,
+        "weight": 0.07,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5a16b93dfcdbcbcae6687261-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5a16b93dfcdbcbcae6687261-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "categories": [
+          {
+            "name": "マウント",
+            "normalizedName": "mount"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": [
+            {
+              "nameId": "mod_nvg",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "57235b6f24597759bf5a30f1",
+                    "name": "AN/PVS-14 単眼式ナイトビジョン",
+                    "normalizedName": "l3harris-anpvs-14-night-vision-monocular",
+                    "shortName": "PVS-14",
+                    "basePrice": 91951,
+                    "avg24hPrice": 64788,
+                    "lastLowPrice": 64000,
+                    "weight": 0.65,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/57235b6f24597759bf5a30f1-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/57235b6f24597759bf5a30f1-8x.webp",
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "57235b6f24597759bf5a30f1",
+        "name": "AN/PVS-14 単眼式ナイトビジョン",
+        "normalizedName": "l3harris-anpvs-14-night-vision-monocular",
+        "shortName": "PVS-14",
+        "basePrice": 91951,
+        "avg24hPrice": 64788,
+        "lastLowPrice": 64000,
+        "weight": 0.65,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/57235b6f24597759bf5a30f1-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/57235b6f24597759bf5a30f1-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "Night Vision",
+            "normalizedName": "night-vision"
+          },
+          {
+            "name": "スペシャルスコープ",
+            "normalizedName": "special-scope"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c066e3a0db834001b7353f0",
+        "name": "Armasight N-15 night vision goggles",
+        "normalizedName": "armasight-n-15-night-vision-goggles",
+        "shortName": "N-15",
+        "basePrice": 74800,
+        "avg24hPrice": 78524,
+        "lastLowPrice": 64444,
+        "weight": 0.755,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c066e3a0db834001b7353f0-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c066e3a0db834001b7353f0-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5a16b672fcdbcb001912fa83",
+            "name": "Ops-Core FAST バイザー"
+          },
+          {
+            "id": "5a16b7e1fcdbcb00165aa6c9",
+            "name": "Ops-Core FAST multi-hit ballistic face shield"
+          }
+        ],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "Night Vision",
+            "normalizedName": "night-vision"
+          },
+          {
+            "name": "スペシャルスコープ",
+            "normalizedName": "special-scope"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "68d159d46c606e46b605094d",
+        "name": "Armasight N-15 Swing Arm #194",
+        "normalizedName": "armasight-n-15-swing-arm-194",
+        "shortName": "N-15 #194",
+        "basePrice": 3551,
+        "avg24hPrice": 50362,
+        "lastLowPrice": 32998,
+        "weight": 0.1,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/68d159d46c606e46b605094d-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/68d159d46c606e46b605094d-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5e00cdd986f7747473332240",
+            "name": "Team Wendy EXFIL バリスティックフェイスシールド (ブラック)"
+          },
+          {
+            "id": "5e01f37686f774773c6f6c15",
+            "name": "Team Wendy EXFIL バリスティックフェイスシールド (コヨーテブラウン)"
+          }
+        ],
+        "containsItems": [],
+        "categories": [
+          {
+            "name": "マウント",
+            "normalizedName": "mount"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": [
+            {
+              "nameId": "mod_nvg",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "5c066e3a0db834001b7353f0",
+                    "name": "Armasight N-15 night vision goggles",
+                    "normalizedName": "armasight-n-15-night-vision-goggles",
+                    "shortName": "N-15",
+                    "basePrice": 74800,
+                    "avg24hPrice": 78524,
+                    "lastLowPrice": 64444,
+                    "weight": 0.755,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c066e3a0db834001b7353f0-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c066e3a0db834001b7353f0-8x.webp",
+                    "conflictingSlotIds": [],
+                    "conflictingItems": [
+                      {
+                        "id": "5a16b672fcdbcb001912fa83",
+                        "name": "Ops-Core FAST バイザー"
+                      },
+                      {
+                        "id": "5a16b7e1fcdbcb00165aa6c9",
+                        "name": "Ops-Core FAST multi-hit ballistic face shield"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "689b889473ebd6871805edd6",
+        "name": "L3Harris PVS-31A ナイトビジョンゴーグル",
+        "normalizedName": "l3harris-pvs-31a-night-vision-goggles",
+        "shortName": "PVS-31A",
+        "basePrice": 145004,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 0.45,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/689b889473ebd6871805edd6-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/689b889473ebd6871805edd6-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5a16b672fcdbcb001912fa83",
+            "name": "Ops-Core FAST バイザー"
+          },
+          {
+            "id": "5a16b7e1fcdbcb00165aa6c9",
+            "name": "Ops-Core FAST multi-hit ballistic face shield"
+          },
+          {
+            "id": "5e00cdd986f7747473332240",
+            "name": "Team Wendy EXFIL バリスティックフェイスシールド (ブラック)"
+          },
+          {
+            "id": "5e01f37686f774773c6f6c15",
+            "name": "Team Wendy EXFIL バリスティックフェイスシールド (コヨーテブラウン)"
+          }
+        ],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "Night Vision",
+            "normalizedName": "night-vision"
+          },
+          {
+            "name": "スペシャルスコープ",
+            "normalizedName": "special-scope"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c0695860db834001b735461",
+        "name": "PNV-10T ドーブテイルアダプター",
+        "normalizedName": "pnv-10t-dovetail-adapter",
+        "shortName": "10T adapter",
+        "basePrice": 2310,
+        "avg24hPrice": 24666,
+        "lastLowPrice": 18000,
+        "weight": 0.08,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c0695860db834001b735461-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c0695860db834001b735461-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "categories": [
+          {
+            "name": "マウント",
+            "normalizedName": "mount"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": [
+            {
+              "nameId": "mod_nvg",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "5c0696830db834001d23f5da",
+                    "name": "PNV-10T ナイトビジョンゴーグル",
+                    "normalizedName": "pnv-10t-night-vision-goggles",
+                    "shortName": "PNV-10T",
+                    "basePrice": 28000,
+                    "avg24hPrice": 32357,
+                    "lastLowPrice": 32000,
+                    "weight": 0.8,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c0696830db834001d23f5da-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c0696830db834001d23f5da-8x.webp",
+                    "conflictingSlotIds": [],
+                    "conflictingItems": [
+                      {
+                        "id": "5a16b672fcdbcb001912fa83",
+                        "name": "Ops-Core FAST バイザー"
+                      },
+                      {
+                        "id": "5a16b7e1fcdbcb00165aa6c9",
+                        "name": "Ops-Core FAST multi-hit ballistic face shield"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "5c0696830db834001d23f5da",
+        "name": "PNV-10T ナイトビジョンゴーグル",
+        "normalizedName": "pnv-10t-night-vision-goggles",
+        "shortName": "PNV-10T",
+        "basePrice": 28000,
+        "avg24hPrice": 32357,
+        "lastLowPrice": 32000,
+        "weight": 0.8,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c0696830db834001d23f5da-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c0696830db834001d23f5da-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5a16b672fcdbcb001912fa83",
+            "name": "Ops-Core FAST バイザー"
+          },
+          {
+            "id": "5a16b7e1fcdbcb00165aa6c9",
+            "name": "Ops-Core FAST multi-hit ballistic face shield"
+          }
+        ],
+        "containsItems": [],
+        "properties": {},
+        "categories": [
+          {
+            "name": "Night Vision",
+            "normalizedName": "night-vision"
+          },
+          {
+            "name": "スペシャルスコープ",
+            "normalizedName": "special-scope"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      },
+      {
+        "id": "5c11046cd174af02a012e42b",
+        "name": "PVS-7用 Wilcox インターフェイス",
+        "normalizedName": "pvs-7-wilcox-adapter",
+        "shortName": "W-PVS7",
+        "basePrice": 2454,
+        "avg24hPrice": 19000,
+        "lastLowPrice": 20000,
+        "weight": 0.07,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c11046cd174af02a012e42b-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c11046cd174af02a012e42b-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "categories": [
+          {
+            "name": "マウント",
+            "normalizedName": "mount"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ],
+        "properties": {
+          "ergonomics": 0,
+          "recoilModifier": 0,
+          "accuracyModifier": 0,
+          "slots": [
+            {
+              "nameId": "mod_nvg",
+              "filters": {
+                "allowedItems": [
+                  {
+                    "id": "5c110624d174af029e69734c",
+                    "name": "T-7 Thermal Goggles with a Night Vision mount",
+                    "normalizedName": "t-7-thermal-goggles-with-a-night-vision-mount",
+                    "shortName": "T-7",
+                    "basePrice": 480000,
+                    "avg24hPrice": 14000000,
+                    "lastLowPrice": 14000000,
+                    "weight": 0.92,
+                    "ergonomicsModifier": 0,
+                    "accuracyModifier": 0,
+                    "recoilModifier": 0,
+                    "image512pxLink": "https://assets.tarkov.dev/5c110624d174af029e69734c-512.webp",
+                    "image8xLink": "https://assets.tarkov.dev/5c110624d174af029e69734c-8x.webp",
+                    "conflictingSlotIds": [],
+                    "conflictingItems": []
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "5c110624d174af029e69734c",
+        "name": "T-7 Thermal Goggles with a Night Vision mount",
+        "normalizedName": "t-7-thermal-goggles-with-a-night-vision-mount",
+        "shortName": "T-7",
+        "basePrice": 480000,
+        "avg24hPrice": 14000000,
+        "lastLowPrice": 14000000,
+        "weight": 0.92,
+        "ergonomicsModifier": 0,
+        "accuracyModifier": 0,
+        "recoilModifier": 0,
+        "image512pxLink": "https://assets.tarkov.dev/5c110624d174af029e69734c-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/5c110624d174af029e69734c-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [],
+        "containsItems": [],
+        "properties": null,
+        "categories": [
+          {
+            "name": "Thermal Vision",
+            "normalizedName": "thermal-vision"
+          },
+          {
+            "name": "スペシャルスコープ",
+            "normalizedName": "special-scope"
+          },
+          {
+            "name": "サイト",
+            "normalizedName": "sights"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "functional-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(
+        --background-color,
+        #1e1e1e
+    ); /* Dynamic background for theme */
+    color: var(--text-color, #dcdcdc); /* Dynamic text color for theme */
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-color, #dcdcdc);
+    text-align: center;
+}
+
+.app {
+    display: flex;
+    flex-direction: row; /* Allow sidebar and main content */
+    align-items: flex-start;
+}
+
+.body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #3a3a3a;
+}
+::-webkit-scrollbar-thumb {
+    background: #3a6b91;
+}

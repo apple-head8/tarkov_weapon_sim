@@ -1,0 +1,349 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "62e7e7bbe6da9612f743f1e0",
+        "name": "GP-25 Kostyor 40mm underbarrel grenade launcher",
+        "normalizedName": "gp-25-kostyor-40mm-underbarrel-grenade-launcher",
+        "shortName": "GP-25",
+        "basePrice": 50900,
+        "avg24hPrice": null,
+        "lastLowPrice": null,
+        "weight": 1.4,
+        "ergonomicsModifier": -35,
+        "accuracyModifier": 0,
+        "recoilModifier": -8,
+        "image512pxLink": "https://assets.tarkov.dev/62e7e7bbe6da9612f743f1e0-512.webp",
+        "image8xLink": "https://assets.tarkov.dev/62e7e7bbe6da9612f743f1e0-8x.webp",
+        "conflictingSlotIds": [],
+        "conflictingItems": [
+          {
+            "id": "5c7fc87d2e221644f31c0298",
+            "name": "BCM GUNFIGHTER MOD 3 vertical foregrip"
+          },
+          {
+            "id": "5cda9bcfd7f00c0c0b53e900",
+            "name": "ASh-12 バーティカルフォアグリップ"
+          },
+          {
+            "id": "59f8a37386f7747af3328f06",
+            "name": "Fortis Shift タクティカルグリップ"
+          },
+          {
+            "id": "5a7dbfc1159bd40016548fde",
+            "name": "Hera Arms CQR タクティカルグリップ"
+          },
+          {
+            "id": "619386379fb0c665d5490dbe",
+            "name": "HK Sturmgriff foregrip"
+          },
+          {
+            "id": "5c87ca002e221600114cb150",
+            "name": "KAC vertical foregrip"
+          },
+          {
+            "id": "588226d124597767ad33f787",
+            "name": "Magpul AFG tactical foregrip (Black)"
+          },
+          {
+            "id": "588226dd24597767ad33f789",
+            "name": "Magpul AFG tactical foregrip (FDE)"
+          },
+          {
+            "id": "588226e62459776e3e094af7",
+            "name": "Magpul AFG tactical foregrip (Forest Green)"
+          },
+          {
+            "id": "588226ef24597767af46e39c",
+            "name": "Magpul AFG tactical foregrip (Olive Drab)"
+          },
+          {
+            "id": "59fc48e086f77463b1118392",
+            "name": "Magpul RVG foregrip (Black)"
+          },
+          {
+            "id": "5fce0cf655375d18a253eff0",
+            "name": "Magpul RVG foregrip (FDE)"
+          },
+          {
+            "id": "5cf4fb76d7f00c065703d3ac",
+            "name": "RTM Pillau tactical foregrip"
+          },
+          {
+            "id": "5b057b4f5acfc4771e1bd3e9",
+            "name": "Stark SE-5 Express Forward foregrip"
+          },
+          {
+            "id": "5c791e872e2216001219c40a",
+            "name": "Strike Industries Cobra Tactical foregrip"
+          },
+          {
+            "id": "558032614bdc2de7118b4585",
+            "name": "TangoDown Stubby BGV-MK46K foregrip (Black)"
+          },
+          {
+            "id": "58c157be86f77403c74b2bb6",
+            "name": "TangoDown Stubby BGV-MK46K foregrip (FDE)"
+          },
+          {
+            "id": "58c157c886f774032749fb06",
+            "name": "TangoDown Stubby BGV-MK46K foregrip (Stealth Grey)"
+          },
+          {
+            "id": "5f6340d3ca442212f4047eb2",
+            "name": "Tactical Dynamics Skeletonized Foregrip"
+          },
+          {
+            "id": "591af28e86f77414a27a9e1d",
+            "name": "Viking Tactics UVG tactical foregrip"
+          },
+          {
+            "id": "5c1cd46f2e22164bef5cfedb",
+            "name": "Zenit RK-1 tactical foregrip on B-25U mount"
+          },
+          {
+            "id": "5c1bc4812e22164bef5cfde7",
+            "name": "Zenit RK-0 tactical foregrip"
+          },
+          {
+            "id": "5c1bc5612e221602b5429350",
+            "name": "Zenit RK-1 tactical foregrip"
+          },
+          {
+            "id": "5c1bc5af2e221602b412949b",
+            "name": "Zenit RK-2 tactical foregrip"
+          },
+          {
+            "id": "5c1bc5fb2e221602b1779b32",
+            "name": "Zenit RK-4 tactical foregrip"
+          },
+          {
+            "id": "5c1bc7432e221602b412949d",
+            "name": "Zenit RK-5 tactical foregrip"
+          },
+          {
+            "id": "5c1bc7752e221602b1779b34",
+            "name": "Zenit RK-6 tactical foregrip"
+          },
+          {
+            "id": "615d8fd3290d254f5e6b2edc",
+            "name": "Monstrum Tactical Vertical Fore Grip KeyMod"
+          },
+          {
+            "id": "5fc0f9b5d724d907e2077d82",
+            "name": "A3 Tactical MVF001 KeyMod バーティカルフォアグリップ (ブラック)"
+          },
+          {
+            "id": "5fc0f9cbd6fa9c00c571bb90",
+            "name": "SIG Sauer Vertical Foregrip KeyMod (Black)"
+          },
+          {
+            "id": "57cffb66245977632f391a99",
+            "name": "Magpul M-LOK AFG tactical foregrip (Black)"
+          },
+          {
+            "id": "57cffcd624597763133760c5",
+            "name": "Magpul M-LOK AFG tactical foregrip (FDE)"
+          },
+          {
+            "id": "57cffcdd24597763f5110006",
+            "name": "Magpul M-LOK AFG tactical foregrip (Olive Drab)"
+          },
+          {
+            "id": "57cffce524597763b31685d8",
+            "name": "Magpul M-LOK AFG tactical foregrip (Stealth Grey)"
+          },
+          {
+            "id": "5b237e425acfc4771e1be0b6",
+            "name": "AK TROY Full Length Rail handguard with gas tube"
+          },
+          {
+            "id": "5cf656f2d7f00c06585fb6eb",
+            "name": "AK Vezhlivyy Strelok VS-24 + VS-33c handguard with gas tube"
+          },
+          {
+            "id": "5d4aab30a4b9365435358c55",
+            "name": "AK Vezhlivyy Strelok VS-24 + VS-33c handguard with gas tube (White)"
+          },
+          {
+            "id": "5a9d6d13a2750c00164f6b03",
+            "name": "Strike Industries KeyMod 6 inch rail"
+          },
+          {
+            "id": "5a9d6d21a2750c00137fa649",
+            "name": "Strike Industries TRAX bridge rail"
+          },
+          {
+            "id": "59e0bed186f774156f04ce84",
+            "name": "Vltor CASV KeyMod 6 inch rail"
+          },
+          {
+            "id": "5b7be4895acfc400170e2dd5",
+            "name": "Magpul M-LOK 4.1 inch rail"
+          },
+          {
+            "id": "5cf4e3f3d7f00c06595bc7f0",
+            "name": "AK 5.45 Design Aggressor handguard"
+          },
+          {
+            "id": "5648ae314bdc2d3d1c8b457f",
+            "name": "AK CAA RS47 handguard"
+          },
+          {
+            "id": "5d2c829448f0353a5c7d6674",
+            "name": "WASR-10/63 CAF wooden foregrip"
+          },
+          {
+            "id": "5b800e9286f7747a8b04f3ff",
+            "name": "AK Hexagon tubular handguard"
+          },
+          {
+            "id": "5b80242286f77429445e0b47",
+            "name": "AK Hexagon tubular handguard (Anodized Red)"
+          },
+          {
+            "id": "59fb375986f7741b681b81a6",
+            "name": "AK Krebs Custom UFM KeyMod handguard"
+          },
+          {
+            "id": "57cff947245977638e6f2a19",
+            "name": "AK Magpul MOE AKM handguard (Black)"
+          },
+          {
+            "id": "57cffd8224597763b03fc609",
+            "name": "AK Magpul MOE AKM handguard (FDE)"
+          },
+          {
+            "id": "57cffddc24597763133760c6",
+            "name": "AK Magpul MOE AKM handguard (Olive Drab)"
+          },
+          {
+            "id": "57cffe0024597763b03fc60b",
+            "name": "AK Magpul MOE AKM handguard (Plum)"
+          },
+          {
+            "id": "57cffe20245977632f391a9d",
+            "name": "AK Magpul MOE AKM handguard (Stealth Grey)"
+          },
+          {
+            "id": "5c9a07572e221644f31c4b32",
+            "name": "AK Magpul Zhukov-U handguard (Black)"
+          },
+          {
+            "id": "5c9a1c3a2e2216000e69fb6a",
+            "name": "AK Magpul Zhukov-U handguard (FDE)"
+          },
+          {
+            "id": "5c9a1c422e221600106f69f0",
+            "name": "AK Magpul Zhukov-U handguard (Plum)"
+          },
+          {
+            "id": "5f6331e097199b7db2128dc2",
+            "name": "AK TDI X47 tactical handguard rail system"
+          },
+          {
+            "id": "5c17664f2e2216398b5a7e3c",
+            "name": "AK Vltor CMRD KeyMod handguard"
+          },
+          {
+            "id": "5efaf417aeb21837e749c7f2",
+            "name": "AK Zenit B-30 handguard with B-31S upper handguard rail"
+          },
+          {
+            "id": "64806bdd26c80811d408d37a",
+            "name": "RTM Osovets P-2 tactical foregrip"
+          },
+          {
+            "id": "64807a29e5ffe165600abc97",
+            "name": "RTM Osovets P-2 tactical foregrip (Khaki)"
+          },
+          {
+            "id": "65169d5b30425317755f8e25",
+            "name": "RTM Pillau P-2 tactical foregrip (Red)"
+          },
+          {
+            "id": "648067db042be0705c0b3009",
+            "name": "RTM Pillau tactical foregrip (Sand)"
+          },
+          {
+            "id": "655df24fdf80b12750626d0a",
+            "name": "Stark SE-5 Express Forward foregrip (FDE)"
+          },
+          {
+            "id": "655dccfdbdcc6b5df71382b6",
+            "name": "Strike Industries Cobra Tactical foregrip (FDE)"
+          },
+          {
+            "id": "651a8bf3a8520e48047bf708",
+            "name": "Daniel Defense Enhanced M-LOK Vertical Foregrip (Black)"
+          },
+          {
+            "id": "651a8e529829226ceb67c319",
+            "name": "Daniel Defense Enhanced M-LOK Vertical Foregrip (Coyote Brown)"
+          },
+          {
+            "id": "661e52415be02310ed07a07a",
+            "name": "TangoDown Stubby BGV-QDK foregrip (Black)"
+          },
+          {
+            "id": "661e52b5b099f32c28003586",
+            "name": "TangoDown Stubby BGV-QDK foregrip (FDE)"
+          },
+          {
+            "id": "661e52e29c8b4dadef008577",
+            "name": "TangoDown BGV-QDITI foregrip (Black)"
+          },
+          {
+            "id": "661e53149c8b4dadef008579",
+            "name": "TangoDown BGV-QDITI foregrip (FDE)"
+          },
+          {
+            "id": "665d5d9e338229cfd6078da1",
+            "name": "BCM GUNFIGHTER MOD 3 M-LOK foregrip (Black)"
+          },
+          {
+            "id": "665edce564fb556f940ab32a",
+            "name": "BCM GUNFIGHTER MOD 3 M-LOK foregrip (FDE)"
+          },
+          {
+            "id": "6984b690b457c5047e0c01fa",
+            "name": "IRBIS-GUN 30AL フォアグリップ"
+          },
+          {
+            "id": "6984b74a5aab442620032fe6",
+            "name": "IRBIS-GUN 45AL フォアグリップ"
+          }
+        ],
+        "containsItems": [],
+        "properties": {
+          "ergonomics": -35,
+          "recoilModifier": -0.08,
+          "accuracyModifier": 0,
+          "slots": []
+        },
+        "categories": [
+          {
+            "name": "UBGL",
+            "normalizedName": "ubgl"
+          },
+          {
+            "name": "追加mod",
+            "normalizedName": "gear-mod"
+          },
+          {
+            "name": "武器mod",
+            "normalizedName": "weapon-mod"
+          },
+          {
+            "name": "複合アイテム",
+            "normalizedName": "compound-item"
+          },
+          {
+            "name": "Item",
+            "normalizedName": "item"
+          }
+        ]
+      }
+    ]
+  }
+}
