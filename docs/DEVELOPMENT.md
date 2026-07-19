@@ -61,11 +61,19 @@ npm run fetch:data
 
 GitHub Pagesで公開する場合は、GitHub Actionsのデプロイ先を `GitHub Pages` にします。
 
+このリポジトリでは、公開用ワークフローを以下に配置しています。
+
+```txt
+.github/workflows/deploy-pages.yml
+```
+
 GitHub側で必要な設定:
 
 - Repository Settingsを開く
 - Pagesを開く
 - Sourceを `GitHub Actions` にする
+
+運用時は、公開したい変更を `main` ブランチへ取り込むと自動でデプロイされます。手動で再デプロイしたい場合は、GitHubのActions画面から `Deploy GitHub Pages` を選び、`Run workflow` を実行します。
 
 GitHub PagesのURLは、通常以下の形式になります。
 

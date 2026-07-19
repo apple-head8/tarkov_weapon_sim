@@ -32,6 +32,28 @@ const PartCard = ({
             : "-";
     }
 
+    function getSafeImageUrl(value) {
+        if (!value) return "";
+
+        try {
+            const url = new URL(value);
+            const isAllowedImageHost =
+                url.protocol === "https:" &&
+                url.hostname === "assets.tarkov.dev";
+
+            if (!isAllowedImageHost) return "";
+
+            url.searchParams.set("w", "248");
+            url.searchParams.set("fit", "crop");
+            url.searchParams.set("auto", "format");
+            return url.toString();
+        } catch {
+            return "";
+        }
+    }
+
+    const imageUrl = getSafeImageUrl(part?.image512pxLink);
+
     const card = (
         <Card
             sx={{
@@ -66,10 +88,10 @@ const PartCard = ({
                     width: "100%",
                 }}
             >
-                {hasPart ? (
+                {hasPart && imageUrl ? (
                     <CardMedia
                         component="img"
-                        image={`${part.image512pxLink}?w=248&fit=crop&auto=format`}
+                        image={imageUrl}
                         alt={part.name}
                         sx={{
                             objectFit: "contain",

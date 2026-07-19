@@ -25,6 +25,7 @@ import {
 const PRESET_STORAGE_KEY = "tarkovWeaponSim.presets";
 const PRESET_FILE_VERSION = 1;
 const SUPPORTED_PRESET_VERSIONS = [1];
+const MAX_PRESET_FILE_SIZE_BYTES = 1024 * 1024;
 
 function toNumberOrZero(value) {
     return typeof value === "number" && Number.isFinite(value) ? value : 0;
@@ -293,6 +294,11 @@ const TarkovWeaponSim = () => {
 
     const handleImportPresetFile = (file) => {
         if (!file) return;
+
+        if (file.size > MAX_PRESET_FILE_SIZE_BYTES) {
+            setError("プリセットJSONのサイズが大きすぎます。1MB以下のファイルを選択してください。");
+            return;
+        }
 
         const reader = new FileReader();
 
