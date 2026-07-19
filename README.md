@@ -2,6 +2,10 @@
 
 Escape from Tarkov の武器・パーツ・弾薬を組み合わせて、価格や性能の変化を確認できる武器ビルドシミュレーターです。
 
+## 公開URL
+
+https://apple-head8.github.io/tarkov_weapon_sim/
+
 ## できること
 
 - 武器を選択して、対応するパーツを組み替え
