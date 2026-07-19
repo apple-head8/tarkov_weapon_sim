@@ -163,6 +163,7 @@ const TarkovWeaponSim = () => {
     const [selectedAmmo, setSelectedAmmo] = useState(null);
     const [error, setError] = useState("");
     const [enabledCategories, setEnabledCategories] = useState({});
+    const [weaponSelectorResetKey, setWeaponSelectorResetKey] = useState(0);
     const [parameterThresholds, setParameterThresholds] = useState({
         weight: "",
         ergonomics: "",
@@ -270,6 +271,23 @@ const TarkovWeaponSim = () => {
         );
     };
 
+    const resetCurrentBuild = () => {
+        setSelectedGun("");
+        setSelectedParts({});
+        setParameters({
+            weight: 0,
+            ergonomics: 0,
+            price: 0,
+        });
+        setSelectedTab(null);
+        setSelectedGunSlots(categoryArrayList);
+        setSelectedAmmo(null);
+        setPresetName("");
+        setEnabledCategories({});
+        setWeaponSelectorResetKey((prev) => prev + 1);
+        setError("");
+    };
+
     const handleExportCurrentPreset = () => {
         if (!selectedGun) return;
 
@@ -354,7 +372,7 @@ const TarkovWeaponSim = () => {
 
     return (
         <>
-            <Header />
+            <Header onTitleClick={resetCurrentBuild} />
             <Box
                 sx={{
                     display: "flex",
@@ -378,6 +396,7 @@ const TarkovWeaponSim = () => {
                                 setSelectedGunSlots={setSelectedGunSlots}
                                 setSelectedParts={setSelectedParts}
                                 setEnabledCategories={setEnabledCategories}
+                                resetKey={weaponSelectorResetKey}
                             />
                         </Grid2>
                         <Grid2 size={{ xs: 12, md: 10 }}>
