@@ -6,6 +6,7 @@ import WeaponStatus from "./components/WeaponBuildSimulator/WeaponStatus";
 import PresetSave from "./components/WeaponBuildSimulator/PresetSave";
 import PresetList from "./components/WeaponBuildSimulator/PresetList";
 import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 import WeaponSelector from "./components/WeaponBuildSimulator/WeaponSelector";
 import PartSelector from "./components/WeaponBuildSimulator/PartSelector";
 import AmmoSelector from "./components/WeaponBuildSimulator/AmmoSelector";
@@ -467,6 +468,7 @@ const TarkovWeaponSim = () => {
                     </Box>
                 </Box>
             </Box>
+            <Footer />
         </>
     );
 };
