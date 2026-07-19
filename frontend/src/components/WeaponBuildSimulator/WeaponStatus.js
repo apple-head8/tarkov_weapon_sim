@@ -21,18 +21,18 @@ const STATUS_ITEMS = [
         defaultMax: 100,
         color: "#bb86fc",
         warningType: "under",
-        formatValue: (value) => value,
+        formatValue: (value) => Math.round(value),
         formatScale: (value) => Math.round(value),
     },
     {
         key: "price",
         label: "価格",
         thresholdLabel: "価格ライン",
-        unit: "¥",
+        unit: "円",
         defaultMax: 500000,
         color: "#c026d3",
         warningType: "over",
-        formatValue: (value) => `¥${value.toLocaleString()}`,
+        formatValue: (value) => `¥${Math.round(value).toLocaleString()}`,
         formatScale: (value) => `¥${Math.round(value).toLocaleString()}`,
     },
 ];
@@ -187,10 +187,16 @@ function WeaponStatus({ parameters, thresholds, setThresholds }) {
                 boxShadow: "0 2px 5px rgba(0, 0, 0, 0.5)",
             }}
         >
-            <Typography variant="h6">ビルドスペック</Typography>
+            <Typography variant="h6">ビルド性能</Typography>
+            <Typography
+                variant="body2"
+                sx={{ mt: 0.5, color: "rgba(255,255,255,0.68)" }}
+            >
+                価格は avg24hPrice、lastLowPrice、basePrice の順で使用し、標準装備パーツは合計に含めません。
+            </Typography>
             <Box
                 sx={{
-                    padding: 2,
+                    padding: { xs: 1, md: 2 },
                     display: "flex",
                     flexDirection: "column",
                     gap: 1.5,
@@ -203,7 +209,7 @@ function WeaponStatus({ parameters, thresholds, setThresholds }) {
 
             <Box
                 sx={{
-                    mx: 2,
+                    mx: { xs: 1, md: 2 },
                     mt: 0.5,
                     pt: 1.5,
                     borderTop: "1px solid rgba(255,255,255,0.1)",
@@ -272,10 +278,6 @@ function WeaponStatus({ parameters, thresholds, setThresholds }) {
                                 },
                                 "&:hover .MuiOutlinedInput-notchedOutline": {
                                     borderColor: "rgba(255,255,255,0.32)",
-                                },
-                                "& .MuiFormHelperText-root": {
-                                    color: "text.secondary",
-                                    mx: 0,
                                 },
                                 "& input[type=number]": {
                                     MozAppearance: "textfield",

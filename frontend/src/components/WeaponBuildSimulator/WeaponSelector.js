@@ -20,6 +20,10 @@ function WeaponSelector({
         return WEAPON_DATA_MAP[selectedType]?.data?.items ?? [];
     }, [selectedType]);
 
+    const selectedGunId = gunLists.some((weapon) => weapon.id === selectedGun?.id)
+        ? selectedGun.id
+        : "";
+
     useEffect(() => {
         if (!selectedGun?.id) return;
 
@@ -47,11 +51,7 @@ function WeaponSelector({
         const gun = gunLists.find((item) => item.id === id);
 
         setSelectedGun(gun ?? "");
-        handleDefaultParts(gun);
-    };
-
-    const handleDefaultParts = (gunInfo) => {
-        setSelectedParts(buildDefaultPartsForGun(gunInfo));
+        setSelectedParts(buildDefaultPartsForGun(gun));
     };
 
     const StyledSelect = styled(Select)(({ theme }) => ({
@@ -128,7 +128,7 @@ function WeaponSelector({
                 武器
             </Typography>
             <StyledSelect
-                value={selectedGun?.id ?? ""}
+                value={selectedGunId}
                 onChange={handleGunChange}
                 fullWidth
                 size="small"

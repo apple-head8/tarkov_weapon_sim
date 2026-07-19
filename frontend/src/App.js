@@ -24,6 +24,7 @@ import {
 
 const PRESET_STORAGE_KEY = "tarkovWeaponSim.presets";
 const PRESET_FILE_VERSION = 1;
+const SUPPORTED_PRESET_VERSIONS = [1];
 
 function toNumberOrZero(value) {
     return typeof value === "number" && Number.isFinite(value) ? value : 0;
@@ -84,21 +85,43 @@ function createPresetPayload({
 function normalizeImportedPreset(data) {
     const preset = data?.version ? data : data?.preset;
 
-    if (!preset?.gun?.id || !preset?.parts || typeof preset.parts !== "object") {
-        throw new Error("Invalid preset file.");
+    if (!preset || typeof preset !== "object") {
+        throw new Error("プリセットJSONの形式が正しくありません。");
+    }
+
+    const version = preset.version ?? 1;
+
+    if (!SUPPORTED_PRESET_VERSIONS.includes(version)) {
+        throw new Error(`対応していないプリセット形式です。version: ${version}`);
+    }
+
+    if (!preset.gun?.id) {
+        throw new Error("プリセットJSONに武器情報がありません。");
+    }
+
+    if (
+        !preset.parts ||
+        typeof preset.parts !== "object" ||
+        Array.isArray(preset.parts)
+    ) {
+        throw new Error("プリセットJSONにパーツ情報がありません。");
     }
 
     const now = new Date().toISOString();
+    const parameters =
+        preset.parameters && typeof preset.parameters === "object"
+            ? preset.parameters
+            : {};
 
     return {
         version: PRESET_FILE_VERSION,
         id: preset.id ?? `${preset.gun.id}-${Date.now()}`,
-        name: preset.name || preset.gun.name || "Imported preset",
+        name: preset.name || preset.gun.name || "インポートしたプリセット",
         parts: preset.parts,
-        parameters: preset.parameters ?? {
-            weight: 0,
-            ergonomics: 0,
-            price: 0,
+        parameters: {
+            weight: toNumberOrZero(parameters.weight),
+            ergonomics: toNumberOrZero(parameters.ergonomics),
+            price: toNumberOrZero(parameters.price),
         },
         gun: preset.gun,
         ammo: preset.ammo ?? null,
@@ -130,7 +153,7 @@ const TarkovWeaponSim = () => {
         ergonomics: 0,
         price: 0,
     });
-    const [selectedGun, setSelectedGun] = useState(""); // 選択された銃のIDを管理 TODO:初期値の精査
+    const [selectedGun, setSelectedGun] = useState("");
     const [presetName, setPresetName] = useState("");
     const [presets, setPresets] = useState(loadStoredPresets);
     const [selectedTab, setSelectedTab] = useState(null);
@@ -152,9 +175,12 @@ const TarkovWeaponSim = () => {
         return buildDefaultPartIdsBySlotKey(selectedGun);
     }, [selectedGun]);
 
-    const isDefaultPart = useCallback((categoryKey, part) => {
-        return defaultPartIdsBySlotKey[categoryKey] === part?.id;
-    }, [defaultPartIdsBySlotKey]);
+    const isDefaultPart = useCallback(
+        (categoryKey, part) => {
+            return defaultPartIdsBySlotKey[categoryKey] === part?.id;
+        },
+        [defaultPartIdsBySlotKey]
+    );
 
     useEffect(() => {
         const newParameters = Object.values(selectedParts).reduce(
@@ -177,7 +203,6 @@ const TarkovWeaponSim = () => {
         setParameters(newParameters);
     }, [selectedGun, selectedParts, isDefaultPart]);
 
-    // パーツ選択毎に、スロットの情報等を再計算する
     useEffect(() => {
         const { newSlots, enabled } = buildSlotsAndCategories(
             selectedGun,
@@ -188,9 +213,6 @@ const TarkovWeaponSim = () => {
     }, [selectedGun, selectedParts]);
 
     useEffect(() => {
-        // enabledCategories が更新されたら、
-        // もし現在の selectedTab が存在しない or 無効 なら、
-        // 最初のタブに自動で切り替える
         const keys = Object.keys(enabledCategories || []);
 
         if (keys.length === 0) {
@@ -212,31 +234,29 @@ const TarkovWeaponSim = () => {
     };
 
     const handlePartSelect = (category, part) => {
-        // 競合しているパーツが現在装備されているか確認（双方向チェック）
         const conflicted = findConflictingPart(part, selectedParts);
 
         if (conflicted) {
-            // 競合が見つかった場合はエラーメッセージを表示して終了
             const { category: conflictedCategory, part: conflictedItem } =
                 conflicted;
             const conflictedCategoryName = getCategoryDisplayName(
                 conflictedCategory,
                 enabledCategories[conflictedCategory]
             );
+
             setError(
                 `${part.name} は ${conflictedItem.name}（${conflictedCategoryName}）と競合しています。`
             );
             return;
         }
 
-        // エラーをリセット（正常に選択できる場合）
         setError("");
 
         setSelectedParts((prev) => ({
             ...removeCategoryAndDescendants(prev, category, enabledCategories),
             [category]: {
                 ...part,
-                category: category,
+                category,
                 isDefaultPart: isDefaultPart(category, part),
             },
         }));
@@ -297,8 +317,12 @@ const TarkovWeaponSim = () => {
                 });
                 handleLoadPreset(importedPreset);
                 setError("");
-            } catch {
-                setError("プリセットJSONの読み込みに失敗しました。");
+            } catch (importError) {
+                setError(
+                    importError instanceof Error
+                        ? importError.message
+                        : "プリセットJSONの読み込みに失敗しました。"
+                );
             }
         };
 
@@ -323,7 +347,6 @@ const TarkovWeaponSim = () => {
 
     return (
         <>
-            {/* // サイドバーとその他要素で横並びにする */}
             <Header />
             <Box
                 sx={{
@@ -332,8 +355,6 @@ const TarkovWeaponSim = () => {
                     minHeight: "calc(100vh - 48px)",
                 }}
             >
-                {/* ここから再度縦並び */}
-                {/* flex 1 は、画面横幅いっぱい使うような設定 */}
                 <Box
                     sx={{
                         flex: 1,
@@ -342,7 +363,6 @@ const TarkovWeaponSim = () => {
                     }}
                 >
                     {error && <ErrorMessage message={error} />}
-                    {/* 再度横並び */}
                     <Grid2 container spacing={2}>
                         <Grid2 size={{ xs: 12, md: 2 }}>
                             <WeaponSelector
@@ -354,7 +374,7 @@ const TarkovWeaponSim = () => {
                             />
                         </Grid2>
                         <Grid2 size={{ xs: 12, md: 10 }}>
-                            {selectedTab && (
+                            {selectedTab ? (
                                 <PartSelector
                                     selectedTab={selectedTab}
                                     handleTabChange={handleTabChange}
@@ -368,6 +388,21 @@ const TarkovWeaponSim = () => {
                                     }
                                     clearPartSelect={clearPartSelect}
                                 />
+                            ) : (
+                                <Box
+                                    sx={{
+                                        minHeight: 180,
+                                        display: "grid",
+                                        placeItems: "center",
+                                        backgroundColor: "#2a2a2a",
+                                        color: "rgba(255,255,255,0.72)",
+                                        borderRadius: 1,
+                                    }}
+                                >
+                                    <Typography>
+                                        武器を選択するとパーツ候補が表示されます。
+                                    </Typography>
+                                </Box>
                             )}
                         </Grid2>
                     </Grid2>
@@ -399,7 +434,6 @@ const TarkovWeaponSim = () => {
                         </Grid2>
                     </Grid2>
 
-                    {/* Preset Save and List */}
                     <Box
                         sx={{
                             marginTop: 3,

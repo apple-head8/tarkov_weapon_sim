@@ -13,6 +13,10 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
             .sort((a, b) => a.name.localeCompare(b.name));
     }, [caliber]);
 
+    const selectedAmmoId = ammoOptions.some((ammo) => ammo.id === selectedAmmo?.id)
+        ? selectedAmmo.id
+        : "";
+
     useEffect(() => {
         if (!ammoOptions.length) {
             setSelectedAmmo(null);
@@ -64,7 +68,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
         }
 
         if (properties.tracer) {
-            effects.push(`曳光 ${properties.tracerColor ?? ""}`.trim());
+            effects.push(`曳光弾 ${properties.tracerColor ?? ""}`.trim());
         }
 
         if (properties.projectileCount > 1) {
@@ -131,9 +135,9 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
             }}
         >
             <Typography variant="h6">弾薬</Typography>
-            <Box sx={{ padding: 2 }}>
+            <Box sx={{ padding: { xs: 1, md: 2 } }}>
                 <Select
-                    value={selectedAmmo?.id ?? ""}
+                    value={selectedAmmoId}
                     onChange={handleAmmoChange}
                     renderValue={(selectedId) => {
                         const ammo = ammoOptions.find(
@@ -142,7 +146,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
 
                         if (!ammo) return "";
 
-                        return `${ammo.name} / アーマー ${ammo.properties?.armorDamage ?? "-"}`;
+                        return `${ammo.name} / アーマーダメージ ${ammo.properties?.armorDamage ?? "-"}`;
                     }}
                     fullWidth
                     size="small"
@@ -183,7 +187,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
 
                 {!caliber && (
                     <Typography sx={{ color: "text.secondary" }}>
-                        武器を選択すると弾薬を選べます。
+                        武器を選択すると、対応する弾薬を確認できます。
                     </Typography>
                 )}
 
