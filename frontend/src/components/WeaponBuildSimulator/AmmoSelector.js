@@ -78,41 +78,30 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
         return effects;
     }
 
-    function getArmorPenetrationScore(penetrationPower, armorClass) {
-        if (!Number.isFinite(penetrationPower)) return 0;
+    function getArmorPenetrationMark(penetrationPower, armorClass) {
+        if (!Number.isFinite(penetrationPower)) return "×";
 
-        const effectivenessThresholds = {
-            1: [2, 4, 5, 6, 6, 10],
-            2: [10, 12, 14, 18, 20, 25],
-            3: [18, 20, 24, 27, 30, 35],
-            4: [25, 30, 32, 36, 40, 45],
-            5: [25, 30, 38, 42, 47, 52],
-            6: [35, 40, 45, 50, 55, 60],
-        };
-        const thresholds = effectivenessThresholds[armorClass] ?? [];
-        let score = 0;
+        const reliableClass = Math.floor(penetrationPower / 10);
+        const remainder = penetrationPower % 10;
 
-        thresholds.forEach((threshold, index) => {
-            if (penetrationPower >= threshold) {
-                score = index + 1;
-            }
-        });
+        if (armorClass <= reliableClass) return "◎";
+        if (armorClass === reliableClass + 1) {
+            if (remainder >= 7) return "○";
+            if (remainder >= 1) return "△";
+        }
 
-        return score;
+        return "×";
     }
 
-    function getPenetrationColor(score) {
-        const colors = [
-            "#ef4444",
-            "#f97316",
-            "#f59e0b",
-            "#facc15",
-            "#bef264",
-            "#86efac",
-            "#4ade80",
-        ];
+    function getPenetrationMarkColor(mark) {
+        const colors = {
+            "◎": "#4ade80",
+            "○": "#facc15",
+            "△": "#fb923c",
+            "×": "#ef4444",
+        };
 
-        return colors[score] ?? colors[0];
+        return colors[mark] ?? colors["×"];
     }
 
     function getArmorClassColor(armorClass) {
@@ -154,7 +143,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                             fontSize: "0.72rem",
                         }}
                     >
-                        0-6
+                        簡易
                     </Typography>
                 </Box>
                 <Box
@@ -165,7 +154,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                     }}
                 >
                     {[1, 2, 3, 4, 5, 6].map((armorClass) => {
-                        const score = getArmorPenetrationScore(
+                        const mark = getArmorPenetrationMark(
                             penetrationPower,
                             armorClass
                         );
@@ -198,13 +187,13 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                                         py: 0.65,
                                         textAlign: "center",
                                         backgroundColor:
-                                            getPenetrationColor(score),
+                                            getPenetrationMarkColor(mark),
                                         color: "#111",
                                         fontWeight: 800,
-                                        fontSize: "1rem",
+                                        fontSize: "1.05rem",
                                     }}
                                 >
-                                    {score}
+                                    {mark}
                                 </Box>
                             </Box>
                         );
@@ -219,7 +208,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                         lineHeight: 1.5,
                     }}
                 >
-                    弾薬の貫通力から算出した目安です。実際の貫通結果はアーマーの残耐久などによって変動します。
+                    弾薬の貫通力のみから算出した簡易目安です。実際の貫通結果はアーマーの残耐久や素材などによって変動します。
                 </Typography>
             </Box>
         );
