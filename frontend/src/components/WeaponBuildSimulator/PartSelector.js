@@ -48,24 +48,13 @@ function PartSelector({
 
         if (!category) return false;
 
-        const hasParent = category.parent !== null;
-        const hasChildren = category.children?.length > 0;
-
-        return hasParent || hasChildren;
+        return category.parent !== null || category.children?.length > 0;
     }
 
     function getTopLineStyle(depth) {
-        if (depth === 0) {
-            return {
-                color: "primary.main",
-                opacity: 1,
-                height: 3,
-            };
-        }
-
         return {
             color: "primary.main",
-            opacity: 0.9,
+            opacity: depth === 0 ? 1 : 0.9,
             height: 3,
         };
     }
@@ -115,18 +104,14 @@ function PartSelector({
     function withDefaultPartFlag(categoryKey, part) {
         if (!part) return part;
 
-        const isDefaultPart =
-            defaultPartIdsBySlotKey?.[categoryKey] === part.id;
-
         return {
             ...part,
-            isDefaultPart,
+            isDefaultPart: defaultPartIdsBySlotKey?.[categoryKey] === part.id,
         };
     }
 
     return (
         <>
-            {/* Tabs for part categories */}
             <Tabs
                 value={selectedTab}
                 onChange={handleTabChange}
@@ -134,6 +119,13 @@ function PartSelector({
                 indicatorColor="primary"
                 variant="scrollable"
                 scrollButtons="auto"
+                allowScrollButtonsMobile
+                sx={{
+                    maxWidth: "100%",
+                    "& .MuiTabs-scroller": {
+                        overflowX: "auto",
+                    },
+                }}
             >
                 {categoryKeys.map((key) => {
                     const depth = getCategoryDepth(key, categories);
@@ -157,7 +149,7 @@ function PartSelector({
                                             display: "flex",
                                             flexDirection: "column",
                                             alignItems: "center",
-                                            maxWidth: 160,
+                                            maxWidth: { xs: 128, sm: 160 },
                                             textAlign: "center",
                                         }}
                                     >
@@ -167,6 +159,7 @@ function PartSelector({
                                                 fontSize: "0.82rem",
                                                 lineHeight: 1.2,
                                                 fontWeight: 700,
+                                                overflowWrap: "anywhere",
                                             }}
                                         >
                                             {getCategoryLabel(key)}
@@ -195,14 +188,13 @@ function PartSelector({
                                 position: "relative",
                                 textTransform: "none",
                                 minHeight: parentHint ? 58 : 48,
+                                minWidth: { xs: 112, sm: 140 },
                                 alignItems: "center",
                                 px: 1.5,
                                 background: "transparent",
                                 "&.Mui-selected": {
                                     background: "transparent",
                                 },
-
-                                // 上部ライン
                                 "&::before": (() => {
                                     if (!shouldHighlightTab(key, categories)) {
                                         return {};
@@ -221,7 +213,6 @@ function PartSelector({
                                         opacity: line.opacity,
                                     };
                                 })(),
-
                                 "&.Mui-selected::before": {
                                     opacity: 1,
                                     height: 5,
@@ -232,18 +223,20 @@ function PartSelector({
                 })}
             </Tabs>
 
-            {/* Parts within the selected tab */}
             <Box
                 sx={{
                     display: "flex",
+                    flexDirection: { xs: "column", sm: "row" },
+                    gap: { xs: 1, sm: 0 },
+                    minWidth: 0,
                 }}
             >
-                <div
-                    style={{
-                        width: "150px",
-                        height: "200px",
+                <Box
+                    sx={{
+                        width: { xs: 132, sm: 150 },
+                        height: { xs: 190, sm: 200 },
                         display: "grid",
-                        margin: "10px",
+                        margin: { xs: "10px 10px 0", sm: "10px" },
                         flexShrink: 0,
                     }}
                 >
@@ -252,22 +245,25 @@ function PartSelector({
                         isSelectedCard={true}
                         onClick={() => clearPartSelect(selectedTab)}
                     />
-                </div>
+                </Box>
 
                 <Box
                     sx={{
                         display: "flex",
-                        overflowX: "auto", // 横スクロールを有効化
+                        overflowX: "auto",
                         width: "100%",
+                        minWidth: 0,
+                        pb: 1,
                     }}
                 >
                     {(parts[selectedTab] ?? []).map((part) => (
-                        <div
-                            style={{
-                                width: "150px",
-                                height: "200px",
+                        <Box
+                            sx={{
+                                width: { xs: 132, sm: 150 },
+                                height: { xs: 190, sm: 200 },
                                 display: "grid",
                                 margin: "10px",
+                                flexShrink: 0,
                             }}
                             key={part.id}
                         >
@@ -280,7 +276,7 @@ function PartSelector({
                                     handlePartSelect(selectedTab, part)
                                 }
                             />
-                        </div>
+                        </Box>
                     ))}
                 </Box>
             </Box>

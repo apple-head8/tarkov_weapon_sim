@@ -334,11 +334,17 @@ const TarkovWeaponSim = () => {
             >
                 {/* ここから再度縦並び */}
                 {/* flex 1 は、画面横幅いっぱい使うような設定 */}
-                <Box sx={{ flex: 1, padding: 3, overflowX: "hidden" }}>
+                <Box
+                    sx={{
+                        flex: 1,
+                        padding: { xs: 1.5, md: 3 },
+                        overflowX: "hidden",
+                    }}
+                >
                     {error && <ErrorMessage message={error} />}
                     {/* 再度横並び */}
                     <Grid2 container spacing={2}>
-                        <Grid2 size={2}>
+                        <Grid2 size={{ xs: 12, md: 2 }}>
                             <WeaponSelector
                                 selectedGun={selectedGun}
                                 setSelectedGun={setSelectedGun}
@@ -347,7 +353,7 @@ const TarkovWeaponSim = () => {
                                 setEnabledCategories={setEnabledCategories}
                             />
                         </Grid2>
-                        <Grid2 size={10}>
+                        <Grid2 size={{ xs: 12, md: 10 }}>
                             {selectedTab && (
                                 <PartSelector
                                     selectedTab={selectedTab}
@@ -366,15 +372,15 @@ const TarkovWeaponSim = () => {
                         </Grid2>
                     </Grid2>
 
-                    <Grid2 container spacing={2} sx={{ mt: 3 }}>
-                        <Grid2 size={6}>
+                    <Grid2 container spacing={2} sx={{ mt: { xs: 2, md: 3 } }}>
+                        <Grid2 size={{ xs: 12, md: 6 }}>
                             <WeaponStatus
                                 parameters={parameters}
                                 thresholds={parameterThresholds}
                                 setThresholds={setParameterThresholds}
                             />
                         </Grid2>
-                        <Grid2 size={6}>
+                        <Grid2 size={{ xs: 12, md: 6 }}>
                             <AmmoSelector
                                 selectedGun={selectedGun}
                                 selectedAmmo={selectedAmmo}

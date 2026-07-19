@@ -35,8 +35,8 @@ const PartCard = ({
     const card = (
         <Card
             sx={{
-                width: 150,
-                height: 200,
+                width: { xs: 132, sm: 150 },
+                height: { xs: 190, sm: 200 },
                 backgroundColor: isSelectedCard
                     ? "#4c8cc6"
                     : isSelected
@@ -59,7 +59,13 @@ const PartCard = ({
             }}
             onClick={onClick}
         >
-            <Box sx={{ position: "relative", height: 120, width: "100%" }}>
+            <Box
+                sx={{
+                    position: "relative",
+                    height: { xs: 108, sm: 120 },
+                    width: "100%",
+                }}
+            >
                 {hasPart ? (
                     <CardMedia
                         component="img"
@@ -90,7 +96,7 @@ const PartCard = ({
                         background: "rgba(50,50,50,0.7)",
                         height: 48,
                         "& .MuiImageListItemBar-title": {
-                            fontSize: "0.8rem",
+                            fontSize: { xs: "0.72rem", sm: "0.8rem" },
                             fontWeight: "bold",
                             whiteSpace: "normal",
                             display: "-webkit-box",
