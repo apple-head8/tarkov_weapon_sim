@@ -11,6 +11,7 @@ function WeaponSelector({
     setSelectedGunSlots,
     setSelectedParts,
     setEnabledCategories,
+    resetKey,
 }) {
     const [selectedType, setSelectedType] = useState("");
 
@@ -23,6 +24,10 @@ function WeaponSelector({
     const selectedGunId = gunLists.some((weapon) => weapon.id === selectedGun?.id)
         ? selectedGun.id
         : "";
+
+    useEffect(() => {
+        setSelectedType("");
+    }, [resetKey]);
 
     useEffect(() => {
         if (!selectedGun?.id) return;

@@ -1,7 +1,7 @@
 import React from "react";
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { AppBar, ButtonBase, Toolbar, Typography } from "@mui/material";
 
-function Header() {
+function Header({ onTitleClick }) {
     return (
         <AppBar
             position="static"
@@ -11,9 +11,24 @@ function Header() {
             }}
         >
             <Toolbar variant="dense">
-                <Typography variant="h6" color="inherit" component="div">
-                    Tarkov 武器ビルドシミュレーター
-                </Typography>
+                <ButtonBase
+                    onClick={onTitleClick}
+                    sx={{
+                        borderRadius: 1,
+                        px: 0.75,
+                        py: 0.4,
+                        color: "inherit",
+                        textAlign: "left",
+                        "&:hover": {
+                            backgroundColor: "rgba(255,255,255,0.08)",
+                        },
+                    }}
+                    aria-label="初期状態に戻す"
+                >
+                    <Typography variant="h6" color="inherit" component="div">
+                        Tarkov 武器ビルドシミュレーター
+                    </Typography>
+                </ButtonBase>
             </Toolbar>
         </AppBar>
     );
