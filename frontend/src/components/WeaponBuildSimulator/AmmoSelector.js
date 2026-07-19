@@ -78,6 +78,153 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
         return effects;
     }
 
+    function getArmorPenetrationScore(penetrationPower, armorClass) {
+        if (!Number.isFinite(penetrationPower)) return 0;
+
+        const effectivenessThresholds = {
+            1: [2, 4, 5, 6, 6, 10],
+            2: [10, 12, 14, 18, 20, 25],
+            3: [18, 20, 24, 27, 30, 35],
+            4: [25, 30, 32, 36, 40, 45],
+            5: [25, 30, 38, 42, 47, 52],
+            6: [35, 40, 45, 50, 55, 60],
+        };
+        const thresholds = effectivenessThresholds[armorClass] ?? [];
+        let score = 0;
+
+        thresholds.forEach((threshold, index) => {
+            if (penetrationPower >= threshold) {
+                score = index + 1;
+            }
+        });
+
+        return score;
+    }
+
+    function getPenetrationColor(score) {
+        const colors = [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#facc15",
+            "#bef264",
+            "#86efac",
+            "#4ade80",
+        ];
+
+        return colors[score] ?? colors[0];
+    }
+
+    function getArmorClassColor(armorClass) {
+        const colors = {
+            1: "#c4b5fd",
+            2: "#a78bfa",
+            3: "#8b5cf6",
+            4: "#7c3aed",
+            5: "#a21caf",
+            6: "#db2777",
+        };
+
+        return colors[armorClass] ?? "text.secondary";
+    }
+
+    function ArmorClassPenetration({ penetrationPower }) {
+        return (
+            <Box sx={{ mt: 2 }}>
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        gap: 1,
+                        mb: 0.75,
+                    }}
+                >
+                    <Typography
+                        sx={{
+                            color: "text.secondary",
+                            fontSize: "0.82rem",
+                            fontWeight: 700,
+                        }}
+                    >
+                        アーマークラス別 貫通目安
+                    </Typography>
+                    <Typography
+                        sx={{
+                            color: "rgba(255,255,255,0.56)",
+                            fontSize: "0.72rem",
+                        }}
+                    >
+                        0-6
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{
+                        display: "grid",
+                        gridTemplateColumns: "repeat(6, 1fr)",
+                        gap: 0.75,
+                    }}
+                >
+                    {[1, 2, 3, 4, 5, 6].map((armorClass) => {
+                        const score = getArmorPenetrationScore(
+                            penetrationPower,
+                            armorClass
+                        );
+
+                        return (
+                            <Box
+                                key={armorClass}
+                                sx={{
+                                    overflow: "hidden",
+                                    borderRadius: 1,
+                                    border:
+                                        "1px solid rgba(255,255,255,0.12)",
+                                    backgroundColor:
+                                        "rgba(255,255,255,0.06)",
+                                }}
+                            >
+                                <Typography
+                                    sx={{
+                                        py: 0.35,
+                                        textAlign: "center",
+                                        color: getArmorClassColor(armorClass),
+                                        fontSize: "0.76rem",
+                                        fontWeight: 800,
+                                    }}
+                                >
+                                    クラス {armorClass}
+                                </Typography>
+                                <Box
+                                    sx={{
+                                        py: 0.65,
+                                        textAlign: "center",
+                                        backgroundColor:
+                                            getPenetrationColor(score),
+                                        color: "#111",
+                                        fontWeight: 800,
+                                        fontSize: "1rem",
+                                    }}
+                                >
+                                    {score}
+                                </Box>
+                            </Box>
+                        );
+                    })}
+                </Box>
+                <Typography
+                    variant="caption"
+                    sx={{
+                        display: "block",
+                        mt: 0.75,
+                        color: "rgba(255,255,255,0.56)",
+                        lineHeight: 1.5,
+                    }}
+                >
+                    弾薬の貫通力から算出した目安です。実際の貫通結果はアーマーの残耐久などによって変動します。
+                </Typography>
+            </Box>
+        );
+    }
+
     function AmmoStatCard({ label, value, unit }) {
         return (
             <Box
@@ -132,6 +279,9 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                 color: "#fff",
                 borderRadius: 1,
                 boxShadow: "0 2px 5px rgba(0, 0, 0, 0.5)",
+                width: "100%",
+                height: "100%",
+                boxSizing: "border-box",
             }}
         >
             <Typography variant="h6">弾薬</Typography>
@@ -256,6 +406,9 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                                 </Typography>
                             )}
                         </Box>
+                        <ArmorClassPenetration
+                            penetrationPower={properties.penetrationPower}
+                        />
                     </>
                 )}
             </Box>

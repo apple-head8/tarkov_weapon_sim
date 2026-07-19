@@ -185,6 +185,9 @@ function WeaponStatus({ parameters, thresholds, setThresholds }) {
                 color: "#fff",
                 borderRadius: 1,
                 boxShadow: "0 2px 5px rgba(0, 0, 0, 0.5)",
+                width: "100%",
+                height: "100%",
+                boxSizing: "border-box",
             }}
         >
             <Typography variant="h6">ビルド性能</Typography>

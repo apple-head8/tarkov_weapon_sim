@@ -398,7 +398,9 @@ const TarkovWeaponSim = () => {
                             ) : (
                                 <Box
                                     sx={{
-                                        minHeight: 180,
+                                        minHeight: { xs: 180, md: "100%" },
+                                        height: { md: "100%" },
+                                        boxSizing: "border-box",
                                         display: "grid",
                                         placeItems: "center",
                                         backgroundColor: "#2a2a2a",
@@ -414,15 +416,28 @@ const TarkovWeaponSim = () => {
                         </Grid2>
                     </Grid2>
 
-                    <Grid2 container spacing={2} sx={{ mt: { xs: 2, md: 3 } }}>
-                        <Grid2 size={{ xs: 12, md: 6 }}>
+                    <Grid2
+                        container
+                        spacing={2}
+                        sx={{
+                            mt: { xs: 2, md: 3 },
+                            alignItems: "stretch",
+                        }}
+                    >
+                        <Grid2
+                            size={{ xs: 12, md: 6 }}
+                            sx={{ display: "flex" }}
+                        >
                             <WeaponStatus
                                 parameters={parameters}
                                 thresholds={parameterThresholds}
                                 setThresholds={setParameterThresholds}
                             />
                         </Grid2>
-                        <Grid2 size={{ xs: 12, md: 6 }}>
+                        <Grid2
+                            size={{ xs: 12, md: 6 }}
+                            sx={{ display: "flex" }}
+                        >
                             <AmmoSelector
                                 selectedGun={selectedGun}
                                 selectedAmmo={selectedAmmo}
