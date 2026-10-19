@@ -3,6 +3,28 @@ import { Box, TextField, Typography } from "@mui/material";
 
 const STATUS_ITEMS = [
     {
+        key: "recoilVertical",
+        label: "縦反動",
+        thresholdLabel: "縦反動ライン",
+        unit: "",
+        defaultMax: 200,
+        color: "#f59e0b",
+        warningType: "over",
+        formatValue: (value) => Math.round(value),
+        formatScale: (value) => Math.round(value),
+    },
+    {
+        key: "recoilHorizontal",
+        label: "横反動",
+        thresholdLabel: "横反動ライン",
+        unit: "",
+        defaultMax: 500,
+        color: "#fb923c",
+        warningType: "over",
+        formatValue: (value) => Math.round(value),
+        formatScale: (value) => Math.round(value),
+    },
+    {
         key: "weight",
         label: "重量",
         thresholdLabel: "重量ライン",
