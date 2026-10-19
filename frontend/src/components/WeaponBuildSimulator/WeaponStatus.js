@@ -28,12 +28,12 @@ const STATUS_ITEMS = [
         key: "price",
         label: "価格",
         thresholdLabel: "価格ライン",
-        unit: "円",
+        unit: "₽",
         defaultMax: 500000,
         color: "#c026d3",
         warningType: "over",
-        formatValue: (value) => `¥${Math.round(value).toLocaleString()}`,
-        formatScale: (value) => `¥${Math.round(value).toLocaleString()}`,
+        formatValue: (value) => `₽${Math.round(value).toLocaleString()}`,
+        formatScale: (value) => `₽${Math.round(value).toLocaleString()}`,
     },
 ];
 

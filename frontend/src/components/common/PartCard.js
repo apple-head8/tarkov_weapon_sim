@@ -28,7 +28,7 @@ const PartCard = ({
 
         const value = getDisplayPrice(item);
         return typeof value === "number" && Number.isFinite(value)
-            ? `¥${value.toLocaleString()}`
+            ? `₽${value.toLocaleString()}`
             : "-";
     }
 
