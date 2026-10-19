@@ -1,4 +1,5 @@
 import React from "react";
+import { getRecoilModifier } from "../../utils/recoil";
 import {
     Card,
     CardContent,
@@ -58,7 +59,7 @@ const PartCard = ({
         <Card
             sx={{
                 width: { xs: 132, sm: 150 },
-                height: { xs: 190, sm: 200 },
+                height: { xs: 214, sm: 224 },
                 backgroundColor: isSelectedCard
                     ? "#4c8cc6"
                     : isSelected
@@ -143,6 +144,9 @@ const PartCard = ({
                         </Typography>
                         <Typography variant="body2" align="center">
                             エルゴ: {part.ergonomicsModifier ?? 0}
+                        </Typography>
+                        <Typography variant="body2" align="center">
+                            反動: {getRecoilModifier(part) > 0 ? "+" : ""}{Number((getRecoilModifier(part) * 100).toFixed(2))}%
                         </Typography>
                         <Typography variant="body2" align="center">
                             価格: {formatPrice(part)}

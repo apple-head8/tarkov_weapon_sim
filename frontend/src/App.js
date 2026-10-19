@@ -16,6 +16,7 @@ import {
 } from "./constants/categoryList";
 import ErrorMessage from "./components/common/ErrorMessage";
 import { findConflictingPart } from "./utils/conflict";
+import { calculateRecoil } from "./utils/recoil";
 import {
     buildDefaultPartIdsBySlotKey,
     buildOrderedCategoryKeys,
@@ -121,6 +122,7 @@ function normalizeImportedPreset(data) {
         name: preset.name || preset.gun.name || "インポートしたプリセット",
         parts: preset.parts,
         parameters: {
+            ...calculateRecoil(preset.gun, preset.parts),
             weight: toNumberOrZero(parameters.weight),
             ergonomics: toNumberOrZero(parameters.ergonomics),
             price: toNumberOrZero(parameters.price),
@@ -151,6 +153,7 @@ function downloadPresetJson(preset) {
 const TarkovWeaponSim = () => {
     const [selectedParts, setSelectedParts] = useState({});
     const [parameters, setParameters] = useState({
+        ...calculateRecoil(null),
         weight: 0,
         ergonomics: 0,
         price: 0,
@@ -165,6 +168,8 @@ const TarkovWeaponSim = () => {
     const [enabledCategories, setEnabledCategories] = useState({});
     const [weaponSelectorResetKey, setWeaponSelectorResetKey] = useState(0);
     const [parameterThresholds, setParameterThresholds] = useState({
+        recoilVertical: "",
+        recoilHorizontal: "",
         weight: "",
         ergonomics: "",
         price: "",
@@ -203,7 +208,7 @@ const TarkovWeaponSim = () => {
                 price: getMarketPrice(selectedGun),
             }
         );
-        setParameters(newParameters);
+        setParameters({ ...newParameters, ...calculateRecoil(selectedGun, selectedParts) });
     }, [selectedGun, selectedParts, isDefaultPart]);
 
     useEffect(() => {
@@ -275,6 +280,7 @@ const TarkovWeaponSim = () => {
         setSelectedGun("");
         setSelectedParts({});
         setParameters({
+            ...calculateRecoil(null),
             weight: 0,
             ergonomics: 0,
             price: 0,
