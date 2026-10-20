@@ -56,6 +56,7 @@ function WeaponPartsList({ categoryKeys, categories, selectedParts }) {
                                 sx={{
                                     overflowWrap: "anywhere",
                                     whiteSpace: "normal",
+                                    textAlign: "center",
                                     color: "rgba(255,255,255,0.82)",
                                     fontSize: { xs: "0.86rem", sm: "1rem" },
                                 }}

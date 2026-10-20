@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { Tabs, Tab, Box, Tooltip, Typography } from "@mui/material";
+import React, { useEffect, useRef, useState } from "react";
+import { Tabs, Tab, Box, Tooltip, Typography, TextField, Button } from "@mui/material";
 import PartCard from "../common/PartCard";
 import { getCategoryDisplayName } from "../../constants/categoryList";
 
@@ -15,6 +15,18 @@ function PartSelector({
     clearPartSelect,
 }) {
     const tabRefs = useRef({});
+    const [searchText, setSearchText] = useState("");
+    const normalize = (value) => (value ?? "").normalize("NFKC").toLowerCase();
+    const searchTerms = normalize(searchText).trim().split(/\s+/).filter(Boolean);
+    const availableParts = parts[selectedTab] ?? [];
+    const filteredParts = availableParts.filter((part) => {
+        const name = normalize(`${part.name ?? ""} ${part.shortName ?? ""}`);
+        return searchTerms.every((term) => name.includes(term));
+    });
+
+    useEffect(() => {
+        setSearchText("");
+    }, [selectedTab]);
 
     useEffect(() => {
         const selectedCategory = categories[selectedTab];
@@ -223,6 +235,29 @@ function PartSelector({
                 })}
             </Tabs>
 
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, p: 1 }}>
+                <TextField
+                    label="パーツ名検索"
+                    placeholder="名前・略称で絞り込み"
+                    type="search"
+                    size="small"
+                    fullWidth
+                    value={searchText}
+                    onChange={(event) => setSearchText(event.target.value)}
+                    helperText="選択中のカテゴリ内を検索します"
+                />
+                <Button
+                    onClick={() => setSearchText("")}
+                    disabled={!searchText}
+                    sx={{ flexShrink: 0 }}
+                >
+                    クリア
+                </Button>
+            </Box>
+            <Typography role="status" variant="body2" sx={{ px: 1, color: "text.secondary" }}>
+                {filteredParts.length} / {availableParts.length} 件
+            </Typography>
+
             <Box
                 sx={{
                     display: "flex",
@@ -234,7 +269,7 @@ function PartSelector({
                 <Box
                     sx={{
                         width: { xs: 132, sm: 150 },
-                        height: { xs: 190, sm: 200 },
+                        height: { xs: 214, sm: 224 },
                         display: "grid",
                         margin: { xs: "10px 10px 0", sm: "10px" },
                         flexShrink: 0,
@@ -256,11 +291,18 @@ function PartSelector({
                         pb: 1,
                     }}
                 >
-                    {(parts[selectedTab] ?? []).map((part) => (
+                    {filteredParts.length === 0 && (
+                        <Typography sx={{ p: 2, color: "text.secondary" }}>
+                            {searchTerms.length > 0
+                                ? "該当するパーツがありません。検索語を変更してください。"
+                                : "このカテゴリに装着できるパーツはありません。"}
+                        </Typography>
+                    )}
+                    {filteredParts.map((part) => (
                         <Box
                             sx={{
                                 width: { xs: 132, sm: 150 },
-                                height: { xs: 190, sm: 200 },
+                                height: { xs: 214, sm: 224 },
                                 display: "grid",
                                 margin: "10px",
                                 flexShrink: 0,
