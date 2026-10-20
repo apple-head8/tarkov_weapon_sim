@@ -119,6 +119,7 @@ const PartCard = ({
                         background: "rgba(50,50,50,0.7)",
                         height: 48,
                         "& .MuiImageListItemBar-title": {
+                            textAlign: "center",
                             fontSize: { xs: "0.72rem", sm: "0.8rem" },
                             fontWeight: "bold",
                             whiteSpace: "normal",
