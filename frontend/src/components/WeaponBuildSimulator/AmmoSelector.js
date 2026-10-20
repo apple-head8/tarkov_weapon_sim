@@ -285,7 +285,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
 
                         if (!ammo) return "";
 
-                        return `${ammo.name} / アーマーダメージ ${ammo.properties?.armorDamage ?? "-"}`;
+                        return `${ammo.name} / 貫通力 ${ammo.properties?.penetrationPower ?? "-"}`;
                     }}
                     fullWidth
                     size="small"
@@ -317,7 +317,7 @@ function AmmoSelector({ selectedGun, selectedAmmo, setSelectedAmmo }) {
                                         flexShrink: 0,
                                     }}
                                 >
-                                    アーマー {ammo.properties?.armorDamage ?? "-"}
+                                    貫通力 {ammo.properties?.penetrationPower ?? "-"}
                                 </Typography>
                             </Box>
                         </MenuItem>
