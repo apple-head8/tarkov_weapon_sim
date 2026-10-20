@@ -38,7 +38,11 @@ jobs:
         working-directory: frontend
 
       - name: Fetch app data
-        run: npm run fetch:data
+        run: |
+          if ! npm run fetch:data; then
+            echo "::warning::Data API unavailable. Publishing with the committed data snapshot."
+            git restore --source=HEAD -- src/data
+          fi
         working-directory: frontend
 
       - name: Build
